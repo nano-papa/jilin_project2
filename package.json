@@ -1,0 +1,21 @@
+{
+  "name": "jilin_project",
+  "version": "1.0.0",
+  "description": "jilin-project",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --port 8082 --hot --inline --color --progress"
+  },
+  "author": "renakan",
+  "license": "ISC",
+  "devDependencies": {
+    "angular-cookies": "^1.3.0",
+    "autoprefixer": "^6.7.3",
+    "css-loader": "^0.26.1",
+    "file-loader": "^0.9.0",
+    "postcss-loader": "^1.3.1",
+    "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.14.0"
+  }
+}

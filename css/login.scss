@@ -1,0 +1,199 @@
+@import "common";
+@charset "utf-8";
+.login{
+  width:100%;
+  background:url('../img/login_bg.png') 100% 100% no-repeat;
+  .login_logo{
+    padding-top:84px;
+    margin:0 auto;
+    text-align: center;
+  }
+  .login_lin{
+    margin:0 auto;
+    margin-top:63px;
+    width:1118px;
+    border-bottom:1px solid $theme-color-pink1;
+  }
+  .login_outer{
+    margin:0 auto;
+    margin-top:63px;
+    width:800px;
+    .login_box{
+      width:800px;
+      min-height:470px;
+      margin:0 auto;
+      background:#f9f9f9;
+      p{
+        text-align: center;
+        font-size:14px;
+        color:#999;
+        padding-top:60px;
+      }
+      .login_user{
+        margin-top:30px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        position:relative;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        label{
+          display: inline-block;
+          width:26px;
+          height:32px;
+          background:url('../img/user.png')0 -2px no-repeat;
+        }
+        .userpwdicon{
+          background-position:-28px -0px;
+        }
+        input{
+          padding:0px;
+          margin-left:25px;
+          width:254px;
+          height:37px;
+          border:1px solid #ddd;
+          outline:none;
+          font-size:14px;
+          &:focus{
+            border:1px solid $theme-color-pink2;
+          }
+        }
+        span {
+          position:absolute;
+          right:106px;
+          top:12px;
+          width:134px;
+          i{
+            display: inline-block;
+            width:16px;
+            height:16px;
+            background:url('../img/remind.png') no-repeat;
+          }
+          .error{
+            background-position:-18px 0;
+          }
+          u{
+            padding-left:8px;
+            text-decoration: none;
+            font-size:12px;
+          }
+        }
+      }
+      .login_code{
+        margin-top:20px;
+        display: flex;
+        width:800px;
+        align-items: center;
+        justify-content: center;
+        input{
+          padding:0px;
+          margin-left:28px;
+          width:150px;
+          height:37px;
+          border:1px solid #ddd;
+          outline:none;
+          font-size:14px;
+          &:focus{
+            border:1px solid $theme-color-active;
+          }
+      }
+      }
+      .login_msg{
+        margin-top:20px;
+        display:flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        p{
+          padding:10px;
+          margin-left:74px;
+          font-size:12px;
+          width:256px;
+          color:#a94442;
+          min-height:20px;
+          border:1px solid #a94442;
+          background:#f2dede;
+        }
+      }
+      .login_btn{
+        margin-top:20px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        button{
+          margin-left:50px;
+          outline:none;
+          border:none;
+          cursor: pointer;
+          background:$theme-color-active;
+          width:254px;
+          height:38px;
+          color:#fff;
+          font-size:20px;
+        }
+      }
+      .service{
+        margin:0 auto;
+        margin-top: 8px;
+        width:254px;
+        font-size:12px;
+        padding-left:50px;
+        span{
+          padding-left:82px;
+          font-size:12px;
+        }
+        a{
+          font-size:12px;
+          color:$theme-color-pink1;
+        &:hover{
+          color:$theme-color-pink2
+        }
+          u{
+            font-size:12px;
+          }
+        }
+      }
+      .third-party{
+        margin-top:38px;
+        padding-bottom:35px;
+        h6{
+          text-align: center;
+          color:#999;
+          font-weight: normal;
+          font-size:14px;
+        }
+        ul{
+          margin-top:16px;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: center;
+              -ms-flex-pack: center;
+                  justify-content: center;
+          li{
+            width:48px;
+            height:48px;
+            background:url('../img/three_part.png') no-repeat;
+            margin-right:10px;
+            &:last-child{
+              margin-right:0px;
+            }
+            &:last-child{
+              background-position: -50px 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}

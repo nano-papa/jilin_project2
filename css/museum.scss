@@ -1,0 +1,447 @@
+@import "common";
+@charset "utf-8";
+.museum-details {
+  padding: 10px 83px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  .museum-details-img {
+    width: 640px;
+    height: 360px;
+  }
+  .museum-details-msg {
+    width: 360px;
+    padding: 53px 0 0 34px;
+    .museum-details-msg-title {
+      color: $theme-color-pink1;
+      font-size: 18px;
+    }
+    table {
+      margin-top: 20px;
+      td {
+        color: #666;
+        line-height: 35px;
+        font-size: 14px;
+      }
+    }
+    h6 {
+      font-weight: normal;
+      color: $theme-color-pink1;
+      line-height: 35px;
+    }
+    .museum-details-msg-time {
+      color: #666;
+      p {
+        font-size: 14px;
+        line-height: 30px;
+      }
+    }
+  }
+  .museum-details-service {
+    width: 1036px;
+    margin-right: 20px;
+    .museum-details-service-title {
+      margin-top: 10px;
+      &:after {
+        display: block;
+        content: "";
+        clear: both;
+      }
+      li {
+        float: left;
+        margin-right: 20px;
+        border-bottom: 2px solid #fff;
+        color: #000;
+        line-height: 30px;
+        cursor: pointer;
+        &:hover, &.active {
+          color:$theme-color-pink1;
+          border-color: $theme-color-pink1;
+        }
+      }
+    }
+    .museum-details-service-content {
+      li {
+        display: none;
+        padding: 15px;
+        .museum-details-service-content-msg {
+          font-size: 12px;
+          color: #666;
+          line-height: 24px;
+          height: 72px;
+          overflow: hidden;
+          -webkit-transition: height 1s;
+          transition: height 1s;
+          text-align: left;
+          p{
+            font-size:12px;
+          }
+          &.auto-height {
+            height: auto;
+          }
+        }
+        &.active {
+          display: block;
+        }
+        div {
+          text-align: right;
+          button {
+            outline: none;
+            font-size: 12px;
+            color: $theme-color-pink1;
+            line-height: 24px;
+            background: #fff;
+            border: 1px solid $theme-color-pink1;
+            &:hover {
+              background: $theme-color-pink2;
+              color: #fff;
+              border-color:$theme-color-pink2;
+            }
+          }
+        }
+
+      }
+    }
+  }
+  .museum-details-title {
+    width: 100%;
+    color: $theme-color-pink1;
+    font-size: 18px;
+    line-height: 35px;
+    a {
+      float: right;
+      color:$theme-color-pink1;
+      &:hover{
+        color:$theme-color-pink2;
+      }
+    }
+  }
+  .museum-details-collection {
+    width: 668px;
+    ul {
+      margin-top: 8px;
+      &:after {
+        display: block;
+        content: '';
+        clear: both;
+      }
+      li {
+        float: left;
+        width: 192px;
+        margin-right: 23px;
+        &:nth-child(3), &:last-child {
+          margin: 0;
+        }
+        a{
+          display: block;
+          width:192px;
+          height:128px;
+          img{
+            width: 100%;/*宽高设置100%*/
+            height: 100%;
+            object-fit: contain;
+            background:#e4e4e4;/*图片不够尺寸后背景色填充*/
+          }
+        }
+        p {
+           width:100%;
+           text-align: center;
+           color: #666;
+           font-size: 14px;
+           line-height:40px;
+           height:40px;
+           overflow: hidden;
+           @include limitLine(1,200,30);
+         }
+      }
+    }
+  }
+  .museum-details-map {
+    margin-left: 54px;
+    div {
+      .museum-details-map-url{
+        width:308px;
+        height:314px;
+      }
+      p {
+        width: 308px;
+        font-size: 14px;
+        height:35px;
+        overflow:hidden;
+        color: #666;
+        line-height: 35px;
+        @include limitLine(1,200,30)
+      }
+    }
+
+  }
+  .museum-details-display {
+    margin-top:30px;
+    margin-bottom:30px;
+    width: 515px;
+    .museum-details-display-content {
+      margin-top:10px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      a{
+        color:$theme-color-pink1;
+        &:hover{
+          color:$theme-color-pink2;
+        }
+      }
+      div{
+        margin-top:20px;
+        margin-left:12px;
+        h5{
+          font-size:12px;
+          font-weight:normal;
+          color: $theme-color-pink1;
+          line-height:32px;
+          span{
+            font-size:12px;
+            color:#666;
+          }
+        }
+        h6{
+          font-size:14px;
+          font-weight:normal;
+          line-height:32px;
+          a{
+            display: block;
+            width:200px;
+            line-height:18px;
+            height:18px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space:nowrap;
+          }
+        }
+        p{
+          width:206px;
+          font-size:12px;
+          color:#666;
+          line-height:17px;
+          @include limitLine(4,200,30);
+        }
+      }
+    }
+  }
+  .museum-details-digization{
+    padding-left:50px;
+    width:459px;
+    margin-top:30px;
+    margin-bottom:30px;
+    position:relative;
+    .line-clip{
+      position:absolute;
+      left:23px;
+      top:0;
+    }
+    .museum-details-digization-content{
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      div{
+        padding:35px 0 0 30px;
+        h6{
+          font-weight:normal;
+          font-size:18px;
+          color:#666;
+          line-height:50px;
+          width:130px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space:nowrap;
+        }
+      }
+    }
+  }
+}
+.museum-map{
+  margin:0 82px;
+  padding-bottom:50px;
+  position:relative;
+  height:890px;
+  background:url('../img/backgroundmusum.jpg') no-repeat;
+  .museum-items{
+    position:absolute;
+    right:30px;
+    bottom:55px;
+
+    border:1px solid $theme-color-pink1;
+    p{
+      font-size:20px;
+      color:#fff;
+      padding:6px 0;
+      line-height:30px;
+      text-align: center;
+      background:$theme-color-pink1;
+    }
+    ul{
+      padding:10px 0;
+      background:#e6e6e6;
+      width:315px;
+      height:300px;
+      overflow: auto;
+      li{
+        a{
+          line-height:30px;
+          display: flex;
+          flex-flow: row;
+          color:#000000;
+          font-size: 14px;
+          &:hover{
+            color: $theme-color-pink1;
+          }
+          span{
+            @include limitLine(1,200,30);
+            width:200px;
+            padding-left:20px;
+            font-size: 14px;
+          }
+          u{
+            padding-left:10px;
+            text-decoration: none;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}
+.museum-details-morecollection-title{
+  padding: 10px 15px 0px 83px;
+  color:$theme-color-pink1;
+}
+.museum-details-morecollection-list{
+  padding: 20px 15px 0px 83px;
+  ul{
+    &:after{
+      display: block;
+      content:'';
+      clear:both;
+    }
+    li{
+      float:left;
+      width: 240px;
+      margin-right: 154px;
+      margin-bottom: 25px;
+      &:nth-child(3n){
+        margin-right:0px;
+      }
+      h1{
+        font-weight: normal;
+        font-size:14px;
+        margin-bottom:8px;
+      }
+      h4{
+        margin-top:8px;
+        color:$theme-color-pink1;
+        font-weight: normal;
+        font-size:12px;
+        line-height: 16px;
+        span{
+          color:$theme-color-pink1;
+          font-weight: normal;
+          font-size:12px;
+          line-height: 16px;
+        }
+      }
+      p{
+        margin-top:8px;
+        font-size:12px;
+        line-height: 16px;
+        color:#666;
+      }
+    }
+  }
+}
+.museum-details-moreDisplay-list{
+  padding: 20px 15px 0px 83px;
+  ul{
+    &:after{
+      display:block;
+      content:'';
+      clear:both;
+    }
+    li{
+      float:left;
+      margin-right:27px;
+      a{
+        h1{
+          font-weight: normal;
+          font-size:16px;
+          color:#666;
+          line-height: 50px;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+.museum-details-moreDigization-list {
+  padding: 0 0px 0 83px;
+  margin-top:10px;
+  &:after {
+    display: block;
+    content: '';
+    clear: both;
+  }
+  .digization-list-item {
+    float: left;
+    margin-right:115px;
+    margin-bottom: 10px;
+    &:nth-child(2n){
+      margin-right:0;
+    }
+    ul {
+      &:after {
+        display: block;
+        content: '';
+        clear: both;
+      }
+      li {
+        float: left;
+      }
+      .digization-list-item-img {
+        width: 240px;
+        p {
+          font-size: 16px;
+          color:#666;
+          line-height: 40px;
+          text-align: center;
+        }
+      }
+      .digization-list-item-infor {
+        width:194px;
+        height:120px;
+        display:table;
+        margin:40px 0px 15px 10px;
+        p {
+          vertical-align: middle;
+          font-size: 14px;
+          line-height: 22px;
+        }
+      }
+    }
+  }
+}

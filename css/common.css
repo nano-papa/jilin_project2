@@ -1,0 +1,164 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: "Microsoft YaHei UI";
+  font-size: 16px;
+  vertical-align: bottom; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1;
+  background: #eee; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+input {
+  outline: none; }
+
+button {
+  font-family: "Microsoft YaHei UI";
+  outline: none;
+  border: none; }
+
+.wrapper {
+  width: 1200px;
+  margin: auto;
+  background: rgba(255, 255, 255, 0.9); }
+
+.index-outer {
+  background: url("../img/bg.jpg") no-repeat;
+  background-size: 100% 100%; }
+
+a {
+  text-decoration: none;
+  color: #fff; }
+  a:hover, a.active {
+    color: #dc4652; }
+
+.header {
+  width: 100%;
+  background: #1e2326; }
+  .header .header-inner {
+    margin: 0 auto;
+    width: 1200px;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .header .header-inner .header-inner-logo {
+      height: 30px;
+      width: 395px; }
+    .header .header-inner .header-inner-service {
+      position: relative;
+      width: 200px;
+      height: 20px; }
+      .header .header-inner .header-inner-service ul {
+        display: flex; }
+        .header .header-inner .header-inner-service ul li {
+          height: 16px; }
+          .header .header-inner .header-inner-service ul li a {
+            display: inline-block;
+            font-size: 12px;
+            line-height: 16px; }
+          .header .header-inner .header-inner-service ul li:first-child {
+            border-right: 1px solid #fff; }
+            .header .header-inner .header-inner-service ul li:first-child a {
+              padding-right: 8px; }
+          .header .header-inner .header-inner-service ul li:nth-child(2) a {
+            padding-left: 8px; }
+      .header .header-inner .header-inner-service button {
+        position: absolute;
+        right: 35px;
+        top: -2px;
+        color: #fff;
+        cursor: pointer;
+        background: #fc5f74; }
+  .header .header-inners {
+    width: 100%;
+    background: #2a2a2a; }
+    .header .header-inners nav {
+      border-top: 2px solid #35393c;
+      display: flex;
+      justify-content: center; }
+      .header .header-inners nav ul {
+        display: flex;
+        flex-flow: row;
+        height: 69px;
+        justify-content: center;
+        width: 970px; }
+        .header .header-inners nav ul li:not(last-child) {
+          border-right: 1px solid #353535;
+          border-left: 1px solid #0d0c08; }
+        .header .header-inners nav ul li a {
+          padding: 0 36px;
+          line-height: 69px;
+          display: inline-block;
+          height: 69px; }
+          .header .header-inners nav ul li a:hover, .header .header-inners nav ul li a.active {
+            color: #fff;
+            background: #dc1720; }
+
+footer {
+  width: 100%;
+  height: 212px;
+  background: #333333;
+  color: #fff;
+  border-top: 5px solid #dc4652; }
+  footer p {
+    margin: auto;
+    font-size: 14px;
+    text-align: center;
+    padding-top: 36px; }
+    footer p span {
+      line-height: 25px;
+      color: #fff; }
+  footer ul {
+    overflow: hidden;
+    margin: 0 auto;
+    width: 637px;
+    margin-top: 20px; }
+    footer ul li {
+      float: left;
+      border-right: 1px solid #fff; }
+      footer ul li:last-child {
+        border: none; }
+      footer ul li a {
+        color: #fff;
+        font-size: 12px;
+        padding: 0 20px; }
+
+/*# sourceMappingURL=common.css.map */

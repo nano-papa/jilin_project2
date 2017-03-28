@@ -1,0 +1,491 @@
+@import "common";
+
+@charset "utf-8";
+.collection-wraper {
+  padding: 0 20px 0;
+  .slected-condition {
+    &:after {
+      display: block;
+      content: "";
+      clear: both;
+    }
+    ul {
+      float: left;
+      overflow: hidden;
+      li {
+        float: left;
+        height: 24px;
+        background: #f3f3f3;
+        border: 1px solid #ddd;
+        text-align: center;
+        margin-left: 10px;
+        padding:0 10px;
+        small {
+          font-size: 12px;
+          line-height: 24px;
+        }
+        u {
+          font-size: 12px;
+          text-decoration: none;
+          line-height: 24px;
+          color: $theme-color-pink2;
+        }
+        i {
+          font-size: 16px;
+          font-style: normal;
+          line-height: 24px;
+          padding-left: 10px;
+          &:hover {
+            color: $theme-color-pink2;
+            cursor: pointer;
+          }
+        }
+        &:first-child {
+          width: 80px;
+          border: none;
+          background: transparent;
+          margin: 0;
+          span {
+            line-height: 24px;
+          }
+        }
+      }
+    }
+    .key-words-value {
+      float: left;
+      color: #666;
+      line-height: 26px;
+      span {
+        font-size: 12px;
+        line-height: 26px;
+      }
+    }
+  }
+  .key-words {
+    position: relative;
+    height: 36px;
+    margin-top: 15px;
+    .collection-search {
+      width: 305px;
+      height: 15px;
+      border: 1px solid $theme-color-pink1;
+      padding: 5px;
+      padding-right:80px;
+      margin-bottom: 5px;
+      &:focus {
+        border-color: $theme-color-pink2;
+      }
+    }
+    ul {
+      position: absolute;
+      overflow: hidden;
+      left: 385px;
+      top: 7px;
+      li {
+        float: left;
+        width: 21px;
+        height: 21px;
+
+        &:first-child {
+          cursor: pointer;
+          padding-right: 10px;
+          border-right: 1px solid $theme-color-pink1;
+          background: url("../img/xj.png") no-repeat;
+        }
+        &:last-child {
+          cursor: pointer;
+          margin-left: 10px;
+          background: url("../img/fdj.png") no-repeat;
+        }
+      }
+    }
+    /*关键字搜索*/
+    .hot-keywords {
+      position: absolute;
+      left: 321px;
+      top: 8px;
+      span, a {
+        font-size: 14px;
+        color: rgba(0, 0, 0, .4);
+      }
+      a {
+        &:hover {
+          color: $theme-color-pink2;
+        }
+      }
+    }
+  }
+  /*筛选条件*/
+  .condition {
+    margin-top: 15px;
+    .condition-item {
+      overflow: hidden;
+      border-top: 1px solid #e5e5e5;
+      .condition-title {
+        float: left;
+        display: block;
+        line-height: 40px;
+        background: #f3f3f3;
+        padding: 0 10px;
+        &.slidedown {
+          height: auto;
+        }
+      }
+      .condition-content {
+        float: left;
+        overflow: hidden;
+        height: 40px;
+        padding-left: 15px;
+        width: 850px;
+        &.slidedown {
+          height: auto;
+        }
+        li {
+          float: left;
+          margin: 0 15px;
+          span {
+            cursor: pointer;
+            line-height: 40px;
+            font-size: 12px;
+            color: $theme-color-pink1;
+            &:hover {
+              color: $theme-color-pink2;
+            }
+          }
+        }
+      }
+      .condition-more {
+        float: left;
+        cursor:pointer;
+        font-size: 12px;
+        line-height: 40px;
+        color: $theme-color-pink2;
+        span {
+          line-height: 40px;
+        }
+      }
+    }
+  }
+  /*排序状态*/
+  .sort-state {
+    ul {
+      &:after {
+        content: '';
+        display: block;
+        clear: both;
+      }
+      li {
+        float: left;
+        ul li {
+          button {
+            margin-top: 10px;
+            padding: 0 15px;
+            line-height: 35px;
+            border: 1px solid $theme-color-pink2;
+            outline: none;
+            color: $theme-color-pink2;
+            background: #fff;
+            &:hover, &.active {
+              color: #fff;
+              background: $theme-color-active;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*字体加粗*/
+.fontB {
+  font-weight: bold;
+  color: #666;
+  font-size: 14px;
+}
+
+#ul1,#ul2 {
+  width: 1160px;
+  margin-top: 20px;
+  position:relative;
+  left:-18px;
+  &:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+  li{
+    width: 278px;
+    list-style: none;
+    float: left;
+    margin-right: 16px;
+    &:last-child{
+      margin-right: 0px;
+    }
+      div{
+        margin-bottom: 20px;
+        position: relative;
+        border-radius:4px;
+        box-shadow: 0px 1px 3px rgba(0,0,0,.3);
+        a{
+          position: relative;
+          display: block;
+          img{
+            width: 225px;
+            display: block;
+          }
+
+        }
+        p {
+          margin: auto;
+          text-align: center;
+          padding: 10px 0;
+          width: 240px;
+          &:after {
+            content: '';
+            display: block;
+            clear: both;
+          }
+          span {
+            float: left;
+            width: 100%;
+            display: block;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            text-align: center;
+            font-size: 12px;
+            color: rgba(0, 0, 0, .7);
+          }
+
+        }
+        i {
+          display: inline-block;
+          position: absolute;
+          right: 3px;
+          bottom: 17px;
+          float: right;
+          width: 15px;
+          height: 15px;
+          background: url("../img/icon-heart.png") no-repeat -17px 0;
+          &.active{
+            cursor: pointer;
+            background-position: 0 0;
+          }
+        }
+        u {
+          position: absolute;
+          display: none;
+          left: 0px;
+          top: 0px;
+          float: right;
+          width: 37px;
+          height: 30px;
+          background: url("../img/icon-3d.png") no-repeat;
+          &.is3d {
+            display: inline-block;
+          }
+        }
+      }
+
+
+  }
+}
+
+/*藏品详情页*/
+.collection-details {
+  padding: 0 65px;
+  > ul {
+    line-height: 28px;
+    height: 28px;
+    margin-bottom: 22px;
+    &:after {
+      display: block;
+      content: "";
+      clear: both;
+    }
+    li {
+      float: left;
+      position: relative;
+      span {
+        font-size: 24px;
+      }
+      i {
+        display: inline-block;
+        position: absolute;
+        left: 20px;
+        bottom: 7px;
+        float: right;
+        width: 15px;
+        height: 15px;
+        background: url("../img/icon-heart.png") no-repeat -17px 0;
+        &.active{
+          cursor: pointer;
+          background-position: 0 0;
+        }
+      }
+      u {
+        text-decoration: none;
+      }
+      button {
+        outline: none;
+        border: none;
+        margin-left: 10px;
+        padding:0;
+        a{
+          display:block;
+          color: #fff;
+          width: 55px;
+          height: 28px;
+          background: $theme-color;
+          border-radius: 2px;
+          line-height: 28px;
+          &:hover, &.active {
+            background: $theme-color-active;
+          }
+          s{
+            display: inline-block;
+            vertical-align: middle;
+            width:16px;
+            height:16px;
+            background:url('../img/play.png') no-repeat;
+            background-position:0px -1px;
+            &.pplay{
+              background-position:-17px -1px;
+            }
+          }
+        }
+      }
+    }
+
+  }
+  .collection-details-img {
+    width: 640px;
+    height: 426px;
+    display: inline-block;
+    img{
+      width: 100%;/*宽高设置100%*/
+      height: 100%;
+      object-fit: contain;
+      background:#e4e4e4;/*图片不够尺寸后背景色填充*/
+    }
+  }
+  .collection-details-msg {
+    display: inline-block;
+    width: 420px;
+    height: 426px;
+    > p {
+      font-size: 18px;
+      color: $theme-color;
+      padding: 16px 0 0 30px;
+    }
+    table {
+      margin-left: 50px;
+      margin-top: 30px;
+      tr {
+        td {
+          font-size: 14px;
+          line-height: 23px;
+          &:first-child {
+            color: $theme-color;
+          }
+        }
+      }
+    }
+  }
+  .collection-details-infor {
+    .content_1{
+      width:375px;
+      height:190px;
+      overflow: auto;
+      text-indent: 24px;
+      font-size: 12px;
+    }
+    margin-left: 50px;
+    margin-top: 30px;
+    line-height: 20px;
+  }
+  .collection-details-correlation {
+    position:relative;
+    > p {
+      padding: 20px 0;
+      font-size: 18px;
+      color: $theme-color;
+      border-bottom: 1px solid #e3e3e3;
+    }
+    ol{
+      position:absolute;
+      right:0;
+      top:24px;
+      li{
+        float:left;
+        width:8px;
+        height:12px;
+        background:url('../img/arrow.png') -10px 0px no-repeat;
+        &:last-child{
+          background-position:0px 0px;
+        }
+        &.hasmore{
+          background-position-y:-14px;
+        }
+      }
+
+    }
+    ul {
+      margin-top: 15px;
+      width:1070px;
+      height:177px;
+      &:after {
+        display: block;
+        content: "";
+        clear: both;
+      }
+      li {
+        float: left;
+        margin-right: 28px;
+        width: 191px;
+        a{
+          display:block;
+          width:191px;
+          height:129px;
+          img {
+            width: 100%;/*宽高设置100%*/
+            height: 100%;
+            object-fit: contain;
+            background:#e4e4e4;/*图片不够尺寸后背景色填充*/
+          }
+        }
+        p {
+          text-align: center;
+          line-height: 20px;
+          font-size: 14px;
+          padding: 14px 0;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          text-align: center;
+        }
+        &:last-child {
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+
+.btnactive {
+  color: red;
+}
+
+.btn.btnshow {
+  display: block;
+}
+
+.btn {
+  display: none;
+}
+.video-content{
+  width:100%;
+  height:100%;
+}
+
+

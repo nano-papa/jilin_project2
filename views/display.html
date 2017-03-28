@@ -1,0 +1,83 @@
+
+<div class="wrapper">
+    <img ng-src="{{imgUrlarr[2].carList[0].pic.backUrl}}" width="1200" height="120" alt="">
+<div class="display">
+    <div class="breadcrumb">
+        <a ui-sref="home">首页</a><u>&gt;&gt;</u><a ui-sref="display">展览</a>
+    </div>
+    <div class="display-content">
+        <div class="display_list_Pinner" ng-controller="Displaylist.Pinner">
+            <div class="slected-condition" ng-if="isSelected">
+                <ul>
+                    <li>
+                <span>
+                    全部结果>
+                </span>
+                    </li>
+                    <li ng-show="isA">
+                        <small>单位：</small>
+                        <u ng-bind="area"></u>
+                        <i ng-click="removeArea()" ng-show="remove">×</i>
+                    </li>
+                    <li ng-show="isK">
+                        <small>关键字：</small>
+                        <u ng-bind="value"></u>
+                        <i ng-click="hideKeyword()">×</i>
+                    </li>
+                </ul>
+            </div>
+            <div class="display-search">
+                <span>关键词：</span>
+                <input type="text" id="search_box" ng-trim="true">
+                <button ng-click="showKeyword()"></button>
+            </div>
+            <div class="condition">
+                <div class="condition-item" ng-if="isClassify">
+                    <p class="condition-title fontB">所在地区：</p>
+                    <ul class="condition-content">
+                        <li ng-repeat="s in conditionData">
+                            <span ng-click="getClassify($event)" ng-bind="s.cityName" data-index="{{$index}}"></span>
+                        </li>
+                    </ul>
+                    <div class="condition-more" ng-click="SlideDown($event)">更多<span>&gt;</span></div>
+                </div>
+                <div class="condition-item" ng-if="isArea">
+                    <p class="condition-title fontB">收藏单位：</p>
+                    <ul class="condition-content">
+                        <li ng-repeat="r in conditionData[index].museum">
+                            <span ng-click="getArea($event)" ng-bind="r.name" data-id="{{r.cityId}}"></span>
+                        </li>
+                    </ul>
+                    <div class="condition-more" ng-click="SlideDown($event)">更多<span>&gt;</span></div>
+                </div>
+            </div>
+            <div class="display-list-content">
+                <ul class="display-list-content-tab">
+                    <li ng-click="changeListTab(1)" ng-class="{active:tabsubpage===1}">
+                        正在展出
+                    </li>
+                    <li ng-click="changeListTab(0)" ng-class="{active:tabsubpage===0}" >
+                        往期回顾
+                    </li>
+                </ul>
+            </div>
+            <div class="display-list-content-inner">
+                <ul>
+                    <li ng-repeat='x in nDatalist'>
+                        <a ui-sref="displaydetails({type:'inner',id:x.id})" target="_blank">
+                            <img ng-src="{{x.pictureThumb}}" width="298" height="165" alt="{{x.headline}}">
+                        </a>
+                        <h1 ng-bind="x.headline"></h1>
+                        <h5 ng-if="x.staTime"><i ng-class="{displaypermanent:!x.staTime}"></i><span ng-show="x.staTime"><s ng-bind="x.staTime"></s>--<s ng-bind="x.overTime"></s></span><span ng-show="!x.staTime">常设展览</span></h5>
+                        <h6><i class="displaytime"></i><span ng-bind="x.musExhibition"></span></h6>
+                        <p ng-bind="x.content | filterhtml">
+                        </p>
+                    </li>
+                    <nohavemore nheight="500" nwidth="1034" ng-if="showData"></nohavemore>
+                </ul>
+                <div class="PagePlugs" style="margin-top:15px"></div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>

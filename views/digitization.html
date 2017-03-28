@@ -1,0 +1,31 @@
+<div class="digization wrapper" style="padding-bottom:1px;">
+    <img  ng-src="{{imgUrlarr[3].carList[0].pic.backUrl}}" width="1200" height="120" alt="">
+    <p class="breadcrumb">
+        <a ui-sref="home">首页</a><u>&gt;&gt;</u><a ui-sref="digitization">数字展厅</a><u ng-show="conditions.orgId">&gt;&gt;</u><span ng-show="conditions.orgId" ng-bind="museum"></span>
+    </p>
+    <div class="digization-tab" ng-if="!showData">
+        <ul ng-show="showTab">
+            <li ng-class="{active:tabpage==1}" ng-click="changeTab(1)">最新</li>
+            <li ng-class="{active:tabpage==2}" ng-click="changeTab(2)">最热</li>
+        </ul>
+    </div>
+    <ul class="digization-list">
+        <li class="digization-list-item" ng-repeat="item in data |limitTo: 3">
+            <ul>
+                <li class="digization-list-item-img">
+                    <a ng-href="{{item.viPCUrl}}" ng-click="addClick(item.id)" target="_blank">
+                        <img ng-src="{{item.viAddress}}" width="297" height="167" alt="{{item.viName}}">
+                    </a>
+                </li>
+                <li class="digization-list-item-infor">
+                    <div>
+                        <h1 ng-bind="item.viName"></h1>
+                        <h2 ng-if="showTab" ></h2>
+                        <p ng-bind="item.viIntro" class="hide" ng-mouseover="showMore($event)" ng-mouseleave="hide($event)"></p>
+                    </div>
+                </li>
+            </ul>
+        </li>
+        <nohavemore nheight="680" nwidth="1117" ng-if="showData"></nohavemore>
+    </ul><div class="PagePlugs" style="margin:30px 0;"></div>
+</div>

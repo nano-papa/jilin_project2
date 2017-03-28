@@ -1,0 +1,23 @@
+
+<div class="wrapper">
+    <img ng-src="{{imgUrlarr[2].carList[0].pic.backUrl}}" width="1200" height="120" alt="">
+    <p class="breadcrumb">
+        <a ui-sref="home">首页</a><u>&gt;&gt;</u><a ui-sref="display">展览</a><u>&gt;&gt;</u><span ng-bind="detailsData.headline"></span>
+    </p>
+    <div class="display-details">
+        <h1 ng-bind="detailsData.headline"></h1>
+        <div class="display-details-inf">
+            <h3>
+                <i>博物馆：</i>
+                <span ng-bind="detailsData.musExhibition"></span>
+            </h3>
+            <h3 style="margin-left:20px" ng-if="detailsData.staTime">
+                <i>时间：</i>
+                <span ng-show="detailsData.staTime"><u ng-bind="detailsData.staTime"></u>--<u ng-bind="detailsData.overTime"></u></span><span ng-hide="detailsData.staTime">常设展览</span>
+            </h3>
+        </div>
+        <div class="display-details-content">
+            <p ng-bind-html="sce(detailsData.content)"></p>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,135 @@
+<p class="breadcrumb">
+    <a ui-sref="home">首页</a><u>&gt;&gt;</u><a ui-sref="museum.museumMap">博物馆导览</a><u>&gt;&gt;</u><span ng-bind="data.museumInfo.museumName"></span>
+</p>
+<div class="museum-details">
+    <div class="museum-details-img">
+        <ul>
+            <li ng-repeat="sl in sliders" repeat-done="slider6()">
+                <img ng-src="{{sl.url}}" width="640" height="360"/>
+            </li>
+        </ul>
+    </div>
+    <div class="museum-details-msg">
+        <p class="museum-details-msg-title" ng-bind="data.museumInfo.museumName"></p>
+        <table>
+            <tbody>
+            <tr>
+                <td>类别：</td>
+                <td ng-bind="data.museumInfo.category"></td>
+            </tr>
+            <tr>
+                <td>地区：</td>
+                <td ng-bind="'山东省 '+data.cityList[0].name"></td>
+            </tr>
+            <tr>
+                <td>门票：</td>
+                <td ng-if="data.museumInfo.ticketPrice" ng-bind="data.museumInfo.ticketPrice"></td>
+                <td ng-if="!data.museumInfo.ticketPrice">免费</td>
+            </tr>
+            </tbody>
+        </table>
+        <h6>开放时间</h6>
+        <div class="museum-details-msg-time">
+            <p ng-bind="data.museumInfo.openingHours"></p>
+        </div>
+    </div>
+    <div class="museum-details-service">
+        <ul class="museum-details-service-title">
+            <li class="active" ng-click="changeTab($event)">场馆介绍</li>
+            <li ng-click="changeTab($event)">如何买票</li>
+            <li ng-click="changeTab($event)">附近餐饮</li>
+            <li ng-click="changeTab($event)">参观须知</li>
+            <li ng-click="changeTab($event)">服务信息</li>
+        </ul>
+        <ol class="museum-details-service-content">
+            <li class="active">
+                <div ng-bind-html="data.museumInfo.introduce" class="museum-details-service-content-msg">
+                </div>
+                <div>
+                    <button ng-click="lookAll($event)">{{btn}}</button>
+                </div>
+            </li>
+            <li>
+                <div ng-bind-html="data.museumInfo.buyTicket" class="museum-details-service-content-msg"></div>
+                <div>
+                    <button ng-click="lookAll($event)">{{btn}}</button>
+                </div>
+            </li>
+            <li>
+                <div ng-bind-html="data.museumInfo.nearby" class="museum-details-service-content-msg"></div>
+                <div>
+                    <button ng-click="lookAll($event)">{{btn}}</button>
+                </div>
+            </li>
+            <li>
+                <div ng-bind-html="data.museumInfo.visitNotes" class="museum-details-service-content-msg"></div>
+                <div>
+                    <button ng-click="lookAll($event)">{{btn}}</button>
+                </div>
+            </li>
+            <li>
+                <div ng-bind-html="data.museumInfo.serviceInformation" class="museum-details-service-content-msg"></div>
+                <div>
+                    <button ng-click="lookAll($event)">{{btn}}</button>
+                </div>
+            </li>
+        </ol>
+    </div>
+    <div class="museum-details-collection">
+        <p class="museum-details-title">
+            馆内藏品 <a
+                ui-sref="collection({museum:data.museumInfo.museumName,type:'文物藏品',id:id})">更多 &Gt;</a>
+        </p>
+        <ul>
+            <li ng-repeat="x in data.culList">
+                <a ui-sref="collectiondetails({type:(x.mipOpenCulturalrelicInfo.collectionType?'Relic':'specimen'),id:x.mipOpenCulturalrelicInfo.id})" target="_blank">
+                    <img ng-src="{{x.picture.thumb3}}" width="192" height="128" alt="">
+                </a>
+                <p ng-bind="x.mipOpenCulturalrelicInfo.name"></p>
+            </li>
+        </ul>
+    </div>
+    <div class="museum-details-map">
+        <p class="museum-details-title">
+            地理信息
+        </p>
+        <div style="margin-top:8px;">
+            <div class="museum-details-map-url">
+                <iframe id="map" width="308" height="314" frameborder="0"></iframe>
+            </div>
+            <p ng-bind="data.museumInfo.address">
+            </p>
+        </div>
+    </div>
+    <div class="museum-details-display" ng-if="data.spreList">
+        <p class="museum-details-title">
+            展览 <a ui-sref="display({museum:data.museumInfo.museumName,id:id})">更多 &Gt;</a>
+        </p>
+        <div class="museum-details-display-content">
+            <a ui-sref="displaydetails({id:data.spreList.id,type:'inner'})"><img ng-src="{{data.spreList.pictureThumb}}"
+                                                                    width="297" height="167px" alt=""></a>
+            <div>
+                <h6><a ui-sref="displaydetails({id:data.spreList.id,type:'inner'})" ng-bind="data.spreList.headline"></a></h6>
+                <h5 ng-show="data.spreList.staTime">展期：<span
+                        ng-bind="data.spreList.staTime+'-'+data.spreList.overTime"></span></h5>
+                <p ng-bind-html="data.spreList.content|filterhtml">
+                </p>
+            </div>
+        </div>
+
+    </div>
+    <div class="museum-details-digization" ng-if="data.virList">
+        <img ng-show="data.spreList" src="img/83.png" alt="" class="line-clip">
+        <p class="museum-details-title">
+            虚拟展厅<a ui-sref="digitization({museum:data.museumInfo.museumName,id:id})">更多 &Gt;</a>
+        </p>
+        <div class="museum-details-digization-content">
+            <a href="{{data.virList.viPCUrl}}" target="_blank"><img ng-src="{{data.virList.pictureThumb}}" width="297" height="167px"
+                                            alt=""></a>
+            <div>
+                <a href="{{data.virList.viPCUrl}}" target="_blank"><h6 ng-bind="data.virList.viName">
+                </h6></a>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,308 @@
+<div class="wrapper">
+    <div class="slider">
+        <ul>
+            <li ng-repeat="slide in imgUrlarr[0].carList" repeat-done="slider()">
+                <a href="">
+                    <img ng-src="{{slide.pic.backUrl}}" width="1200" style="margin:auto;">
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="index-chunk">
+        <section class="index-chunk-one">
+            <ul class="index-chunk-one-title">
+                <li ng-class="{ative:onetab===0}" ng-click="changeTabone(0)"><span>活动</span></li>
+                <li ng-class="{ative:onetab===1}" ng-click="changeTabone(1)" style="margin-top:3px;"><span>最新展览</span>
+                </li>
+            </ul>
+            <div class="index-chunk-one-content">
+                <ul ng-show="onetab===0" style="opacity: 1">
+                    <li class="index-chunk-one-content-item">
+                        <div class="index-chunk-one-content-item-img">
+                            <img width="220" height="150" src="img/oneimg.png" alt="">
+                        </div>
+                        <div class="index-chunk-one-content-item-msg">
+                            <h1><a href="">猜灯谜，绘灯笼，闹元宵！sdfasdfasdf</a><span>吉林省博物馆asdfasdf</span></h1>
+                            <p>赏明月，花好月圆；观花灯，诗意盎然；舞龙狮，“钱”途灿烂；吃元宵，甜蜜永远。为更好地让观众体验传统文化
+                                赏明月，花好月圆；观花灯，诗意盎然；舞龙狮，“钱”途灿烂；吃元宵，甜蜜永远。为更好地让观众体验传统文化赏明月，花好月圆；观花灯，诗意盎然；舞龙狮，“钱”途灿烂；吃元宵，甜蜜永远。为更好地让观众体验传统文化
+                            </p>
+                            <h6><a href="">查看详情</a></h6>
+                        </div>
+                    </li>
+                    <li class="index-chunk-one-content-item">
+                        <div class="index-chunk-one-content-item-img">
+                            <img width="220" height="150" src="img/oneimg.png" alt="">
+                        </div>
+                        <div class="index-chunk-one-content-item-msg">
+                            <h1><a href="">猜灯谜，绘灯笼，闹元宵！sdfasdfasdf</a><span>吉林省博物馆asdfasdf</span></h1>
+                            <p>赏明月，花好月圆；观花灯，诗意盎然；舞龙狮，“钱”途灿烂；吃元宵，甜蜜永远。为更好地让观众体验传统文化
+                                赏明月，花好月圆；观花灯，诗意盎然；舞龙狮，“钱”途灿烂；吃元宵，甜蜜永远。为更好地让观众体验传统文化赏明月，花好月圆；观花灯，诗意盎然；舞龙狮，“钱”途灿烂；吃元宵，甜蜜永远。为更好地让观众体验传统文化
+                            </p>
+                            <h6><a href="">查看详情</a></h6>
+                        </div>
+                    </li>
+                    <li class="index-chunk-one-content-item">
+                        <div class="index-chunk-one-content-item-img">
+                            <img width="220" height="150" src="img/oneimg.png" alt="">
+                        </div>
+                        <div class="index-chunk-one-content-item-msg">
+                            <h1><a href="">猜灯谜，绘灯笼，闹元宵！sdfasdfasdf</a><span>吉林省博物馆asdfasdf</span></h1>
+                            <p>赏明月，花好月圆；观花灯，诗意盎然；舞龙狮，“钱”途灿烂；吃元宵，甜蜜永远。为更好地让观众体验传统文化
+                                赏明月，花好月圆；观花灯，诗意盎然；舞龙狮，“钱”途灿烂；吃元宵，甜蜜永远。为更好地让观众体验传统文化赏明月，花好月圆；观花灯，诗意盎然；舞龙狮，“钱”途灿烂；吃元宵，甜蜜永远。为更好地让观众体验传统文化
+                            </p>
+                            <h6><a href="">查看详情</a></h6>
+                        </div>
+                    </li>
+                </ul>
+                <ol ng-show="onetab===1" style="opacity: 1">
+                    <li class="index-chunk-one-content-item-new">
+                        <div class="index-chunk-one-content-item-img">
+                            <img width="297" height="170" src="img/newdisplay.png" alt="">
+                        </div>
+                        <div class="index-chunk-one-content-item-msg">
+                            <h1><a href="">猜灯谜，绘灯笼，闹元宵！</a></h1>
+                            <h4>吉林省博物馆</h4>
+                            <p>赏明月，花好月圆；观花灯，诗意盎然；舞龙狮，“钱”途灿烂；吃元宵，甜蜜永远。为更好地让观众体验传统文化
+                                赏明月，花好月圆；观花灯，诗意盎然；舞龙狮，“钱”途灿烂；吃元宵，甜蜜永远。为更好地让观众体验传统文化赏明月，花好月圆；观花灯，诗意盎然；舞龙狮，“钱”途灿烂；吃元宵，甜蜜永远。为更好地让观众体验传统文化
+                            </p>
+                            <h6><a href="">查看详情</a></h6>
+                        </div>
+                    </li>
+                    <li class="index-chunk-one-content-item-new">
+                        <div class="index-chunk-one-content-item-img">
+                            <img width="297" height="170" src="img/newdisplay.png" alt="">
+                        </div>
+                        <div class="index-chunk-one-content-item-msg">
+                            <h1><a href="">猜灯谜，绘灯笼，闹元宵！</a></h1>
+                            <h4>吉林省博物馆</h4>
+                            <p>赏明月，花好月圆；观花灯，诗意盎然；舞龙狮，“钱”途灿烂；吃元宵，甜蜜永远。为更好地让观众体验传统文化
+                                赏明月，花好月圆；观花灯，诗意盎然；舞龙狮，“钱”途灿烂；吃元宵，甜蜜永远。为更好地让观众体验传统文化赏明月，花好月圆；观花灯，诗意盎然；舞龙狮，“钱”途灿烂；吃元宵，甜蜜永远。为更好地让观众体验传统文化
+                            </p>
+                            <h6><a href="">查看详情</a></h6>
+                        </div>
+                    </li>
+                    <li class="index-chunk-one-content-item-new">
+                        <div class="index-chunk-one-content-item-img">
+                            <img width="297" height="170" src="img/newdisplay.png" alt="">
+                        </div>
+                        <div class="index-chunk-one-content-item-msg">
+                            <h1><a href="">猜灯谜，绘灯笼，闹元宵！</a></h1>
+                            <h4>吉林省博物馆</h4>
+                            <p>赏明月，花好月圆；观花灯，诗意盎然；舞龙狮，“钱”途灿烂；吃元宵，甜蜜永远。为更好地让观众体验传统文化
+                                赏明月，花好月圆；观花灯，诗意盎然；舞龙狮，“钱”途灿烂；吃元宵，甜蜜永远。为更好地让观众体验传统文化赏明月，花好月圆；观花灯，诗意盎然；舞龙狮，“钱”途灿烂；吃元宵，甜蜜永远。为更好地让观众体验传统文化
+                            </p>
+                            <h6><a href="">查看详情</a></h6>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+        </section>
+        <section class="index-chunk-two">
+            <div class="index-chunk-two-top">
+                <h1>我要策展 &nbsp;&nbsp;&gt;</h1>
+                <div class="index-chunk-two-top-content">
+                    <div class="index-chunk-two-top-content-img">
+                        <a href=""><img src="img/ablum.png" width="163" height="111" alt=""></a>
+                    </div>
+                    <div class="index-chunk-two-top-content-msg">
+                        <p>
+                            不错！希望你发布更多的好的策展，我要多向你学习
+                        </p>
+                    </div>
+                    <h6>
+                        <a href="">更多</a>
+                    </h6>
+                </div>
+            </div>
+            <div class="index-chunk-two-middle">
+                <h1>精彩评论</h1>
+                <div class="index-chunk-two-middle-content">
+                    <ul>
+                        <li>
+                            <div class="index-chunk-two-middle-content-img">
+                                <img src="img/user_head.png" alt="">
+                            </div>
+                            <div class="index-chunk-two-middle-content-msg">
+                                <div><span>10分钟前</span><span style="margin-left:30px;">饕餮</span></div>
+                                <p>
+                                    撒大法师的法师大法师的法师多发送大法师打发阿斯顿发生当代司法撒地方阿斯蒂芬 </p>
+                                <h6><a href="">回复</a></h6>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="index-chunk-two-middle-content-img">
+                                <img src="img/user_head.png" alt="">
+                            </div>
+                            <div class="index-chunk-two-middle-content-msg">
+                                <div><span>10分钟前</span><span style="margin-left:30px;">饕餮</span></div>
+                                <p>
+                                    撒大法师的法师大法师的法师多发送大法师打发阿斯顿发生当代司法撒地方阿斯蒂芬 </p>
+                                <h6><a href="">回复</a></h6>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="index-chunk-two-bottom">
+                <h1>文物百科 &nbsp;&nbsp;&gt;</h1>
+                <ul>
+                    <li>
+                        <a class="index-bai" href="">
+                            <h2>asdfasdfasdfasdfasdfasdfas</h2>
+                            <div style="width:192px;height:128px;margin-top:8px;">
+                                <img src="img/baike.png" width="192" height="128" alt="">
+                            </div>
+                            <p>
+                                此卷用工笔重彩大描金法，画佛界诸形象，有卫护神、观音、禅宗此卷用工笔重彩大描金法，画佛界诸形象，有卫护神、观音、禅宗此卷用工笔重彩大描金法，画佛界诸形象，有卫护神、观音、禅宗此卷用工笔重彩大描金法，画佛界诸形象，有卫护神、观音、禅宗此卷用工笔重彩大描金法，画佛界诸形象，有卫护神、观音、禅宗此卷用工笔重彩大描金法，画佛界诸形象，有卫护神、观音、禅宗此卷用工笔重彩大描金法，画佛界诸形象，有卫护神、观音、禅宗
+                            </p>
+                            <button href="" class="editor">编辑词条</button>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="index-bai" href="">
+                            <h2>asdfasdfasdfasdfasdfasdfas</h2>
+                            <div style="width:192px;height:128px;margin-top:8px;">
+                                <img src="img/baike.png" width="192" height="128" alt="">
+                            </div>
+                            <p>
+                                此卷用工笔重彩大描金法，画佛界诸形象，有卫护神、观音、禅宗此卷用工笔重彩大描金法，画佛界诸形象，有卫护神、观音、禅宗此卷用工笔重彩大描金法，画佛界诸形象，有卫护神、观音、禅宗此卷用工笔重彩大描金法，画佛界诸形象，有卫护神、观音、禅宗此卷用工笔重彩大描金法，画佛界诸形象，有卫护神、观音、禅宗此卷用工笔重彩大描金法，画佛界诸形象，有卫护神、观音、禅宗此卷用工笔重彩大描金法，画佛界诸形象，有卫护神、观音、禅宗
+                            </p>
+                            <button href="" class="editor">编辑词条</button>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="index-chunk-two-bottom2">
+                <h3>扫描网站二维码</h3>
+                <img src="img/code.png" alt="">
+            </div>
+        </section>
+        <section class="index-chunk-three">
+            <ul class="index-chunk-three-title">
+                <li ng-class="{ative:twotab===0}" ng-click="changeTabtwo(0)"><span>藏品</span></li>
+                <li ng-class="{ative:twotab===1}" ng-click="changeTabtwo(1)" style="margin-top:3px;"><span>数字展厅</span>
+                </li>
+            </ul>
+            <div class="index-chunk-three-content">
+                <ul ng-show="twotab===0">
+                    <li>
+                        <a href="">
+                            <div>
+                                <img src="img/collection.png" width="192" height="128" alt="">
+                            </div>
+                            <h1>红山文化玉龙</h1>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div>
+                                <img src="img/collection.png" width="192" height="128" alt="">
+                            </div>
+                            <h1>红山文化玉龙</h1>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div>
+                                <img src="img/collection.png" width="192" height="128" alt="">
+                            </div>
+                            <h1>红山文化玉龙</h1>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div>
+                                <img src="img/collection.png" width="192" height="128" alt="">
+                            </div>
+                            <h1>红山文化玉龙</h1>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div>
+                                <img src="img/collection.png" width="192" height="128" alt="">
+                            </div>
+                            <h1>红山文化玉龙</h1>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div>
+                                <img src="img/collection.png" width="192" height="128" alt="">
+                            </div>
+                            <h1>红山文化玉龙</h1>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div>
+                                <img src="img/collection.png" width="192" height="128" alt="">
+                            </div>
+                            <h1>红山文化玉龙</h1>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div>
+                                <img src="img/collection.png" width="192" height="128" alt="">
+                            </div>
+                            <h1>红山文化玉龙</h1>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div>
+                                <img src="img/collection.png" width="192" height="128" alt="">
+                            </div>
+                            <h1>红山文化玉龙</h1>
+                        </a>
+                    </li>
+                </ul>
+                <ol ng-show="twotab===1">
+                    <li class="index-chunk-one-content-item-digi">
+                        <div class="index-chunk-one-content-item-img">
+                            <img width="297" height="170" src="img/digizition.png" alt="">
+                        </div>
+                        <div class="index-chunk-one-content-item-msg">
+                            <h1><a href="">猜灯谜，绘灯笼，闹元宵！</a></h1>
+                            <h4>吉林省博物馆</h4>
+                            <p>赏明月，花好月圆；观花灯，诗意盎然；舞龙狮，“钱”途灿烂；吃元宵，甜蜜永远。为更好地让观众体验传统文化
+                                赏明月，花好月圆；观花灯，诗意盎然；舞龙狮，“钱”途灿烂；吃元宵，甜蜜永远。为更好地让观众体验传统文化赏明月，花好月圆；观花灯，诗意盎然；舞龙狮，“钱”途灿烂；吃元宵，甜蜜永远。为更好地让观众体验传统文化
+                                赏明月，花好月圆；观花灯，诗意盎然；舞龙狮，“钱”途灿烂；吃元宵，甜蜜永远。为更好地让观众体验传统文化赏明月，花好月圆；观花灯，诗意盎然；舞龙狮，“钱”途灿烂；吃元宵，甜蜜永远。为更好地让观众体验传统文化
+                                赏明月，花好月圆；观花灯，诗意盎然；舞龙狮，“钱”途灿烂；吃元宵，甜蜜永远。为更好地让观众体验传统文化赏明月，花好月圆；观花灯，诗意盎然；舞龙狮，“钱”途灿烂；吃元宵，甜蜜永远。为更好地让观众体验传统文化
+                            </p>
+                        </div>
+                    </li> <li class="index-chunk-one-content-item-digi">
+                        <div class="index-chunk-one-content-item-img">
+                            <img width="297" height="170" src="img/digizition.png" alt="">
+                        </div>
+                        <div class="index-chunk-one-content-item-msg">
+                            <h1><a href="">猜灯谜，绘灯笼，闹元宵！</a></h1>
+                            <h4>吉林省博物馆</h4>
+                            <p>赏明月，花好月圆；观花灯，诗意盎然；舞龙狮，“钱”途灿烂；吃元宵，甜蜜永远。为更好地让观众体验传统文化
+                                赏明月，花好月圆；观花灯，诗意盎然；舞龙狮，“钱”途灿烂；吃元宵，甜蜜永远。为更好地让观众体验传统文化赏明月，花好月圆；观花灯，诗意盎然；舞龙狮，“钱”途灿烂；吃元宵，甜蜜永远。为更好地让观众体验传统文化
+                                赏明月，花好月圆；观花灯，诗意盎然；舞龙狮，“钱”途灿烂；吃元宵，甜蜜永远。为更好地让观众体验传统文化赏明月，花好月圆；观花灯，诗意盎然；舞龙狮，“钱”途灿烂；吃元宵，甜蜜永远。为更好地让观众体验传统文化
+                                赏明月，花好月圆；观花灯，诗意盎然；舞龙狮，“钱”途灿烂；吃元宵，甜蜜永远。为更好地让观众体验传统文化赏明月，花好月圆；观花灯，诗意盎然；舞龙狮，“钱”途灿烂；吃元宵，甜蜜永远。为更好地让观众体验传统文化
+                            </p>
+                        </div>
+                    </li> <li class="index-chunk-one-content-item-digi">
+                        <div class="index-chunk-one-content-item-img">
+                            <img width="297" height="170" src="img/digizition.png" alt="">
+                        </div>
+                        <div class="index-chunk-one-content-item-msg">
+                            <h1><a href="">猜灯谜，绘灯笼，闹元宵！</a></h1>
+                            <h4>吉林省博物馆</h4>
+                            <p>赏明月，花好月圆；观花灯，诗意盎然；舞龙狮，“钱”途灿烂；吃元宵，甜蜜永远。为更好地让观众体验传统文化
+                                赏明月，花好月圆；观花灯，诗意盎然；舞龙狮，“钱”途灿烂；吃元宵，甜蜜永远。为更好地让观众体验传统文化赏明月，花好月圆；观花灯，诗意盎然；舞龙狮，“钱”途灿烂；吃元宵，甜蜜永远。为更好地让观众体验传统文化
+                                赏明月，花好月圆；观花灯，诗意盎然；舞龙狮，“钱”途灿烂；吃元宵，甜蜜永远。为更好地让观众体验传统文化赏明月，花好月圆；观花灯，诗意盎然；舞龙狮，“钱”途灿烂；吃元宵，甜蜜永远。为更好地让观众体验传统文化
+                                赏明月，花好月圆；观花灯，诗意盎然；舞龙狮，“钱”途灿烂；吃元宵，甜蜜永远。为更好地让观众体验传统文化赏明月，花好月圆；观花灯，诗意盎然；舞龙狮，“钱”途灿烂；吃元宵，甜蜜永远。为更好地让观众体验传统文化
+                            </p>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+        </section>
+    </div>
+
+</div>

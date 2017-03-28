@@ -1,0 +1,226 @@
+@import "reset";
+@charset "utf-8";
+$theme-color:#723f3f;
+$theme-color-active: #dc4652;
+$theme-color-pink1: #723f3f;
+$theme-color-pink2: #dc4652;
+$theme-color-pink-active: #ea703a;
+.wrapper {
+  width: 1200px;
+  margin: auto;
+  background: rgba(255,255,255,0.9);
+}
+.index-outer{
+  background: url('../img/bg.jpg') no-repeat;
+  background-size:100% 100%;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+  &:hover, &.active {
+    color: #dc4652;
+  }
+}
+.header {
+  width: 100%;
+  background: #1e2326;
+  .header-inner {
+    margin: 0 auto;
+    width: 1200px;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .header-inner-logo {
+      height: 30px;
+      width: 395px;
+    }
+    .header-inner-service {
+      position:relative;
+      width: 200px;
+      height: 20px;
+      ul {
+        display: flex;
+        li {
+          height:16px;
+          a {
+            display: inline-block;
+            font-size: 12px;
+            line-height: 16px;
+          }
+          &:first-child {
+            border-right: 1px solid #fff;
+            a {
+              padding-right: 8px;
+            }
+          }
+          &:nth-child(2) {
+            a {
+              padding-left: 8px;
+            }
+          }
+        }
+      }
+      button {
+        position:absolute;
+        right:35px;
+        top:-2px;
+        color: #fff;
+        cursor: pointer;
+        background: $theme-color-pink1;
+      }
+    }
+
+  }
+  .header-inners{
+    width:100%;
+    background:#2a2a2a;
+    nav{
+      border-top:2px solid #35393c;
+      display: flex;
+      justify-content: center;
+      ul{
+        display: flex;
+        flex-flow: row;
+        height:69px;
+        justify-content: center;
+        width:970px;
+        li{
+          &:not(last-child){
+            border-right:1px solid #353535;
+            border-left:1px solid #0d0c08;
+          }
+          a{
+            padding:0 36px;
+            line-height:69px;
+            display: inline-block;
+            height:69px;
+            &:hover,&.active{
+              color:#fff;
+              background:#dc1720;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+footer {
+  width: 100%;
+  height: 212px;
+  background: #333333;
+  color:#fff;
+  border-top:5px solid #dc4652;
+  p {
+    margin: auto;
+    font-size: 14px;
+    text-align: center;
+    padding-top: 36px;
+    span {
+      line-height: 25px;
+      color: #fff;
+    }
+  }
+  ul {
+    overflow: hidden;
+    margin:0 auto;
+    width: 637px;
+    margin-top:20px;
+    li {
+      float: left;
+      border-right: 1px solid #fff;
+      &:last-child {
+        border: none;
+      }
+      a {
+        color: #fff;
+        font-size: 12px;
+        padding: 0 20px;
+      }
+    }
+  }
+}
+/*面包屑*/
+.breadcrumb {
+  font-size: 18px;
+  color: $theme-color-pink1;
+  padding: 20px 83px 0px 83px;
+  u {
+    text-decoration: none;
+    line-height: 30px;
+  }
+  a {
+    color: $theme-color-pink1;
+    line-height: 30px;
+    &:hover{
+      color:$theme-color-pink2;
+    }
+  }
+  span {
+    line-height: 30px;
+  }
+  .tab-items {
+    float: right;
+    button {
+      border: none;
+      color: #666;
+      background: #f2f2f2;
+      padding: 5px 20px;
+      font-size: 14px;
+      font-weight: bold;
+      border-bottom: 2px solid #fff;
+      &:hover {
+        color: #fff;
+        background: #666;
+        border-bottom: 2px solid $theme-color-pink-active;
+      }
+      &.active {
+        color: #fff;
+        background: #666;
+        border-bottom: 2px solid $theme-color-pink-active;
+      }
+    }
+  }
+}
+.PagePlugs {
+  text-align: center;
+}
+
+//限定行数的函数
+@mixin limitLine($line,$width,$height) {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $line;
+  overflow: hidden;
+  width:$width+px;
+  height: $height+px;
+}
+@mixin simpleLine($width){
+  display: block;
+  width: $width+px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+/* 设置滚动条的样式 */
+::-webkit-scrollbar {
+  width: 2px;
+  height:2px;
+}
+
+/* 滚动槽 */
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 2px;
+}
+
+/* 滚动条滑块 */
+::-webkit-scrollbar-thumb {
+  border-radius: 2px;
+  background: rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: inset 0 0 6px $theme-color-pink1;
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+  background:$theme-color-pink1;
+}

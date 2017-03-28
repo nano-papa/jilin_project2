@@ -1,0 +1,50 @@
+<div class="login">
+    <div class="login_logo">
+        <a ui-sref="home">
+            <img src="img/login_logo.png" alt="">
+        </a>
+    </div>
+    <div class="login_lin"></div>
+    <div class="login_outer">
+        <form name="myform" class="login_box">
+            <p>使用手机号登录</p>
+            <div class="login_user">
+                <label for="username"></label>
+                <input ng-trim="true" type="text" name="username" ng-model="username" id="username" placeholder="请输入手机号码">
+                <!--<span>-->
+                    <!--<i></i><u>正确消息</u>-->
+                <!--</span>-->
+            </div>
+            <div class="login_user">
+                <label for="userpwd" class="userpwdicon"></label>
+                <input type="password" name="userpwd" ng-model="userpwd" id="userpwd" placeholder="请输入密码">
+                <!--<span>-->
+                    <!--<i class="error"></i><u>错误消息</u>-->
+                <!--</span>-->
+            </div>
+            <div class="login_code" ng-show="error>0">
+                <input ng-trim="true" type="text" ng-model="verificationcode">
+                <img src="../getImgCode.do" width="80" height="30" ng-click="changeimg($event)" alt="">
+            </div>
+            <div class="login_msg" ng-show="errormsg">
+                <p ng-bind="tip"></p>
+            </div>
+            <div class="login_btn">
+                <button type="submit" ng-disabled="false" ng-click="showForm()">登录</button>
+            </div>
+            <div class="service">
+                <a href=""><u>忘记密码？</u></a>
+                <span>
+                    没有账号？<a ui-sref="Register">立即注册</a>
+                </span>
+            </div>
+            <div class="third-party">
+                <h6>使用第三方登录</h6>
+                <ul>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+        </form>
+    </div>
+</div>

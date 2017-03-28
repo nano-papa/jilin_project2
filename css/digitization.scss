@@ -1,0 +1,107 @@
+@import "common";
+@charset "utf-8";
+.digization {
+  &:after {
+    display: block;
+    content: '';
+    clear: both;
+  }
+  .digization-tab{
+    padding: 0 0 0 88px;
+    margin-top:20px;
+    ul{
+      &:after{
+        display: block;
+        content: '';
+        clear: both;
+      }
+      li{
+        float:left;
+        cursor:pointer;
+        width:50px;
+        height:20px;
+        padding-bottom:5px;
+        font-size:18px;
+        color:#666;
+        font-weight: bold;
+        text-align: center;
+        &.active{
+          color:$theme-color-pink1;
+          border-bottom:2px solid $theme-color-pink2;
+        }
+        a{
+          font-weight: bold;
+        }
+        &:last-child{
+          margin-left:45px;
+        }
+      }
+    }
+  }
+  .digization-list {
+    padding: 20px 0px 0 83px;
+    margin-top:10px;
+    height:680px;
+    &:after {
+      display: block;
+      content: '';
+      clear: both;
+    }
+    .digization-list-item {
+      margin-bottom:42px;
+      ul {
+        &:after {
+          display: block;
+          content: '';
+          clear: both;
+        }
+        li {
+          float: left;
+        }
+        .digization-list-item-img {
+          width: 297px;
+          p {
+            font-size: 18px;
+            line-height: 40px;
+            text-align: center;
+          }
+        }
+        .digization-list-item-infor {
+          width:543px;
+          height:174px;
+          margin-left:15px;
+          div {
+            h1{
+              font-size:18px;
+              line-height:22px;
+              font-weight: normal;
+              padding-bottom: 5px;
+            }
+            h2{
+              font-size:12px;
+              line-height:20px;
+              padding-bottom: 5px;
+              color:$theme-color-pink1;
+              font-weight:normal;
+            }
+            p{
+              font-size: 14px;
+              line-height: 22px;
+              color:rgba(0,0,0,.7);
+              width: 543px;
+              height:110px;
+              &.hide{
+                @include limitLine(5,543,110);
+                padding-right:2px;
+              }
+              &.showmore{
+                overflow:auto;
+                padding-right:0px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

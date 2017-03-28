@@ -1,0 +1,181 @@
+@charset "utf-8";
+@import 'common';
+.register{
+  position:relative;
+  padding:0px 84px;
+  .register-guide{
+    position:absolute;
+    left:300px;
+    top:20px;
+    ul{
+      display: flex;
+      flex-flow: row;
+      background:url("../img/register1.png") no-repeat;
+      &.secend{
+        background:url("../img/register2.png") no-repeat;
+        li{
+          span{
+            font-size:12px;
+            line-height:32px;
+            color:#666;
+            &.active{
+              color:#fff;
+            }
+          }
+        }
+      }
+      li{
+        width:215px;
+        height:32px;
+        text-align: center;
+        span{
+          font-size:12px;
+          line-height:32px;
+          color:#fff;
+          &.active{
+            color:#666;
+          }
+        }
+      }
+    }
+  }
+  .register-form{
+    margin:0 auto;
+    padding-bottom:50px;
+    text-align: center;
+    table{
+      margin:0 auto;
+      tbody{
+        tr{
+          line-height:60px;
+          td{
+            margin-bottom:20px;
+            text-align: left;
+            label{
+              line-height:60px;
+              color:#666;
+            }
+            .register-msn{
+              width:92px;
+              height:32px;
+              border:none;
+              background:$theme-color-active;
+              color:#fff;
+              &.send{
+                background:#eee;
+                color:#999;
+              }
+            }
+            input{
+              width:321px;
+              height:22px;
+              border:1px solid #e6e6e6;
+              background:#fcfcfc;
+              font-size:16px;
+              padding:5px;
+              &:focus{
+                border-color:$theme-color;
+                background:#fff;
+              }
+            }
+            &:nth-child(1){
+              text-align: right;
+            }
+          }
+        }
+      }
+    }
+    .register-submit{
+      cursor: pointer;
+        width:254px;
+        height:38px;
+        background:#aaa;
+        border:none;
+        font-size:20px;
+        color:#eee;
+      &.active{
+        background:$theme-color-active;
+        color:#fff;
+      }
+    }
+    .register-tips{
+      width:230px;
+      position:absolute;
+      right:0px;
+      top:0px;
+      text-align: left;
+      span {
+        i{
+          display: inline-block;
+          width:16px;
+          height:16px;
+          background:url('../img/remind.png') no-repeat;
+        }
+        .error{
+          background-position:-18px 0;
+        }
+        u{
+          padding-left:8px;
+          text-decoration: none;
+          font-size:12px;
+        }
+      }
+    }
+    .register-tips-nikename{
+      right:131px;
+      top:92px;
+    }
+    .register-tips-phone{
+      right:131px;
+      top:152px;
+    }
+    .register-tips-piccode{
+      right:131px;
+      top:212px;
+    }
+    .register-tips-msg{
+      right:131px;
+      top:353px;
+    }
+    .register-tips-password{
+      right:131px;
+      top:413px;
+    }
+    .register-tips-rpassword{
+      right:131px;
+      top:473px;
+    }
+  }
+  .register-secend{
+    height:606px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    div{
+
+      h1{
+        color:$theme-color;
+        font-weight:normal;
+        font-size:24px;
+        line-height:50px;
+      }
+      p{
+        color:#666;
+        font-size:18px;
+        line-height:50px;
+      }
+      a{
+        display:block;
+        width:251px;
+        height:78px;
+        border:none;
+        line-height:78px;
+        background:$theme-color-active;
+        color:#fff;
+        font-size:22px;
+      }
+    }
+
+  }
+}

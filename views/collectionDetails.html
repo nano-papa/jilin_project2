@@ -1,0 +1,87 @@
+<div class="wrapper">
+    <img  ng-src="{{imgUrlarr[4].carList[0].pic.backUrl}}" width="1200" height="120" alt="">
+    <p class="breadcrumb" style="padding-left:18px;padding-bottom: 20px;">
+        <a ui-sref="home">首页</a><u>&gt;&gt;</u><a ui-sref="collection">藏品</a><u>&gt;&gt;</u><span ng-bind="data.mipOpenCulturalrelicInfo.name||data.mipOpenFossilInfo.name"></span>
+    </p>
+    <div class="collection-details">
+        <ul>
+            <li><span ng-bind="data.mipOpenCulturalrelicInfo.name||data.mipOpenFossilInfo.name"></span></li>
+        </ul>
+        <ul>
+            <li ng-if="data.mipOpenCulturalrelicInfo.threeDimensionalCollection||data.mipOpenFossilInfo.threeDimensionalCollection">
+                <button ng-click="open3D(data.mipOpenCulturalrelicInfo.threeDimensionalCollection||data.mipOpenFossilInfo.threeDimensionalCollection)"><a>3D</a></button>
+            </li>
+            <li ng-if="data.mipOpenCulturalrelicInfo.fVideo||data.mipOpenFossilInfo.fVideo">
+                <button ><a ui-sref="collectinodetailsvideo({id:videoid,type:videotype})" target="_blank">视频</a></button>
+            </li>
+            <li>
+                <button><a>百科</a></button>
+            </li>
+            <li ng-if="data.mipOpenCulturalrelicInfo.fAudio||data.mipOpenFossilInfo.fAudio">
+                <button><a href="" style="padding:0 5px;" ng-click="playAudio()">音频<s style="margin-left: 5px;" ng-class="{pplay:pplay}"></s></a></button>
+            </li>
+            <li style="padding-left:40px;">
+                <i ng-class="{active:data.isCollected}" ng-click="addCollection($event)"></i><u ng-bind="'收藏('+(data.mipOpenCulturalrelicInfo.collectedCounts+(num2)||data.mipOpenFossilInfo.collectedCounts+(num2))+')'"></u>
+            </li>
+            <audio style="visibility: hidden;display:inline-block" id="paudio" ng-if="data.mipOpenCulturalrelicInfo.fAudio||data.mipOpenFossilInfo.fAudio" ng-src="{{sce(data.mipOpenCulturalrelicInfo.fAudio)||sce(data.mipOpenFossilInfo.fAudio)}}" controls></audio>
+        </ul>
+        <div class="collection-details-img">
+            <img width="640" height="426" ng-src="{{data.picture.thumb1}}" alt="{{data.mipOpenCulturalrelicInfo.name||data.mipOpenFossilInfo.name}}">
+        </div>
+        <div class="collection-details-msg">
+            <p>基本信息</p>
+            <table>
+                <tbody>
+                <tr>
+                    <td>收藏单位：</td>
+                    <td ng-bind="data.mipOpenCulturalrelicInfo.collectionUnit||data.mipOpenFossilInfo.collectionUnit"></td>
+                </tr>
+                <tr>
+                    <td>类&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;别：</td>
+                    <td ng-bind="data.mipOpenCulturalrelicInfo.collectionsCategory||data.mipOpenFossilInfo.collectionsCategory"></td>
+                </tr>
+                <tr>
+                    <td>年&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;代：</td>
+                    <td ng-bind="data.mipOpenCulturalrelicInfo.yearType||data.mipOpenFossilInfo.yearType"></td>
+                </tr>
+                </tbody>
+            </table>
+            <p style="padding-top:30px;">藏品简介</p>
+            <div class="collection-details-infor">
+                <div class="content_1" ng-bind="data.mipOpenCulturalrelicInfo.description||data.mipOpenFossilInfo.description">
+                </div>
+            </div>
+        </div>
+        <div class="collection-details-correlation">
+            <p>本馆藏品</p>
+            <ol>
+                <li style="margin-right:20px;" ng-class="{hasmore:hasmoreleft1}" ng-click="reducePage('other')" style="cursor: pointer"></li>
+                <li ng-class="{hasmore:hasmoreright1}" ng-click="addPage('other')" style="cursor: pointer"></li>
+            </ol>
+            <ul>
+                <li ng-repeat="relation in corother | limitTo:5">
+                    <a ui-sref="collectiondetails({type:(relation.mipOpenCulturalrelicInfo.collectionType?'Relic':'specimen')||(relation.mipOpenFossilInfo?'Relic':'specimen'),id:relation.mipOpenCulturalrelicInfo.id||relation.mipOpenFossilInfo.id})">
+                        <img ng-src="{{relation.picture.thumb3}}" width="191" height="129" alt="{{relation.mipOpenCulturalrelicInfo.name||relation.mipOpenFossilInfo.name}}">
+                    </a>
+                    <p ng-bind="relation.mipOpenCulturalrelicInfo.name||relation.mipOpenFossilInfo.name"></p>
+                </li>
+            </ul>
+        </div>
+        <div class="collection-details-correlation">
+            <p>相关藏品</p>
+            <ol>
+                <li style="margin-right:20px;" ng-class="{hasmore:hasmoreleft}" ng-click="reducePage('relations')" style="cursor: pointer"></li>
+                <li ng-class="{hasmore:hasmoreright}" ng-click="addPage('relations')" style="cursor: pointer"></li>
+            </ol>
+            <ul>
+                <li ng-repeat="other in correlation | limitTo:5">
+                    <a ui-sref="collectiondetails({type:(other.mipOpenCulturalrelicInfo.collectionType?'Relic':'specimen')||(other.mipOpenFossilInfo?'Relic':'specimen'),id:other.mipOpenCulturalrelicInfo.id||other.mipOpenFossilInfo.id})">
+                        <img ng-src="{{other.picture.thumb3}}" width="191" height="129" alt="{{other.mipOpenCulturalrelicInfo.name||other.mipOpenFossilInfo.name}}">
+                    </a>
+                    <p ng-bind="other.mipOpenCulturalrelicInfo.name||other.mipOpenFossilInfo.name"></p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+

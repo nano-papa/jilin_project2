@@ -1,0 +1,29 @@
+<div class="header">
+    <div class="header-inner">
+        <div class="header-inner-logo">
+            <img src="img/logo1.png" alt="">
+            <img src="img/logo2.png" style="margin-left:15px;" alt="">
+        </div>
+        <div class="header-inner-service">
+            <ul>
+                <li><a ui-sref="login">登录</a></li>
+                <li><a ui-sref="Register">注册</a></li>
+            </ul>
+            <button>信息管理平台</button>
+        </div>
+    </div>
+    <div class="header-inners">
+        <nav>
+            <ul>
+                <li><a ui-sref="home" ui-sref-active="active">首页</a></li>
+                <li><a ui-sref="museum.museumMap" ui-sref-active="active">博物馆</a></li>
+                <li><a ui-sref="display({museum:''})" ui-sref-active="active">展览</a></li>
+                <li><a ui-sref="digitization({museum:'',id:''})" ui-sref-active="active">数字展厅</a></li>
+                <li><a ui-sref="collection({museum:'',type:'',keywords:'',id:''})" ui-sref-active="active">藏品</a></li>
+                <li><a href="">活动</a></li>
+                <li><a href="">历史吉林</a></li>
+                <li><a href="">文创空间</a></li>
+            </ul>
+        </nav>
+    </div>
+</div>
