@@ -1,0 +1,18 @@
+{
+  "page": null,
+  "success": 1,
+  "data": {
+    "id": null,
+    "userName": null,
+    "password": null,
+    "rpassword": null,
+    "remberPwd": null,
+    "verificationCode": null,
+    "sessionAdminName": "管理员",
+    "tipMessage": null,
+    "phone": null,
+    "errorTimes": 0
+  },
+  "error": null,
+  "others": null
+}

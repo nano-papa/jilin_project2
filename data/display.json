@@ -1,0 +1,1562 @@
+{
+  "page": {
+    "allRow": 17,
+    "currentPage": 1,
+    "size": 6,
+    "totalPage": 3,
+    "start": 0
+  },
+  "success": 1,
+  "data": {
+    "cityList": [
+      {
+        "cityName": "济南市",
+        "cityOrder": 0,
+        "museum": [
+          {
+            "id": "1376",
+            "name": "山东博物馆",
+            "number": null,
+            "cityId": "60",
+            "level": 0
+          },
+          {
+            "id": "1376",
+            "name": "山东大学博物馆",
+            "number": null,
+            "cityId": "62",
+            "level": 0
+          },
+          {
+            "id": "1376",
+            "name": "济南市博物馆",
+            "number": null,
+            "cityId": "63",
+            "level": 0
+          },
+          {
+            "id": "1376",
+            "name": "老舍纪念馆",
+            "number": null,
+            "cityId": "64",
+            "level": 0
+          },
+          {
+            "id": "1376",
+            "name": "蔡公时纪念馆",
+            "number": null,
+            "cityId": "65",
+            "level": 0
+          },
+          {
+            "id": "1376",
+            "name": "济南市历城区博物馆",
+            "number": null,
+            "cityId": "66",
+            "level": 0
+          },
+          {
+            "id": "1376",
+            "name": "济南市历城区辛弃疾纪念馆",
+            "number": null,
+            "cityId": "67",
+            "level": 0
+          },
+          {
+            "id": "1376",
+            "name": "平阴县博物馆",
+            "number": null,
+            "cityId": "68",
+            "level": 0
+          },
+          {
+            "id": "1376",
+            "name": "济阳县博物馆",
+            "number": null,
+            "cityId": "69",
+            "level": 0
+          },
+          {
+            "id": "1376",
+            "name": "商河县博物馆",
+            "number": null,
+            "cityId": "70",
+            "level": 0
+          },
+          {
+            "id": "1376",
+            "name": "章丘市博物馆",
+            "number": null,
+            "cityId": "71",
+            "level": 0
+          },
+          {
+            "id": "1376",
+            "name": "章丘龙山文化博物馆",
+            "number": null,
+            "cityId": "72",
+            "level": 0
+          },
+          {
+            "id": "1376",
+            "name": "石敢当摩崖艺术博物馆",
+            "number": null,
+            "cityId": "73",
+            "level": 0
+          },
+          {
+            "id": "1376",
+            "name": "山东华夏汽车博物馆",
+            "number": null,
+            "cityId": "74",
+            "level": 0
+          },
+          {
+            "id": "1376",
+            "name": "刘氏古钟表博物馆",
+            "number": null,
+            "cityId": "75",
+            "level": 0
+          },
+          {
+            "id": "1376",
+            "name": "山东省权衡天下秤砣博物馆",
+            "number": null,
+            "cityId": "76",
+            "level": 0
+          }
+        ],
+        "museumCount": null
+      },
+      {
+        "cityName": "青岛市",
+        "cityOrder": 0,
+        "museum": [
+          {
+            "id": "1387",
+            "name": "青岛市博物馆",
+            "number": null,
+            "cityId": "77",
+            "level": 0
+          },
+          {
+            "id": "1387",
+            "name": "青岛市康有为故居纪念馆",
+            "number": null,
+            "cityId": "78",
+            "level": 0
+          },
+          {
+            "id": "1387",
+            "name": "青岛德国总督楼旧址博物馆",
+            "number": null,
+            "cityId": "79",
+            "level": 0
+          },
+          {
+            "id": "1387",
+            "name": "青岛市民俗博物馆",
+            "number": null,
+            "cityId": "80",
+            "level": 0
+          },
+          {
+            "id": "1387",
+            "name": "青岛邮电博物馆",
+            "number": null,
+            "cityId": "81",
+            "level": 0
+          },
+          {
+            "id": "1387",
+            "name": "奥帆博物馆",
+            "number": null,
+            "cityId": "82",
+            "level": 0
+          },
+          {
+            "id": "1387",
+            "name": "青岛德国监狱旧址博物馆",
+            "number": null,
+            "cityId": "83",
+            "level": 0
+          },
+          {
+            "id": "1387",
+            "name": "骆驼祥子博物馆",
+            "number": null,
+            "cityId": "84",
+            "level": 0
+          },
+          {
+            "id": "1387",
+            "name": "青岛海产博物馆",
+            "number": null,
+            "cityId": "85",
+            "level": 0
+          },
+          {
+            "id": "1387",
+            "name": "青岛啤酒博物馆",
+            "number": null,
+            "cityId": "86",
+            "level": 0
+          },
+          {
+            "id": "1387",
+            "name": "青岛市口腔医学博物馆",
+            "number": null,
+            "cityId": "87",
+            "level": 0
+          },
+          {
+            "id": "1387",
+            "name": "青岛消防博物馆",
+            "number": null,
+            "cityId": "88",
+            "level": 0
+          },
+          {
+            "id": "1387",
+            "name": "青岛道路交通博物馆",
+            "number": null,
+            "cityId": "89",
+            "level": 0
+          },
+          {
+            "id": "1387",
+            "name": "青岛琅琊台博物馆",
+            "number": null,
+            "cityId": "90",
+            "level": 0
+          },
+          {
+            "id": "1387",
+            "name": "青岛纺织博物馆",
+            "number": null,
+            "cityId": "91",
+            "level": 0
+          },
+          {
+            "id": "1387",
+            "name": "青岛技术博物馆",
+            "number": null,
+            "cityId": "92",
+            "level": 0
+          },
+          {
+            "id": "1387",
+            "name": "青岛市黄岛区博物馆",
+            "number": null,
+            "cityId": "93",
+            "level": 0
+          },
+          {
+            "id": "1387",
+            "name": "黄岛区民俗博物馆",
+            "number": null,
+            "cityId": "94",
+            "level": 0
+          },
+          {
+            "id": "1387",
+            "name": "崂山茶博物馆",
+            "number": null,
+            "cityId": "95",
+            "level": 0
+          },
+          {
+            "id": "1387",
+            "name": "即墨市博物馆",
+            "number": null,
+            "cityId": "96",
+            "level": 0
+          },
+          {
+            "id": "1387",
+            "name": "平度市博物馆",
+            "number": null,
+            "cityId": "97",
+            "level": 0
+          },
+          {
+            "id": "1387",
+            "name": "莱西市博物馆",
+            "number": null,
+            "cityId": "98",
+            "level": 0
+          },
+          {
+            "id": "1387",
+            "name": "青岛贝壳博物馆",
+            "number": null,
+            "cityId": "99",
+            "level": 0
+          },
+          {
+            "id": "1387",
+            "name": "胶州九兴博物馆",
+            "number": null,
+            "cityId": "100",
+            "level": 0
+          },
+          {
+            "id": "1387",
+            "name": "青岛华仁输液文化博物馆",
+            "number": null,
+            "cityId": "101",
+            "level": 0
+          },
+          {
+            "id": "1387",
+            "name": "青岛黄海学院博物馆",
+            "number": null,
+            "cityId": "102",
+            "level": 0
+          },
+          {
+            "id": "1387",
+            "name": "青岛嘉木艺术博物馆",
+            "number": null,
+            "cityId": "103",
+            "level": 0
+          },
+          {
+            "id": "1387",
+            "name": "秋宝斋指墨画博物馆",
+            "number": null,
+            "cityId": "104",
+            "level": 0
+          },
+          {
+            "id": "1387",
+            "name": "大沽河博物馆",
+            "number": null,
+            "cityId": "105",
+            "level": 0
+          },
+          {
+            "id": "1387",
+            "name": "青岛琴岛钢琴艺术博物馆",
+            "number": null,
+            "cityId": "106",
+            "level": 0
+          },
+          {
+            "id": "1387",
+            "name": "青岛韩家鱼盐民俗博物馆",
+            "number": null,
+            "cityId": "107",
+            "level": 0
+          }
+        ],
+        "museumCount": null
+      },
+      {
+        "cityName": "淄博市",
+        "cityOrder": 0,
+        "museum": [
+          {
+            "id": "1399",
+            "name": "淄博市博物馆",
+            "number": null,
+            "cityId": "108",
+            "level": 0
+          },
+          {
+            "id": "1399",
+            "name": "临淄中国古车博物馆",
+            "number": null,
+            "cityId": "109",
+            "level": 0
+          },
+          {
+            "id": "1399",
+            "name": "淄博煤矿博物馆",
+            "number": null,
+            "cityId": "110",
+            "level": 0
+          },
+          {
+            "id": "1399",
+            "name": "淄博市陶瓷博物馆",
+            "number": null,
+            "cityId": "111",
+            "level": 0
+          },
+          {
+            "id": "1399",
+            "name": "蒲松龄纪念馆",
+            "number": null,
+            "cityId": "112",
+            "level": 0
+          },
+          {
+            "id": "1399",
+            "name": "淄川博物馆",
+            "number": null,
+            "cityId": "113",
+            "level": 0
+          },
+          {
+            "id": "1399",
+            "name": "桓台县博物馆",
+            "number": null,
+            "cityId": "114",
+            "level": 0
+          },
+          {
+            "id": "1399",
+            "name": "王士禛纪念馆",
+            "number": null,
+            "cityId": "115",
+            "level": 0
+          },
+          {
+            "id": "1399",
+            "name": "高青县博物馆",
+            "number": null,
+            "cityId": "116",
+            "level": 0
+          },
+          {
+            "id": "1399",
+            "name": "沂源县博物馆",
+            "number": null,
+            "cityId": "117",
+            "level": 0
+          },
+          {
+            "id": "1399",
+            "name": "齐文化博物馆",
+            "number": null,
+            "cityId": "118",
+            "level": 0
+          },
+          {
+            "id": "1399",
+            "name": "山东九宫阁齐国文字博物馆",
+            "number": null,
+            "cityId": "119",
+            "level": 0
+          },
+          {
+            "id": "1399",
+            "name": "山东承扬老电影博物馆",
+            "number": null,
+            "cityId": "120",
+            "level": 0
+          },
+          {
+            "id": "1399",
+            "name": "山东百年课本博物馆",
+            "number": null,
+            "cityId": "121",
+            "level": 0
+          },
+          {
+            "id": "1399",
+            "name": "淄博市鸿磊金石拓片艺术博物馆",
+            "number": null,
+            "cityId": "122",
+            "level": 0
+          },
+          {
+            "id": "1399",
+            "name": "周村烧饼博物馆",
+            "number": null,
+            "cityId": "123",
+            "level": 0
+          },
+          {
+            "id": "1399",
+            "name": "淄博市在堂鱼盘艺术博物馆",
+            "number": null,
+            "cityId": "124",
+            "level": 0
+          },
+          {
+            "id": "1399",
+            "name": "大顺世界钱币博物馆",
+            "number": null,
+            "cityId": "125",
+            "level": 0
+          }
+        ],
+        "museumCount": null
+      },
+      {
+        "cityName": "枣庄市",
+        "cityOrder": 0,
+        "museum": [
+          {
+            "id": "1408",
+            "name": "枣庄市博物馆",
+            "number": null,
+            "cityId": "126",
+            "level": 0
+          },
+          {
+            "id": "1408",
+            "name": "王学仲艺术馆",
+            "number": null,
+            "cityId": "127",
+            "level": 0
+          },
+          {
+            "id": "1408",
+            "name": "世界语博物馆",
+            "number": null,
+            "cityId": "128",
+            "level": 0
+          },
+          {
+            "id": "1408",
+            "name": "枣庄中兴文化博物馆",
+            "number": null,
+            "cityId": "129",
+            "level": 0
+          },
+          {
+            "id": "1408",
+            "name": "台儿庄大战纪念馆",
+            "number": null,
+            "cityId": "130",
+            "level": 0
+          },
+          {
+            "id": "1408",
+            "name": "贺敬之文学馆",
+            "number": null,
+            "cityId": "131",
+            "level": 0
+          },
+          {
+            "id": "1408",
+            "name": "滕州市博物馆",
+            "number": null,
+            "cityId": "132",
+            "level": 0
+          },
+          {
+            "id": "1408",
+            "name": "滕州市汉画像石馆",
+            "number": null,
+            "cityId": "133",
+            "level": 0
+          },
+          {
+            "id": "1408",
+            "name": "滕州市砚台博物馆",
+            "number": null,
+            "cityId": "134",
+            "level": 0
+          },
+          {
+            "id": "1408",
+            "name": "滕州市鲁班纪念馆",
+            "number": null,
+            "cityId": "135",
+            "level": 0
+          },
+          {
+            "id": "1408",
+            "name": "滕州市墨子纪念馆",
+            "number": null,
+            "cityId": "136",
+            "level": 0
+          }
+        ],
+        "museumCount": null
+      },
+      {
+        "cityName": "东营市",
+        "cityOrder": 0,
+        "museum": [
+          {
+            "id": "1415",
+            "name": "东营市历史博物馆",
+            "number": null,
+            "cityId": "137",
+            "level": 0
+          },
+          {
+            "id": "1415",
+            "name": "垦利博物馆",
+            "number": null,
+            "cityId": "138",
+            "level": 0
+          },
+          {
+            "id": "1415",
+            "name": "东营市渤海垦区革命纪念馆",
+            "number": null,
+            "cityId": "139",
+            "level": 0
+          },
+          {
+            "id": "1415",
+            "name": "利津县博物馆",
+            "number": null,
+            "cityId": "140",
+            "level": 0
+          },
+          {
+            "id": "1415",
+            "name": "中共刘集支部旧址纪念馆",
+            "number": null,
+            "cityId": "141",
+            "level": 0
+          }
+        ],
+        "museumCount": null
+      },
+      {
+        "cityName": "烟台市",
+        "cityOrder": 0,
+        "museum": [
+          {
+            "id": "1421",
+            "name": "烟台市博物馆",
+            "number": null,
+            "cityId": "142",
+            "level": 0
+          },
+          {
+            "id": "1421",
+            "name": "烟台自然博物馆（中国地质博物馆烟台馆）",
+            "number": null,
+            "cityId": "143",
+            "level": 0
+          },
+          {
+            "id": "1421",
+            "name": "烟台美术博物馆",
+            "number": null,
+            "cityId": "144",
+            "level": 0
+          },
+          {
+            "id": "1421",
+            "name": "北极星钟表文化博物馆",
+            "number": null,
+            "cityId": "145",
+            "level": 0
+          },
+          {
+            "id": "1421",
+            "name": "烟台张裕酒文化博物馆有限公司",
+            "number": null,
+            "cityId": "146",
+            "level": 0
+          },
+          {
+            "id": "1421",
+            "name": "王懿荣纪念馆",
+            "number": null,
+            "cityId": "147",
+            "level": 0
+          },
+          {
+            "id": "1421",
+            "name": "烟台市牟平区博物馆",
+            "number": null,
+            "cityId": "148",
+            "level": 0
+          },
+          {
+            "id": "1421",
+            "name": "长岛县博物馆",
+            "number": null,
+            "cityId": "149",
+            "level": 0
+          },
+          {
+            "id": "1421",
+            "name": "长岛航海博物馆",
+            "number": null,
+            "cityId": "150",
+            "level": 0
+          },
+          {
+            "id": "1421",
+            "name": "龙口市博物馆",
+            "number": null,
+            "cityId": "151",
+            "level": 0
+          },
+          {
+            "id": "1421",
+            "name": "莱州市博物馆",
+            "number": null,
+            "cityId": "152",
+            "level": 0
+          },
+          {
+            "id": "1421",
+            "name": "蓬莱市登州博物馆",
+            "number": null,
+            "cityId": "153",
+            "level": 0
+          },
+          {
+            "id": "1421",
+            "name": "蓬莱古船博物馆",
+            "number": null,
+            "cityId": "154",
+            "level": 0
+          },
+          {
+            "id": "1421",
+            "name": "海阳市博物馆",
+            "number": null,
+            "cityId": "155",
+            "level": 0
+          },
+          {
+            "id": "1421",
+            "name": "栖霞和壹自然博物馆",
+            "number": null,
+            "cityId": "156",
+            "level": 0
+          },
+          {
+            "id": "1421",
+            "name": "许世友在胶东纪念馆",
+            "number": null,
+            "cityId": "157",
+            "level": 0
+          }
+        ],
+        "museumCount": null
+      },
+      {
+        "cityName": "潍坊市",
+        "cityOrder": 0,
+        "museum": [
+          {
+            "id": "1434",
+            "name": "潍坊市博物馆",
+            "number": null,
+            "cityId": "158",
+            "level": 0
+          },
+          {
+            "id": "1434",
+            "name": "潍坊十笏园博物馆",
+            "number": null,
+            "cityId": "159",
+            "level": 0
+          },
+          {
+            "id": "1434",
+            "name": "陈介褀故居陈列馆",
+            "number": null,
+            "cityId": "160",
+            "level": 0
+          },
+          {
+            "id": "1434",
+            "name": "山东临朐山旺古生物化石博物馆",
+            "number": null,
+            "cityId": "161",
+            "level": 0
+          },
+          {
+            "id": "1434",
+            "name": "青州市博物馆",
+            "number": null,
+            "cityId": "162",
+            "level": 0
+          },
+          {
+            "id": "1434",
+            "name": "诸城市博物馆",
+            "number": null,
+            "cityId": "163",
+            "level": 0
+          },
+          {
+            "id": "1434",
+            "name": "寿光市博物馆",
+            "number": null,
+            "cityId": "164",
+            "level": 0
+          },
+          {
+            "id": "1434",
+            "name": "安丘市博物馆",
+            "number": null,
+            "cityId": "165",
+            "level": 0
+          },
+          {
+            "id": "1434",
+            "name": "高密市博物馆",
+            "number": null,
+            "cityId": "166",
+            "level": 0
+          },
+          {
+            "id": "1434",
+            "name": "昌邑市博物馆",
+            "number": null,
+            "cityId": "167",
+            "level": 0
+          },
+          {
+            "id": "1434",
+            "name": "临朐大唐红丝砚博物馆",
+            "number": null,
+            "cityId": "168",
+            "level": 0
+          },
+          {
+            "id": "1434",
+            "name": "潍坊齐鲁酒地酒文化博物馆",
+            "number": null,
+            "cityId": "169",
+            "level": 0
+          }
+        ],
+        "museumCount": null
+      },
+      {
+        "cityName": "济宁市",
+        "cityOrder": 0,
+        "museum": [
+          {
+            "id": "1447",
+            "name": "济宁市博物馆",
+            "number": null,
+            "cityId": "170",
+            "level": 0
+          },
+          {
+            "id": "1447",
+            "name": "济宁市李白纪念馆",
+            "number": null,
+            "cityId": "171",
+            "level": 0
+          },
+          {
+            "id": "1447",
+            "name": "济宁市兖州区博物馆",
+            "number": null,
+            "cityId": "172",
+            "level": 0
+          },
+          {
+            "id": "1447",
+            "name": "金乡县博物馆",
+            "number": null,
+            "cityId": "173",
+            "level": 0
+          },
+          {
+            "id": "1447",
+            "name": "嘉祥武氏墓群石刻博物馆",
+            "number": null,
+            "cityId": "174",
+            "level": 0
+          },
+          {
+            "id": "1447",
+            "name": "汶上县中都博物馆",
+            "number": null,
+            "cityId": "175",
+            "level": 0
+          },
+          {
+            "id": "1447",
+            "name": "梁山县博物馆",
+            "number": null,
+            "cityId": "176",
+            "level": 0
+          },
+          {
+            "id": "1447",
+            "name": "邹城博物馆",
+            "number": null,
+            "cityId": "177",
+            "level": 0
+          },
+          {
+            "id": "1447",
+            "name": "兖州太阳纸文化博物馆",
+            "number": null,
+            "cityId": "178",
+            "level": 0
+          }
+        ],
+        "museumCount": null
+      },
+      {
+        "cityName": "泰安市",
+        "cityOrder": 0,
+        "museum": [
+          {
+            "id": "1459",
+            "name": "泰安市博物馆",
+            "number": null,
+            "cityId": "179",
+            "level": 0
+          },
+          {
+            "id": "1459",
+            "name": "冯玉祥泰山纪念馆",
+            "number": null,
+            "cityId": "180",
+            "level": 0
+          },
+          {
+            "id": "1459",
+            "name": "宁阳县博物馆",
+            "number": null,
+            "cityId": "181",
+            "level": 0
+          },
+          {
+            "id": "1459",
+            "name": "东平县博物馆",
+            "number": null,
+            "cityId": "182",
+            "level": 0
+          },
+          {
+            "id": "1459",
+            "name": "泰安市泰山石敢当博物馆",
+            "number": null,
+            "cityId": "183",
+            "level": 0
+          },
+          {
+            "id": "1459",
+            "name": "泰安徂徕山抗日武装起义博物馆",
+            "number": null,
+            "cityId": "184",
+            "level": 0
+          },
+          {
+            "id": "1459",
+            "name": "肥城桃文化博物馆",
+            "number": null,
+            "cityId": "185",
+            "level": 0
+          },
+          {
+            "id": "1459",
+            "name": "泰安市泰山民俗博物馆",
+            "number": null,
+            "cityId": "186",
+            "level": 0
+          }
+        ],
+        "museumCount": null
+      },
+      {
+        "cityName": "威海市",
+        "cityOrder": 0,
+        "museum": [
+          {
+            "id": "1466",
+            "name": "中国甲午战争博物院",
+            "number": null,
+            "cityId": "187",
+            "level": 0
+          },
+          {
+            "id": "1466",
+            "name": "威海市博物馆",
+            "number": null,
+            "cityId": "188",
+            "level": 0
+          },
+          {
+            "id": "1466",
+            "name": "威海市文登区博物馆",
+            "number": null,
+            "cityId": "189",
+            "level": 0
+          },
+          {
+            "id": "1466",
+            "name": "威海市文登区天福山革命遗址管理所",
+            "number": null,
+            "cityId": "190",
+            "level": 0
+          },
+          {
+            "id": "1466",
+            "name": "荣成博物馆",
+            "number": null,
+            "cityId": "191",
+            "level": 0
+          },
+          {
+            "id": "1466",
+            "name": "冯德英文学馆",
+            "number": null,
+            "cityId": "192",
+            "level": 0
+          },
+          {
+            "id": "1466",
+            "name": "威海毛泽东像章博物馆",
+            "number": null,
+            "cityId": "193",
+            "level": 0
+          },
+          {
+            "id": "1466",
+            "name": "荣成赤山民俗博物馆",
+            "number": null,
+            "cityId": "194",
+            "level": 0
+          }
+        ],
+        "museumCount": null
+      },
+      {
+        "cityName": "日照市",
+        "cityOrder": 0,
+        "museum": [
+          {
+            "id": "1471",
+            "name": "日照市博物馆",
+            "number": null,
+            "cityId": "195",
+            "level": 0
+          },
+          {
+            "id": "1471",
+            "name": "日照尧王文化博物馆",
+            "number": null,
+            "cityId": "196",
+            "level": 0
+          },
+          {
+            "id": "1471",
+            "name": "五莲县博物馆",
+            "number": null,
+            "cityId": "197",
+            "level": 0
+          },
+          {
+            "id": "1471",
+            "name": "莒县博物馆",
+            "number": null,
+            "cityId": "198",
+            "level": 0
+          },
+          {
+            "id": "1471",
+            "name": "莒县刘勰故里民俗生态博物馆",
+            "number": null,
+            "cityId": "199",
+            "level": 0
+          }
+        ],
+        "museumCount": null
+      },
+      {
+        "cityName": "莱芜市",
+        "cityOrder": 0,
+        "museum": [
+          {
+            "id": "1476",
+            "name": "莱芜市博物馆",
+            "number": null,
+            "cityId": "200",
+            "level": 0
+          },
+          {
+            "id": "1476",
+            "name": "莱芜市博物馆",
+            "number": null,
+            "cityId": "201",
+            "level": 0
+          },
+          {
+            "id": "1476",
+            "name": "莱芜幸福童年摄影艺术博物馆",
+            "number": null,
+            "cityId": "202",
+            "level": 0
+          },
+          {
+            "id": "1476",
+            "name": "莱芜市多福砚博物馆",
+            "number": null,
+            "cityId": "203",
+            "level": 0
+          }
+        ],
+        "museumCount": null
+      },
+      {
+        "cityName": "临沂市",
+        "cityOrder": 0,
+        "museum": [
+          {
+            "id": "1479",
+            "name": "临沂市博物馆",
+            "number": null,
+            "cityId": "204",
+            "level": 0
+          },
+          {
+            "id": "1479",
+            "name": "临沂市银雀山汉墓竹简博物馆",
+            "number": null,
+            "cityId": "205",
+            "level": 0
+          },
+          {
+            "id": "1479",
+            "name": "沂南县博物馆",
+            "number": null,
+            "cityId": "206",
+            "level": 0
+          },
+          {
+            "id": "1479",
+            "name": "沂水县博物馆",
+            "number": null,
+            "cityId": "207",
+            "level": 0
+          },
+          {
+            "id": "1479",
+            "name": "费县博物馆",
+            "number": null,
+            "cityId": "208",
+            "level": 0
+          },
+          {
+            "id": "1479",
+            "name": "山东省天宇自然博物馆",
+            "number": null,
+            "cityId": "209",
+            "level": 0
+          },
+          {
+            "id": "1479",
+            "name": "平邑县博物馆",
+            "number": null,
+            "cityId": "210",
+            "level": 0
+          },
+          {
+            "id": "1479",
+            "name": "莒南县博物馆",
+            "number": null,
+            "cityId": "211",
+            "level": 0
+          },
+          {
+            "id": "1479",
+            "name": "孟良崮战役纪念馆",
+            "number": null,
+            "cityId": "212",
+            "level": 0
+          },
+          {
+            "id": "1479",
+            "name": "沂蒙红嫂纪念馆",
+            "number": null,
+            "cityId": "213",
+            "level": 0
+          }
+        ],
+        "museumCount": null
+      },
+      {
+        "cityName": "德州市",
+        "cityOrder": 0,
+        "museum": [
+          {
+            "id": "1492",
+            "name": "德州市博物馆",
+            "number": null,
+            "cityId": "214",
+            "level": 0
+          },
+          {
+            "id": "1492",
+            "name": "德州市苏禄文化博物馆",
+            "number": null,
+            "cityId": "215",
+            "level": 0
+          },
+          {
+            "id": "1492",
+            "name": "德州市陵城区文博苑",
+            "number": null,
+            "cityId": "216",
+            "level": 0
+          },
+          {
+            "id": "1492",
+            "name": "临邑县邢侗纪念馆",
+            "number": null,
+            "cityId": "217",
+            "level": 0
+          },
+          {
+            "id": "1492",
+            "name": "禹城市禹王亭博物馆",
+            "number": null,
+            "cityId": "218",
+            "level": 0
+          },
+          {
+            "id": "1492",
+            "name": "德州普利森机床博物馆",
+            "number": null,
+            "cityId": "219",
+            "level": 0
+          }
+        ],
+        "museumCount": null
+      },
+      {
+        "cityName": "聊城市",
+        "cityOrder": 0,
+        "museum": [
+          {
+            "id": "1504",
+            "name": "聊城中国运河文化博物馆",
+            "number": null,
+            "cityId": "220",
+            "level": 0
+          },
+          {
+            "id": "1504",
+            "name": "孔繁森同志纪念馆",
+            "number": null,
+            "cityId": "221",
+            "level": 0
+          },
+          {
+            "id": "1504",
+            "name": "傅斯年陈列馆",
+            "number": null,
+            "cityId": "222",
+            "level": 0
+          },
+          {
+            "id": "1504",
+            "name": "聊城市乡村记忆博物馆",
+            "number": null,
+            "cityId": "223",
+            "level": 0
+          },
+          {
+            "id": "1504",
+            "name": "莘县博物馆",
+            "number": null,
+            "cityId": "224",
+            "level": 0
+          },
+          {
+            "id": "1504",
+            "name": "高唐县博物馆",
+            "number": null,
+            "cityId": "225",
+            "level": 0
+          },
+          {
+            "id": "1504",
+            "name": "临清市博物馆",
+            "number": null,
+            "cityId": "226",
+            "level": 0
+          },
+          {
+            "id": "1504",
+            "name": "聊城明清圣旨博物馆",
+            "number": null,
+            "cityId": "227",
+            "level": 0
+          }
+        ],
+        "museumCount": null
+      },
+      {
+        "cityName": "滨州市",
+        "cityOrder": 0,
+        "museum": [
+          {
+            "id": "1513",
+            "name": "滨州市博物馆",
+            "number": null,
+            "cityId": "228",
+            "level": 0
+          },
+          {
+            "id": "1513",
+            "name": "滨州市沾化区博物馆",
+            "number": null,
+            "cityId": "229",
+            "level": 0
+          },
+          {
+            "id": "1513",
+            "name": "惠民县博物馆",
+            "number": null,
+            "cityId": "230",
+            "level": 0
+          },
+          {
+            "id": "1513",
+            "name": "无棣县博物馆",
+            "number": null,
+            "cityId": "231",
+            "level": 0
+          },
+          {
+            "id": "1513",
+            "name": "博兴县博物馆",
+            "number": null,
+            "cityId": "232",
+            "level": 0
+          },
+          {
+            "id": "1513",
+            "name": "博兴京博文化艺术博物馆",
+            "number": null,
+            "cityId": "233",
+            "level": 0
+          }
+        ],
+        "museumCount": null
+      },
+      {
+        "cityName": "菏泽市",
+        "cityOrder": 0,
+        "museum": [
+          {
+            "id": "1522",
+            "name": "菏泽市博物馆",
+            "number": null,
+            "cityId": "234",
+            "level": 0
+          },
+          {
+            "id": "1522",
+            "name": "鲁西南民俗博物馆",
+            "number": null,
+            "cityId": "235",
+            "level": 0
+          },
+          {
+            "id": "1522",
+            "name": "冀鲁豫边区革命纪念馆",
+            "number": null,
+            "cityId": "236",
+            "level": 0
+          },
+          {
+            "id": "1522",
+            "name": "中国鲁锦博物馆",
+            "number": null,
+            "cityId": "237",
+            "level": 0
+          },
+          {
+            "id": "1522",
+            "name": "定陶博物馆",
+            "number": null,
+            "cityId": "238",
+            "level": 0
+          },
+          {
+            "id": "1522",
+            "name": "曹县商都博物馆",
+            "number": null,
+            "cityId": "239",
+            "level": 0
+          },
+          {
+            "id": "1522",
+            "name": "单县博物馆",
+            "number": null,
+            "cityId": "240",
+            "level": 0
+          },
+          {
+            "id": "1522",
+            "name": "成武县博物馆",
+            "number": null,
+            "cityId": "241",
+            "level": 0
+          },
+          {
+            "id": "1522",
+            "name": "巨野县博物馆",
+            "number": null,
+            "cityId": "242",
+            "level": 0
+          },
+          {
+            "id": "1522",
+            "name": "东明县博物馆",
+            "number": null,
+            "cityId": "243",
+            "level": 0
+          }
+        ],
+        "museumCount": null
+      }
+    ],
+    "newSpreList": [
+      {
+        "id": "16ac3347-05ff-4669-b7cb-a2dfa8a8161e",
+        "createTime": "2017-03-23 13:32:54.0",
+        "status": 1,
+        "sequence": 50,
+        "beginTime": 0,
+        "endTime": 0,
+        "orgId": 126,
+        "userName": "1066",
+        "picture": "f69c9bc6-8917-4591-a291-ac1afb33f812",
+        "content": "&nbsp; &nbsp; &nbsp; &nbsp;小邾国贵族墓葬出土文物展陈列展示了2002年在山亭区东江村抢救性发掘的小邾国贵族墓地出土的珍贵文物200多件，其中带有铭文的青铜器24件。&nbsp; &nbsp; &nbsp; &nbsp;周武王灭商以后，分封诸侯国邾，都城在今山东省邹城市。周宣王时期，邾国第七代国君夷父颜有功于周室，封他的次子友于郳地，因此叫郳国。又因为是从邾国分出，所以又叫小邾国。周朝末年，邾国一分为三，分别是邾国，都城在邹城；小邾国，都城在山亭区东江镇；滥国，都城在滕州市羊庄镇。&nbsp; &nbsp; &nbsp; &nbsp;小邾国历经西周和春秋战国时期，前后余600余年，最后被楚国所灭。多年来，有关小邾国的资料一片空白，直到2002年夏天，枣庄市文管办和枣庄市博物馆对位于山亭区东江镇的这个墓葬群进行抢救性发掘，出土了一批珍贵文物，小邾国的历史之门由此被打开。",
+        "source": 0,
+        "headline": "小邾国贵族墓葬出土文物展",
+        "publishTime": 1490247181,
+        "publish": 1,
+        "exhibitioType": 1,
+        "staTime": "",
+        "overTime": "",
+        "musExhibition": "枣庄市博物馆",
+        "issemTime": null,
+        "pictureThumb": "http://file.net.tj720.com/back/picture/ef98c30e9fa040b4882c350cb49cdc33.PNG",
+        "nickName": null,
+        "logRemark": ""
+      },
+      {
+        "id": "20d6d99a-ec42-4c33-8c4f-70dc041e2845",
+        "createTime": "2017-03-23 14:22:20.0",
+        "status": 1,
+        "sequence": 50,
+        "beginTime": 0,
+        "endTime": 0,
+        "orgId": 142,
+        "userName": "1082",
+        "picture": "62c9e94a-84c0-4115-b64f-251f2dbc4a6e",
+        "content": "&nbsp; &nbsp; &nbsp; 公元前221年，秦国一举消灭六国完成了统一大业，统一后秦始皇分别在公元前219年、公元前218年和公元前210年三次东巡，并三次来到烟台登临芝罘岛。&nbsp; &nbsp; &nbsp; &nbsp;据最新考古发掘证明，秦始皇东巡除了炫耀武力、寻求传说中的仙山与长生不死药之外，还有一个主要的目的，就是礼祠齐地八神。&nbsp; &nbsp; &nbsp; 《阳主与秦始皇东巡》详细介绍了分布于胶东大地的“齐地八神”。整个展览分为“阳主”和“秦始皇东巡”两个部分，重点以阳主石造像、钟、鼓、瓦当等文物，阳主庙模型、秦始皇东巡图表、图片等资料，既讲述了“阳主”与秦始皇东巡的内在联系。",
+        "source": 0,
+        "headline": "阳主与秦始皇东巡",
+        "publishTime": 1490251135,
+        "publish": 1,
+        "exhibitioType": 1,
+        "staTime": "",
+        "overTime": "",
+        "musExhibition": "烟台市博物馆",
+        "issemTime": null,
+        "pictureThumb": "http://file.net.tj720.com/back/picture/7867f48cc61c42c0a83dbc187c67c056.PNG",
+        "nickName": null,
+        "logRemark": ""
+      },
+      {
+        "id": "464140d2-0b3f-45fa-8d29-b9b6da14149e",
+        "createTime": "2017-03-23 13:27:21.0",
+        "status": 1,
+        "sequence": 50,
+        "beginTime": 0,
+        "endTime": 0,
+        "orgId": 126,
+        "userName": "1066",
+        "picture": "55a96819-bb31-4f9d-934a-8775c5d6adb3",
+        "content": "&nbsp; &nbsp; &nbsp; &nbsp;枣庄历史文物展从我市最早发现的新石器时代文化——北辛文化开始，依次陈列了大汶口文化、龙山文化、商周、秦汉、唐宋元明清的各类典型文物500余件。&nbsp; &nbsp; &nbsp; &nbsp;枣庄历史悠久，文化积淀丰厚。这里拥有7300年的始祖文化，4300年的城邦文化，2700年的运河文化，130年的工业文化。这里是造车鼻祖奚仲的的故里，这里还涌现了大思想家墨子、食客三千的孟尝君、凿壁偷光的匡衡、大文学家贾三近等历史名人。薛国、滕国、曾国、偪阳国、小邾国等先后登上这里的历史舞台，我市还是全国现存历史古城邦最多的城市之一。近年来，全力打造的新的城市名片“江北水乡•运河古城”，高度浓缩了枣庄的城市特点，提升了城市文化的品味。在城市转型的道路上阔步前进的枣庄，正焕发着前所未有的勃勃生机。",
+        "source": 0,
+        "headline": "枣庄历史文物展",
+        "publishTime": 1490247221,
+        "publish": 1,
+        "exhibitioType": 1,
+        "staTime": "",
+        "overTime": "",
+        "musExhibition": "枣庄市博物馆",
+        "issemTime": null,
+        "pictureThumb": "http://file.net.tj720.com/back/picture/30e4c658334b425cab93eebad9e88357.PNG",
+        "nickName": null,
+        "logRemark": ""
+      },
+      {
+        "id": "4ebf8b7c-0ef0-4216-8f37-568899b7c3b6",
+        "createTime": "2017-03-15 00:00:00.0",
+        "status": 1,
+        "sequence": 50,
+        "beginTime": 0,
+        "endTime": 0,
+        "orgId": 60,
+        "userName": "6f008b0c-def7-4629-b1ca-2dfc5db57ac9",
+        "picture": "fe5a6660-d2a8-4d7f-b314-783d1ff6ca47",
+        "content": "&nbsp; &nbsp; 《明代鲁王展》展出的是明朝第一代鲁王朱檀墓中的出土文物。明朝开国皇帝朱元璋为了巩固其江山统治，将其23个皇子分封到各地为藩王，朱檀是他的第十子，封为鲁王。朱檀明洪武三年（1370年）出生，十五岁就藩兖州，从此兖州即升州为府，辖四州二十三县。朱檀自幼好诗书礼仪，礼贤下士，博学多识，甚得朱元璋喜爱，十九岁服丹药毒发伤目而亡，谥号“荒”。&nbsp; &nbsp; 1970年至1971年，由山东省博物馆主持，对位于现山东省邹城市与曲阜市交界处九龙山南麓的鲁荒王陵进行了考古发掘。出土了大量珍贵文物，如冕冠佩饰，家具服装、笔墨纸砚、琴棋书画、彩绘木俑等等。这些文物既是鲁王朱檀王府生活的真实缩影，也反映了明朝时期高超的工艺制作水平，而且填史补阙，对于研究明初社会的政治、经济、文化等具有非常重要的资料价值。",
+        "source": 0,
+        "headline": "明代鲁王展",
+        "publishTime": 1490245884,
+        "publish": 1,
+        "exhibitioType": 1,
+        "staTime": "",
+        "overTime": "",
+        "musExhibition": "山东博物馆",
+        "issemTime": null,
+        "pictureThumb": "http://file.net.tj720.com/back/picture/b2acdffa9b9a4255bf36e4a514cfbb2e.PNG",
+        "nickName": null,
+        "logRemark": ""
+      },
+      {
+        "id": "5bf001b9-9714-4c31-89b8-95cc8bc7a520",
+        "createTime": "2017-03-23 13:57:40.0",
+        "status": 1,
+        "sequence": 50,
+        "beginTime": 0,
+        "endTime": 0,
+        "orgId": 142,
+        "userName": "1082",
+        "picture": "796082b7-f7fb-4166-80be-c8fad24658dd",
+        "content": "&nbsp; &nbsp; 文物是历史的见证，是人类文明进步的重要载体。胶东大地，人杰地灵，文物资源丰富，为研究和传承传统文化、保护和利用文化遗产，征集具有历史价值、艺术价值等各类文物一直是文物工作者的重要职责。&nbsp; &nbsp; 本次展览从本馆近年征集的文物中，精选出反映烟台近代历史和民俗风情的代表性文物，勾勒出一幅上个世纪老烟台的生活画卷。同时，也藉展示文物征集工作所取得的成绩之际，引起全社会对文化遗产保护工作的重视。&nbsp; &nbsp; 烟台市博物馆于3月18日在烟台民俗博物馆（烟台福建会馆）院内举办《旧时风物——馆藏民俗文物展》。本次展览从本馆近年征集的文物中，精选出反映烟台近代历史和民俗风情的代表性文物，勾勒出一幅上个世纪老烟台的生活画卷。同时，也藉展示文物征集工作所取得的成绩之际，引起全社会对文化遗产保护工作的重视。",
+        "source": 0,
+        "headline": "旧时风物——馆藏民俗文物展",
+        "publishTime": 1490248667,
+        "publish": 1,
+        "exhibitioType": 1,
+        "staTime": "",
+        "overTime": "",
+        "musExhibition": "烟台市博物馆",
+        "issemTime": null,
+        "pictureThumb": "http://file.net.tj720.com/back/picture/6794027db04d4bad971c68839e0aee2c.PNG",
+        "nickName": null,
+        "logRemark": ""
+      },
+      {
+        "id": "74d26784-eb8b-47a1-8566-761be99700f0",
+        "createTime": "2017-03-23 13:43:11.0",
+        "status": 1,
+        "sequence": 50,
+        "beginTime": 0,
+        "endTime": 0,
+        "orgId": 158,
+        "userName": "1098",
+        "picture": "b95b4473-1736-48a5-970a-926f325f8fcb",
+        "content": "&nbsp; &nbsp; &nbsp; &nbsp;潍坊市博物馆现存文物7万余件，藏品的构成有历代陶器、青铜器、瓷器、潍坊古象化石、历代名人字画、民俗文物、古籍拓本、名人碑刻、石质青铜佛造像等。我们根据馆藏文物的数量和陈列条件，结合当今先进博物馆的陈列设计及其现代陈列材料，以突出潍坊地方文物特色为主要展出手段，使潍坊简史陈列以时间为顺序，以文物、人物为引线，采用声、光、电及三维影视合成、超写实雕塑等高科技展示手段揭示了潍坊近八千年的发展历史。 &nbsp; &nbsp; &nbsp;&nbsp;陈列共分文明初曦、三代英华、汉唐风韵、宋清撷珍与古城沧桑五部分。通过此展，可以了解潍坊地区的人类文明发展概况。该陈列曾荣获国家文物局颁发的“十大陈列展览精品提名奖”及省优秀陈列大奖。",
+        "source": 0,
+        "headline": "潍坊简史陈列",
+        "publishTime": 1490248186,
+        "publish": 1,
+        "exhibitioType": 1,
+        "staTime": "",
+        "overTime": "",
+        "musExhibition": "潍坊市博物馆",
+        "issemTime": null,
+        "pictureThumb": "http://file.net.tj720.com/back/picture/91aac35ad636448aae88179211b40ba5.PNG",
+        "nickName": null,
+        "logRemark": ""
+      }
+    ]
+  },
+  "error": null,
+  "others": null
+}
