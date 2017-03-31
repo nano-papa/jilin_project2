@@ -1,0 +1,121 @@
+@import "common";
+@charset "utf-8";
+.activity-list-content-inner{
+  ul{
+    width:1034px;
+    min-height:590px;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    li{
+      height:289px;
+      &:not(:nth-child(3n)){
+        margin-right:166px;
+      }
+      figure{
+        a{
+          display: block;
+          color:#000;
+          h1{
+            line-height:60px;
+            font-size:16px;
+            text-overflow:ellipsis;
+            width:100%;
+            overflow: hidden;
+            @include limitLine(1,220,60);
+          }
+          figcaption{
+            margin-top:10px;
+            color:#888;
+            font-size:12px;
+            line-height: 18px;
+            @include limitLine(4,219,70)
+          }
+        }
+      }
+    }
+  }
+}
+//详情页面
+.activity-details{
+  min-height:800px;
+  .activity-details-content{
+    position: relative;
+    padding:0px 83px;
+    color:rgba(0,0,0,.7);
+    font-size:18px;
+    line-height: 30px;
+    display: flex;
+    flex-flow: row;
+    .activity-details-content-one{
+        width:640px;
+      figure{
+        h1{
+          color:#333;
+          font-size:18px;
+          line-height:49px;
+          @include simpleLine(640);
+        }
+        h3{
+          font-weight:normal;
+          font-size:12px;
+          color:#333;
+          span{
+            font-size:12px;
+            color:$theme-color-pink1;
+          }
+        }
+
+      }
+      table{
+        margin:10px 0 0 30px;
+        tbody{
+          tr{
+            td{
+              font-weight: bold;
+              color:$theme-color-pink1;
+              font-size:12px;
+            }
+          }
+        }
+      }
+      p{
+        font-size:12px;
+        line-height:20px;
+        color:#666;
+        min-height: 330px;
+      }
+    }
+    .activity-details-content-two{
+      margin-left:67px;
+      h1{
+        color:#333;
+      }
+      ul{
+        li{
+          border-bottom:1px dashed #cccccc;
+          margin-bottom:20px;
+          a{
+            display:block;
+            width:220px;
+            color:#000;
+            figcaption{
+              font-size:16px;
+              line-height: 30px;
+              @include simpleLine(220);
+            }
+            p{
+              display: flex;
+              flex-flow: row;
+              justify-content: space-between;
+              span{
+                font-size:12px;
+                color:$theme-color-pink1;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

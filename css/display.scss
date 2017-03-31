@@ -2,6 +2,24 @@
 @charset "utf-8";
 .display-content{
   padding:20px 83px;
+  position:relative;
+  .activity-content-search{
+    position: absolute;
+    right: 170px;
+    top:-24px;
+    input{
+      line-height: 23px;
+    }
+    button{
+      background:$theme-color-pink1;
+      color:#fff;
+      cursor: pointer;
+      padding:6px 12px;
+      &:hover{
+        background:$theme-color-pink2;
+      }
+    }
+  }
   .slected-condition {
     &:after {
       display: block;

@@ -219,7 +219,21 @@ footer {
   background: #723f3f; }
 
 .display-content {
-  padding: 20px 83px; }
+  padding: 20px 83px;
+  position: relative; }
+  .display-content .activity-content-search {
+    position: absolute;
+    right: 170px;
+    top: -24px; }
+    .display-content .activity-content-search input {
+      line-height: 23px; }
+    .display-content .activity-content-search button {
+      background: #723f3f;
+      color: #fff;
+      cursor: pointer;
+      padding: 6px 12px; }
+      .display-content .activity-content-search button:hover {
+        background: #dc4652; }
   .display-content .slected-condition:after {
     display: block;
     content: "";

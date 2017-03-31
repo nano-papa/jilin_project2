@@ -57,14 +57,16 @@
                 <ol ng-show="onetab===1" style="opacity: 1">
                     <li class="index-chunk-one-content-item-new" ng-repeat="display in data.spreList">
                         <div class="index-chunk-one-content-item-img">
-                            <img width="297" height="170" ng-src="{{display.pictureThumb}}" alt="">
+                            <a  ui-sref="displaydetails({id:display.id,type:'inner'})" target="_blank">
+                                <img width="297" height="170" ng-src="{{display.pictureThumb}}" alt="">
+                            </a>
                         </div>
                         <div class="index-chunk-one-content-item-msg">
                             <h1><a href="" ng-bind="display.headline" ui-sref="displaydetails({id:display.id,type:'inner'})"></a></h1>
                             <h4 ng-bind="display.musExhibition"></h4>
                             <p ng-bind-html="display.content">
                             </p>
-                            <h6><a ui-sref="displaydetails({id:display.id,type:'inner'})">查看详情</a></h6>
+                            <h6><a ui-sref="displaydetails({id:display.id,type:'inner'})" target="_blank">查看详情</a></h6>
                         </div>
                     </li>
                 </ol>

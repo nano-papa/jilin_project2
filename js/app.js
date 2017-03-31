@@ -16,6 +16,7 @@ angular.module('myApp', [
     'myApp.controllerscollection',
     'myApp.controllerslogin',
     'myApp.controllersregister',
+    'myApp.controllersactivity',
     'myApp.router'
 ])
     .run(['$rootScope','$http',function($rootScope,$http){

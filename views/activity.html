@@ -1,0 +1,126 @@
+<div class="wrapper">
+    <img ng-src="{{imgUrlarr[3].carList[0].pic.backUrl}}" width="1200" height="120" alt="">
+    <div class="display">
+        <div class="breadcrumb">
+            <a ui-sref="home">首页</a><u>&gt;&gt;</u><a ui-sref="activity">活动</a>
+        </div>
+        <div class="display-content">
+            <div class="activity-content-search">
+                <input id="date" placeholder="请输入搜索时间" name="date">
+                <button>搜索</button>
+            </div>
+            <div class="display_list_Pinner">
+                <div class="slected-condition" ng-if="isSelected">
+                    <ul>
+                        <li>
+                            <span>
+                                全部结果>
+                            </span>
+                        </li>
+                        <li ng-show="isA">
+                            <small>单位：</small>
+                            <u ng-bind="area"></u>
+                            <i ng-click="removeArea()" ng-show="remove">×</i>
+                        </li>
+                        <li ng-show="isK">
+                            <small>关键字：</small>
+                            <u ng-bind="value"></u>
+                            <i ng-click="hideKeyword()">×</i>
+                        </li>
+                    </ul>
+                </div>
+                <div class="display-search">
+                    <span>关键词：</span>
+                    <input type="text" id="search_box" ng-trim="true">
+                    <button ng-click="showKeyword()"></button>
+                </div>
+                <div class="condition">
+                    <div class="condition-item" ng-if="isClassify">
+                        <p class="condition-title fontB">活动种类：</p>
+                        <ul class="condition-content">
+                            <li ng-repeat="s in conditionData">
+                                <span ng-click="getClassify($event)" ng-bind="s.cityName"
+                                      data-index="{{$index}}"></span>
+                            </li>
+                        </ul>
+                        <div class="condition-more" ng-click="SlideDown($event)">更多<span>&gt;</span></div>
+                    </div>
+                    <div class="condition-item" ng-if="isClassify">
+                        <p class="condition-title fontB">所在地区：</p>
+                        <ul class="condition-content">
+                            <li ng-repeat="s in conditionData">
+                                <span ng-click="getClassify($event)" ng-bind="s.cityName"
+                                      data-index="{{$index}}"></span>
+                            </li>
+                        </ul>
+                        <div class="condition-more" ng-click="SlideDown($event)">更多<span>&gt;</span></div>
+                    </div>
+                    <div class="condition-item" ng-if="isArea">
+                        <p class="condition-title fontB">博物馆：</p>
+                        <ul class="condition-content">
+                            <li ng-repeat="r in conditionData[index].museum">
+                                <span ng-click="getArea($event)" ng-bind="r.name" data-id="{{r.cityId}}"></span>
+                            </li>
+                        </ul>
+                        <div class="condition-more" ng-click="SlideDown($event)">更多<span>&gt;</span></div>
+                    </div>
+                </div>
+                <div class="activity-list-content-inner">
+                    <ul>
+                        <li>
+                            <figure>
+                                <a ui-sref="activitydetails({id:'4444'})">
+                                    <h1>黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀</h1>
+                                    <img src="img/active.png" width="220" height="147"/>
+                                    <figcaption>黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀.黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀阀黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀</figcaption>
+                                </a>
+                            </figure>
+                        </li><li>
+                            <figure>
+                                <a href="">
+                                    <h1>黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀</h1>
+                                    <img src="img/active.png" width="220" height="147"/>
+                                    <figcaption>黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀.黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀阀黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀</figcaption>
+                                </a>
+                            </figure>
+                        </li><li>
+                            <figure>
+                                <a href="">
+                                    <h1>黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀</h1>
+                                    <img src="img/active.png" width="220" height="147"/>
+                                    <figcaption>黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀.黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀阀黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀</figcaption>
+                                </a>
+                            </figure>
+                        </li><li>
+                            <figure>
+                                <a href="">
+                                    <h1>黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀</h1>
+                                    <img src="img/active.png" width="220" height="147"/>
+                                    <figcaption>黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀.黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀阀黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀</figcaption>
+                                </a>
+                            </figure>
+                        </li><li>
+                            <figure>
+                                <a href="">
+                                    <h1>黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀</h1>
+                                    <img src="img/active.png" width="220" height="147"/>
+                                    <figcaption>黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀.黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀阀黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀</figcaption>
+                                </a>
+                            </figure>
+                        </li><li>
+                            <figure>
+                                <a href="">
+                                    <h1>黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀</h1>
+                                    <img src="img/active.png" width="220" height="147"/>
+                                    <figcaption>黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀.黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀阀黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀</figcaption>
+                                </a>
+                            </figure>
+                        </li>
+                        <nohavemore nheight="500" nwidth="1034" ng-if="showData"></nohavemore>
+                    </ul>
+                    <div class="PagePlugs" style="margin-top:15px"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

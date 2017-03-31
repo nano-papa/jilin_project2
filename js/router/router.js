@@ -106,6 +106,18 @@ angular.module("myApp.router", ["ui.router"])
                 templateUrl: 'views/display_details.html',
                 controller: 'Display.Details'
             })
+            //活动
+            .state('activity', {
+                url: '/activity/:type/:id',
+                templateUrl: 'views/activity.html',
+                controller: 'Activity'
+            })
+            //活动详情页
+            .state('activitydetails', {
+                url: '/activitydetails/:id',
+                templateUrl: 'views/activity_details.html',
+                controller: 'Activity.Details'
+            })
 
         ;
     });
