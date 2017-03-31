@@ -36,8 +36,8 @@ angular.module('myApp.controllersdigitization', [])
         $scope.laypage = function () {
             $http({
                 method: "GET",
-                // url:'../virtual/getPCVirtual.do',
-                url: "data/v.json",
+                url:'../virtual/getPCVirtual.do',
+                // url: "data/v.json",
                 params: $scope.conditions
             })
                 .success(function (response) {
@@ -71,8 +71,8 @@ angular.module('myApp.controllersdigitization', [])
         $scope.getDataList = function () {
             $http({
                 method: "GET",
-                // url:'../virtual/getPCVirtual.do',
-                url: "data/v.json",
+                url:'../virtual/getPCVirtual.do',
+                // url: "data/v.json",
                 params: $scope.conditions
             })
                 .success(function (response) {

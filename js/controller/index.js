@@ -2,7 +2,7 @@
  * Created by jerry on 2017/3/20.
  */
 angular.module('myApp.controllersindex', [])
-    .controller('ParentControl', ['$scope','$rootScope','ipCookie',function ($scope,$rootScope,ipCookie) {
+    .controller('ParentControl', ['$scope','$rootScope','ipCookie','$window',function ($scope,$rootScope,ipCookie,$window) {
         $rootScope.showIndex = true;
         $rootScope.userinfor=ipCookie('userinfor');
         $scope.logout=function(e){
@@ -18,25 +18,23 @@ angular.module('myApp.controllersindex', [])
                     $rootScope.userinfor='';
                 })
         }
-        $scope.goback=function(e){
-            e.preventDefault();
+        $scope.goback=function(){
             $window.open('../toLogin.do');
         }
-        $scope.gocollection=function(){
-            $scope.keys=angular.element('#search').val();
-            if($scope.keys){
-                $state.go('collection',{keywords:$scope.keys})
-            }
-            else{
-                layer.msg('请输入搜索关键字！');
-                return
-            }
-        }
+        // $scope.gocollection=function(){
+        //     $scope.keys=angular.element('#search').val();
+        //     if($scope.keys){
+        //         $state.go('collection',{keywords:$scope.keys})
+        //     }
+        //     else{
+        //         layer.msg('请输入搜索关键字！');
+        //         return
+        //     }
+        // }
     }])
-    .controller('index_parentControl', ['$scope', '$rootScope',function ($scope,$rootScope) {
+    .controller('index_parentControl', ['$scope', '$rootScope','$http',function ($scope,$rootScope,$http) {
         $rootScope.showIndex = true;
         $scope.onetab=0;
-        console.log(123);
         $scope.changeTabone=function(tab){
             $scope.onetab=tab;
         };
@@ -44,13 +42,15 @@ angular.module('myApp.controllersindex', [])
         $scope.changeTabtwo=function(tab){
             $scope.twotab=tab;
         };
-        $scope.slides = [
-            {ur: 'img/banner.jpg'},
-            {ur: 'img/banner.jpg'},
-            {ur: 'img/banner.jpg'},
-            {ur: 'img/banner.jpg'},
-            {ur: 'img/banner.jpg'}
-        ];
+        $http({
+            method:'GET',
+            url:'../homePage/getHomePage.do',
+            // url:'data/index.json'
+        })
+            .success(function(response){
+                $scope.data=response.data;
+                $rootScope.mobile_url=response.data.mbRootpath;
+            });
         $scope.slider = function () {
             $('.slider').unslider({
                 autoplay: true,

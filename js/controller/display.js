@@ -38,8 +38,8 @@ angular.module('myApp.controllersdisplay', [])
         $scope.getConditions = function () {
             $http({
                 method: 'GET',
-                // url: '../spreadtrum/getPCSpreadtrum.do',
-                url:'data/display.json',
+                url: '../spreadtrum/getPCSpreadtrum.do',
+                // url:'data/display.json',
                 params: $scope.conditions
             })
                 .success(function (response) {
@@ -49,8 +49,8 @@ angular.module('myApp.controllersdisplay', [])
         $scope.getDataList = function () {
             $http({
                 method: 'GET',
-                // url: '../spreadtrum/getPCSpreadtrum.do',
-                url:'data/display.json',
+                url: '../spreadtrum/getPCSpreadtrum.do',
+                // url:'data/display.json',
                 params: $scope.conditions
             })
                 .success(function (response) {
@@ -155,8 +155,8 @@ angular.module('myApp.controllersdisplay', [])
         $scope.laypage = function () {
             $http({
                 method: 'GET',
-                // url: '../spreadtrum/getPCSpreadtrum.do',
-                url:'data/display.json',
+                url: '../spreadtrum/getPCSpreadtrum.do',
+                // url:'data/display.json',
                 params: $scope.conditions
             })
                 .success(function (response) {
@@ -195,8 +195,8 @@ angular.module('myApp.controllersdisplay', [])
         $scope.pages = 5;
         $scope.sce=$sce.trustAsHtml;
         if ($stateParams.type == 'inner') {
-            // $scope.url='../spreadtrum/getOneSpreadtrum.do';
-            $scope.url='data/display-details.json';
+            $scope.url='../spreadtrum/getOneSpreadtrum.do';
+            // $scope.url='data/display-details.json';
         }
         $http({
             method: 'GET',

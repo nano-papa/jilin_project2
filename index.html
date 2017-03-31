@@ -8,34 +8,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="favicon.ico">
     <link rel="stylesheet" href="css/video-js.min.css">
+    <script type="text/javascript" src="js/libs/jquery-1.9.1.js"></script>
     <script type="text/javascript">
-        //        var commonURL = 'http://www.jsdaima.com/';
-        function mobile_device_detect(url){
-            var thisOS=navigator.platform;
-            var os=new Array("iPhone","iPod","iPad","android","Nokia","SymbianOS","Symbian","Windows Phone","Phone","Linux armv71","MAUI","UNTRUSTED/1.0","Windows CE","BlackBerry","IEMobile");
-            for(var i=0;i<os.length;i++){
-                if(thisOS.match(os[i])){
-                    window.location=url;
+        $.ajax({
+            type:'GET',
+            url:"../homePage/getHomePage.do",
+            dataType:"text",
+            success:function(json){
+                var datas=eval("("+json+")");
+                function mobile_device_detect(url){
+                    var thisOS=navigator.platform;
+                    var os=new Array("iPhone","iPod","iPad","android","Nokia","SymbianOS","Symbian","Windows Phone","Phone","Linux armv71","MAUI","UNTRUSTED/1.0","Windows CE","BlackBerry","IEMobile");
+                    for(var i=0;i<os.length;i++){
+                        if(thisOS.match(os[i])){
+                            window.location=url;
+                        }
+                    }
+                    if(navigator.platform.indexOf('iPad') != -1){
+                        window.location=url;
+                    }
+                    var check = navigator.appVersion;
+                    if( check.match(/linux/i) ){
+                        if(check.match(/mobile/i) || check.match(/X11/i)) {
+                            window.location=url;
+                        }
+                    }
+                    Array.prototype.in_array = function(e){
+                        for(i=0;i<this.length;i++){
+                            if(this[i] == e)
+                                return true;
+                        }
+                        return false;
+                    }
                 }
+                console.log(datas.data.mbRootpath);
+                mobile_device_detect('../'+datas.data.mbRootpath);/*指定跳转地址*/
             }
-            if(navigator.platform.indexOf('iPad') != -1){
-                window.location=url;
-            }
-            var check = navigator.appVersion;
-            if( check.match(/linux/i) ){
-                if(check.match(/mobile/i) || check.match(/X11/i)) {
-                    window.location=url;
-                }
-            }
-            Array.prototype.in_array = function(e){
-                for(i=0;i<this.length;i++){
-                    if(this[i] == e)
-                        return true;
-                }
-                return false;
-            }
-        }
-        mobile_device_detect("../front/index.html");/*指定跳转地址*/
+        })
     </script>
 </head>
 <body ng-controller="ParentControl">
@@ -45,7 +54,6 @@
     </div>
 </div>
 <footer ng-include="'views/footer.html'" ng-if="showIndex"></footer>
-    <script type="text/javascript" src="js/libs/jquery-1.9.1.js"></script>
     <script type="text/javascript" src="js/libs/unslider-min.js"></script>
     <script type="text/javascript" src="js/libs/layer/layer.js"></script>
     <script type="text/javascript" src="js/libs/laypage.js"></script>
@@ -56,7 +64,7 @@
     <script type="text/javascript" src="js/libs/angular-ui-router.js"></script>
     <script type="text/javascript" src="js/libs/angular-sanitize.min.js"></script>
     <script type="text/javascript" src="js/libs/angular-cookies.min.js"></script>
-    <!--<script type="text/javascript" src="js/bundle.js"></script>-->
-    <script type="text/javascript" src="http://localhost:8082/bundle.js"></script>
+    <script type="text/javascript" src="js/bundle.js"></script>
+    <!--<script type="text/javascript" src="http://localhost:8082/bundle.js"></script>-->
 </body>
 </html>

@@ -4,8 +4,8 @@
 <div class="museum-details">
     <div class="museum-details-img">
         <ul>
-            <li ng-repeat="sl in sliders" repeat-done="slider6()">
-                <img ng-src="{{sl.url}}" width="640" height="360"/>
+            <li ng-repeat="sl in data.carouselList" repeat-done="slider6()">
+                <img ng-src="{{sl.backUrl}}" width="640" height="360"/>
             </li>
         </ul>
     </div>

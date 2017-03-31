@@ -85,8 +85,8 @@ angular.module('myApp.controllerscollection', [])
         getList();
         function getList() {
             if($scope.iPage <= 5){
-                // $http.get("../front/OCCollection/info.do?yearType="
-                    $http.get("data/collection_data1.json?yearType="
+                $http.get("../front/OCCollection/info.do?yearType="
+                    // $http.get("data/collection_data1.json?yearType="
                     + $scope.selectedcondition.year +
                     '&collectionUnit=' + $scope.selectedcondition.unit +
                     '&collectionsCategory=' + $scope.selectedcondition.classify +
@@ -223,8 +223,8 @@ angular.module('myApp.controllerscollection', [])
 
         //选择条件除了地区和收藏单位数据
         $scope.getDataList = function () {
-            // $http.get("../front/OCCollection/info.do?yearType="
-                $http.get("data/collection_data1.json?yearType="
+            $http.get("../front/OCCollection/info.do?yearType="
+                // $http.get("data/collection_data1.json?yearType="
                 + $scope.selectedcondition.year +
                 '&collectionUnit=' + $scope.selectedcondition.unit +
                 '&collectionsCategory=' + $scope.selectedcondition.classify +
@@ -350,14 +350,19 @@ angular.module('myApp.controllerscollection', [])
         }
         //切换最新和最热
         $scope.changeBtn = function (e) {
-            $scope.isActive = !$scope.isActive;
-            $scope.selectedcondition.iPage = 1;
-            $scope.selectedcondition.sort = angular.element(e.target).attr('data-status');
-            $scope.selected.sort = angular.element(e.target).html();
-            ;
-            $('#ul1 li').html(" ");
-            $scope.iPage = 1;
-            getList();
+            if(!angular.element(e.target).hasClass("active")){
+                $scope.isActive = !$scope.isActive;
+                $scope.selectedcondition.iPage = 1;
+                $scope.selectedcondition.sort = angular.element(e.target).attr('data-status');
+                $scope.selected.sort = angular.element(e.target).html();
+                ;
+                $('#ul1 li').html(" ");
+                $scope.iPage = 1;
+                getList();
+            }
+            else{
+                return;
+            }
         }
 
     }])
@@ -404,8 +409,8 @@ angular.module('myApp.controllerscollection', [])
         getList();
         function getList() {
             if($scope.iPage<=5){
-                // $http.get("../front/OCFossil/info.do?yearType="
-                    $http.get("data/collection_data2.json?yearType="
+                $http.get("../front/OCFossil/info.do?yearType="
+                    // $http.get("data/collection_data2.json?yearType="
                     + $scope.selectedcondition.year +
                     '&collectionUnit=' + $scope.selectedcondition.unit +
                     '&collectionsCategory=' + $scope.selectedcondition.classify +
@@ -539,8 +544,8 @@ angular.module('myApp.controllerscollection', [])
 
         //选择条件除了地区和收藏单位数据
         $scope.getDataList = function () {
-            // $http.get("../front/OCFossil/info.do?yearType="
-                $http.get("data/collection_data2.json?yearType="
+            $http.get("../front/OCFossil/info.do?yearType="
+                // $http.get("data/collection_data2.json?yearType="
                 + $scope.selectedcondition.year +
                 '&collectionUnit=' + $scope.selectedcondition.unit +
                 '&collectionsCategory=' + $scope.selectedcondition.classify +
@@ -731,8 +736,8 @@ angular.module('myApp.controllerscollection', [])
         $scope.getDetail = function () {
             $stateParams.type == 'Relic' ? $scope.url= "../front/OCCollection/detail.do?id=":$scope.url='../front/OCFossil/detail.do?id='
             console.log($scope.url);
-            // $http.get($scope.url
-                $http.get("data/collection_details.json?id="
+            $http.get($scope.url
+                // $http.get("data/collection_details.json?id="
                 + $stateParams.id)
                 .success(function (response) {
                     $scope.data = response.data.mocid||response.data.mofid;
@@ -807,8 +812,8 @@ angular.module('myApp.controllerscollection', [])
         $scope.id=$stateParams.id;
         $scope.video = function () {
             $stateParams.type == 'Relic' ? $scope.url= "../front/OCCollection/detail.do?id=":$scope.url='../front/OCFossil/detail.do?id='
-            // $http.get($scope.url
-                $http.get("data/collection_details.json?id="
+            $http.get($scope.url
+                // $http.get("data/collection_details.json?id="
                 + $stateParams.id)
                 .success(function (response) {
                     $scope.sce=$sce.trustAsResourceUrl;

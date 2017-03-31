@@ -55,43 +55,16 @@
                     </li>
                 </ul>
                 <ol ng-show="onetab===1" style="opacity: 1">
-                    <li class="index-chunk-one-content-item-new">
+                    <li class="index-chunk-one-content-item-new" ng-repeat="display in data.spreList">
                         <div class="index-chunk-one-content-item-img">
-                            <img width="297" height="170" src="img/newdisplay.png" alt="">
+                            <img width="297" height="170" ng-src="{{display.pictureThumb}}" alt="">
                         </div>
                         <div class="index-chunk-one-content-item-msg">
-                            <h1><a href="">猜灯谜，绘灯笼，闹元宵！</a></h1>
-                            <h4>吉林省博物馆</h4>
-                            <p>赏明月，花好月圆；观花灯，诗意盎然；舞龙狮，“钱”途灿烂；吃元宵，甜蜜永远。为更好地让观众体验传统文化
-                                赏明月，花好月圆；观花灯，诗意盎然；舞龙狮，“钱”途灿烂；吃元宵，甜蜜永远。为更好地让观众体验传统文化赏明月，花好月圆；观花灯，诗意盎然；舞龙狮，“钱”途灿烂；吃元宵，甜蜜永远。为更好地让观众体验传统文化
+                            <h1><a href="" ng-bind="display.headline" ui-sref="displaydetails({id:display.id,type:'inner'})"></a></h1>
+                            <h4 ng-bind="display.musExhibition"></h4>
+                            <p ng-bind-html="display.content">
                             </p>
-                            <h6><a href="">查看详情</a></h6>
-                        </div>
-                    </li>
-                    <li class="index-chunk-one-content-item-new">
-                        <div class="index-chunk-one-content-item-img">
-                            <img width="297" height="170" src="img/newdisplay.png" alt="">
-                        </div>
-                        <div class="index-chunk-one-content-item-msg">
-                            <h1><a href="">猜灯谜，绘灯笼，闹元宵！</a></h1>
-                            <h4>吉林省博物馆</h4>
-                            <p>赏明月，花好月圆；观花灯，诗意盎然；舞龙狮，“钱”途灿烂；吃元宵，甜蜜永远。为更好地让观众体验传统文化
-                                赏明月，花好月圆；观花灯，诗意盎然；舞龙狮，“钱”途灿烂；吃元宵，甜蜜永远。为更好地让观众体验传统文化赏明月，花好月圆；观花灯，诗意盎然；舞龙狮，“钱”途灿烂；吃元宵，甜蜜永远。为更好地让观众体验传统文化
-                            </p>
-                            <h6><a href="">查看详情</a></h6>
-                        </div>
-                    </li>
-                    <li class="index-chunk-one-content-item-new">
-                        <div class="index-chunk-one-content-item-img">
-                            <img width="297" height="170" src="img/newdisplay.png" alt="">
-                        </div>
-                        <div class="index-chunk-one-content-item-msg">
-                            <h1><a href="">猜灯谜，绘灯笼，闹元宵！</a></h1>
-                            <h4>吉林省博物馆</h4>
-                            <p>赏明月，花好月圆；观花灯，诗意盎然；舞龙狮，“钱”途灿烂；吃元宵，甜蜜永远。为更好地让观众体验传统文化
-                                赏明月，花好月圆；观花灯，诗意盎然；舞龙狮，“钱”途灿烂；吃元宵，甜蜜永远。为更好地让观众体验传统文化赏明月，花好月圆；观花灯，诗意盎然；舞龙狮，“钱”途灿烂；吃元宵，甜蜜永远。为更好地让观众体验传统文化
-                            </p>
-                            <h6><a href="">查看详情</a></h6>
+                            <h6><a ui-sref="displaydetails({id:display.id,type:'inner'})">查看详情</a></h6>
                         </div>
                     </li>
                 </ol>
@@ -186,117 +159,26 @@
             </ul>
             <div class="index-chunk-three-content">
                 <ul ng-show="twotab===0">
-                    <li>
-                        <a href="">
+                    <li ng-repeat="collection in data.culList | limitTo:9">
+                        <a target="_blank" ui-sref="collectiondetails({type:(collection.mipOpenCulturalrelicInfo?'Relic':'specimen'),id:collection.mipOpenCulturalrelicInfo.id||collection.mipOpenFossilInfo.id})">
                             <div>
-                                <img src="img/collection.png" width="192" height="128" alt="">
+                                <img ng-src="{{collection.picture.thumb3}}" alt="">
                             </div>
-                            <h1>红山文化玉龙</h1>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <div>
-                                <img src="img/collection.png" width="192" height="128" alt="">
-                            </div>
-                            <h1>红山文化玉龙</h1>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <div>
-                                <img src="img/collection.png" width="192" height="128" alt="">
-                            </div>
-                            <h1>红山文化玉龙</h1>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <div>
-                                <img src="img/collection.png" width="192" height="128" alt="">
-                            </div>
-                            <h1>红山文化玉龙</h1>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <div>
-                                <img src="img/collection.png" width="192" height="128" alt="">
-                            </div>
-                            <h1>红山文化玉龙</h1>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <div>
-                                <img src="img/collection.png" width="192" height="128" alt="">
-                            </div>
-                            <h1>红山文化玉龙</h1>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <div>
-                                <img src="img/collection.png" width="192" height="128" alt="">
-                            </div>
-                            <h1>红山文化玉龙</h1>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <div>
-                                <img src="img/collection.png" width="192" height="128" alt="">
-                            </div>
-                            <h1>红山文化玉龙</h1>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <div>
-                                <img src="img/collection.png" width="192" height="128" alt="">
-                            </div>
-                            <h1>红山文化玉龙</h1>
+                            <h1 ng-bind="collection.mipOpenCulturalrelicInfo.name||collection.mipOpenFossilInfo.name"></h1>
                         </a>
                     </li>
                 </ul>
                 <ol ng-show="twotab===1">
-                    <li class="index-chunk-one-content-item-digi">
+                    <li class="index-chunk-one-content-item-digi" ng-repeat="digization in data.virtualList">
                         <div class="index-chunk-one-content-item-img">
-                            <img width="297" height="170" src="img/digizition.png" alt="">
+                            <a href="{{digization.viPCUrl}}">
+                                <img width="297" height="170" ng-src="{{digization.pictureThumb}}" alt="">
+                            </a>
                         </div>
                         <div class="index-chunk-one-content-item-msg">
-                            <h1><a href="">猜灯谜，绘灯笼，闹元宵！</a></h1>
-                            <h4>吉林省博物馆</h4>
-                            <p>赏明月，花好月圆；观花灯，诗意盎然；舞龙狮，“钱”途灿烂；吃元宵，甜蜜永远。为更好地让观众体验传统文化
-                                赏明月，花好月圆；观花灯，诗意盎然；舞龙狮，“钱”途灿烂；吃元宵，甜蜜永远。为更好地让观众体验传统文化赏明月，花好月圆；观花灯，诗意盎然；舞龙狮，“钱”途灿烂；吃元宵，甜蜜永远。为更好地让观众体验传统文化
-                                赏明月，花好月圆；观花灯，诗意盎然；舞龙狮，“钱”途灿烂；吃元宵，甜蜜永远。为更好地让观众体验传统文化赏明月，花好月圆；观花灯，诗意盎然；舞龙狮，“钱”途灿烂；吃元宵，甜蜜永远。为更好地让观众体验传统文化
-                                赏明月，花好月圆；观花灯，诗意盎然；舞龙狮，“钱”途灿烂；吃元宵，甜蜜永远。为更好地让观众体验传统文化赏明月，花好月圆；观花灯，诗意盎然；舞龙狮，“钱”途灿烂；吃元宵，甜蜜永远。为更好地让观众体验传统文化
-                            </p>
-                        </div>
-                    </li> <li class="index-chunk-one-content-item-digi">
-                        <div class="index-chunk-one-content-item-img">
-                            <img width="297" height="170" src="img/digizition.png" alt="">
-                        </div>
-                        <div class="index-chunk-one-content-item-msg">
-                            <h1><a href="">猜灯谜，绘灯笼，闹元宵！</a></h1>
-                            <h4>吉林省博物馆</h4>
-                            <p>赏明月，花好月圆；观花灯，诗意盎然；舞龙狮，“钱”途灿烂；吃元宵，甜蜜永远。为更好地让观众体验传统文化
-                                赏明月，花好月圆；观花灯，诗意盎然；舞龙狮，“钱”途灿烂；吃元宵，甜蜜永远。为更好地让观众体验传统文化赏明月，花好月圆；观花灯，诗意盎然；舞龙狮，“钱”途灿烂；吃元宵，甜蜜永远。为更好地让观众体验传统文化
-                                赏明月，花好月圆；观花灯，诗意盎然；舞龙狮，“钱”途灿烂；吃元宵，甜蜜永远。为更好地让观众体验传统文化赏明月，花好月圆；观花灯，诗意盎然；舞龙狮，“钱”途灿烂；吃元宵，甜蜜永远。为更好地让观众体验传统文化
-                                赏明月，花好月圆；观花灯，诗意盎然；舞龙狮，“钱”途灿烂；吃元宵，甜蜜永远。为更好地让观众体验传统文化赏明月，花好月圆；观花灯，诗意盎然；舞龙狮，“钱”途灿烂；吃元宵，甜蜜永远。为更好地让观众体验传统文化
-                            </p>
-                        </div>
-                    </li> <li class="index-chunk-one-content-item-digi">
-                        <div class="index-chunk-one-content-item-img">
-                            <img width="297" height="170" src="img/digizition.png" alt="">
-                        </div>
-                        <div class="index-chunk-one-content-item-msg">
-                            <h1><a href="">猜灯谜，绘灯笼，闹元宵！</a></h1>
-                            <h4>吉林省博物馆</h4>
-                            <p>赏明月，花好月圆；观花灯，诗意盎然；舞龙狮，“钱”途灿烂；吃元宵，甜蜜永远。为更好地让观众体验传统文化
-                                赏明月，花好月圆；观花灯，诗意盎然；舞龙狮，“钱”途灿烂；吃元宵，甜蜜永远。为更好地让观众体验传统文化赏明月，花好月圆；观花灯，诗意盎然；舞龙狮，“钱”途灿烂；吃元宵，甜蜜永远。为更好地让观众体验传统文化
-                                赏明月，花好月圆；观花灯，诗意盎然；舞龙狮，“钱”途灿烂；吃元宵，甜蜜永远。为更好地让观众体验传统文化赏明月，花好月圆；观花灯，诗意盎然；舞龙狮，“钱”途灿烂；吃元宵，甜蜜永远。为更好地让观众体验传统文化
-                                赏明月，花好月圆；观花灯，诗意盎然；舞龙狮，“钱”途灿烂；吃元宵，甜蜜永远。为更好地让观众体验传统文化赏明月，花好月圆；观花灯，诗意盎然；舞龙狮，“钱”途灿烂；吃元宵，甜蜜永远。为更好地让观众体验传统文化
+                            <h1 ng-bind="digization.viName"></h1>
+                            <h4 ng-bind="digization.musExhibition"></h4>
+                            <p ng-bind-html="digization.viIntro">
                             </p>
                         </div>
                     </li>

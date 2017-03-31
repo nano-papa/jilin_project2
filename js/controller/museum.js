@@ -10,22 +10,22 @@ angular.module('myApp.controllersmuseum', [])
     //博物馆地图
     .controller('MuseumMap', ['$scope', '$http', '$rootScope', '$stateParams', '$window', function ($scope, $http, $rootScope, $stateParams, $window) {
         $rootScope.showIndex = true;
-        $scope.cityid = {id: 2};
+        $scope.cityid = {id: 1};
         $scope.colorRating = [
-            '#d1bf99',
-            '#bead8a',
-            '#ad9e7d',
-            '#9e9072',
-            '#9c8a66',
-            '#9b8659',
-            '#9b8350',
+            '#896e36',
             '#957a41',
-            '#896e36'
+            '#9b8350',
+            '#9b8659',
+            '#9c8a66',
+            '#9e9072',
+            '#ad9e7d',
+            '#bead8a',
+            '#d1bf99',
         ];
         $http({
             method: "GET",
-            url: 'data/data_map.json',
-            // url: '../area/getAreaList.do'
+            // url: 'data/data_map.json',
+            url: '../area/getAreaList.do'
         }).success(function (response) {
             for (var i = 0, len = response.length; i < len; i++) {
                 var index = response[i].cityOrder;
@@ -38,7 +38,7 @@ angular.module('myApp.controllersmuseum', [])
             $(this).css({
                 cursor: 'pointer',
                 fill: '#ea703a',
-                transition: 'all .8s'
+                transition: 'all .5s'
             })
         }, function () {
             $(this).css({
@@ -52,16 +52,30 @@ angular.module('myApp.controllersmuseum', [])
     }])
     //博物馆详情页
     .controller('MuseumDetails', ['$scope', '$rootScope','$http','$stateParams', '$sce',function ($scope, $rootScope,$http,$stateParams,$sce) {
-        $http({
-            method:"GET",
-            // url:'data/museumslider.json',
-            url:'data/museumDetails.json',
-            params:{orgId:$stateParams.id}
-        })
-            .success(function(response){
-                $scope.sliders=response;
-                console.log($scope.sliders);
-            });
+        // $http({
+        //     method:"GET",
+        //     url:'data/museumslider.json',
+        //     // url:'data/museumDetails.json',
+        //     params:{orgId:$stateParams.id}
+        // })
+        //     .success(function(response){
+        //         $scope.sliders=response;
+        //         console.log($scope.sliders);
+        //     });
+        $scope.Rating=function(num){
+            if(num===1){
+                return '一级博物馆';
+            }
+            else if(num===2){
+                return '二级博物馆';
+            }
+            else if(num===3){
+                return '三级博物馆';
+            }
+            else if(num===4){
+                return '未定级博物馆';
+            }
+        };
         $scope.slider6 = function () {
             $('.museum-details-img').unslider({
                 autoplay: true,
@@ -72,8 +86,8 @@ angular.module('myApp.controllersmuseum', [])
         };
         $http({
             method:"GET",
-            // url:'../museuminfo/getMuseum.do',
-            url:'data/museumDetails.json',
+            url:'../museuminfo/getMuseum.do',
+            // url:'data/museumDetails.json',
             params:{orgId:$stateParams.id}
         })
             .success(function(response){
