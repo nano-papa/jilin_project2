@@ -191,8 +191,6 @@ angular.module('myApp.controllersdisplay', [])
  //展览详情页
 .controller('Display.Details', ['$scope', '$http', '$stateParams', '$rootScope', '$sce',function ($scope, $http, $stateParams, $rootScope,$sce) {
         $rootScope.showIndex = true;
-        $scope.curr = 1;
-        $scope.pages = 5;
         $scope.sce=$sce.trustAsHtml;
         if ($stateParams.type == 'inner') {
             $scope.url='../spreadtrum/getOneSpreadtrum.do';

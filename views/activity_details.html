@@ -7,66 +7,38 @@
         <div class="activity-details-content">
             <div class="activity-details-content-one">
                 <figure>
-                    <h1>黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀</h1>
-                    <h3>举办馆：<span>吉林省博物馆</span><span style="margin-left: 60px">2010/10/20</span></h3>
-                    <img src="img/activity.png" width="640" height="426"/>
+                    <h1 ng-bind="detailsData.activityName"></h1>
+                    <h3>举办馆：<span ng-bind="detailsData.activityName"></span><span style="margin-left: 60px" ng-bind="detailsData.publishDate"></span></h3>
+                    <img ng-src="{{detailsData.mainPic}}" width="640" height="426"/>
                 </figure>
                 <table>
                     <tbody>
                     <tr>
                         <td>活动类型：</td>
-                        <td>校馆联合活动</td>
+                        <td ng-bind="detailsData.categoryName"></td>
                     </tr>
                     <tr>
                         <td>活动时间：</td>
-                        <td>2017-02-14  09:00AM</td>
+                        <td ng-bind="detailsData.activityDate"></td>
                     </tr>
                     <tr>
                         <td>活动地点：</td>
-                        <td>吉林省博物院3F教室</td>
+                        <td ng-bind="detailsData.activityPlace"></td>
                     </tr>
                     </tbody>
                 </table>
-                <p>
-                    吉林历史久远，早在40000到70000年前，就有人类在这块沃土上劳动、生息和繁衍。
-                    按时间顺序 周为肃慎地，汉为挹娄、扶余地，唐为渤海地，辽为上京、东京等道，金为上京、咸平等路，元属辽阳行书省，明为女真地，领于奴儿干都司，清初为吉林将军辖区，清末民初为吉林省。
-                    按地理民族 除汉族外，还有三大族系，一为肃慎族后改为挹娄，勿吉，女真，满族，主要居于东部；二为夫余族及分支高句丽，夫余居西北部，高句丽居南部；三为东胡族的乌桓，鲜卑，契丹，室韦（蒙古）等族， 主要居于西部地区。公元1644年，清统一中国后，在全国设18个省，因东北是清朝的发祥地，故为满族独占的禁区，不设行省，而设盛京（后改为奉天）、吉林（满语为沿江之意）、黑龙江三个辖区。当时吉林的区域为，东到日本海，南到图们江、鸭绿江，临鄂霍次克海，西接黑龙江、哲里木盟。光绪年间，逐步增设吉林府、长春府、五常厅、双城厅、伊通州，1907年（光年）废将制，改行省、设吉林巡抚，统管吉林全境。中华民国成立后，沿袭了清朝的行政区划。全省分4道、37县。政权制亦几经变化。1931年“九.一八” 事变后，东北沦陷，东北被肢解为19省，吉林省仅辖1市、1旗、17县。
-                    1945年8月，日投降，吉林省人民政府建立，辖1个专区，20个县。1949年中华人民共和国成立初期，吉林省辖2个市、1个专区、22个县和1个工业 区。1954年，东北行政区划调整，将原黑龙江省的7个县划归吉林省，与乾安县并设白城专区；将原辽东省的 1市9县划归吉林省，设立通化专区；将原辽东省的辽源市、西安县、东丰县和辽西省的四平市、双辽县、梨树 县划归吉林管辖。同年吉林省人民政府由吉林市迁至长春市。1969年，将内荣古自治区的哲里木盟和呼伦贝尔盟的1县1旗划归吉林省，1979年又划回内蒙古自治区。
-                </p>
+                <div ng-bind-html="sce(detailsData.content)">
+                </div>
             </div>
             <div class="activity-details-content-two">
                 <h1>近期活动</h1>
                 <ul>
-                    <li>
+                    <li ng-repeat="other in detailsData.lastActivities">
                         <figure>
-                            <a ui-sref="activitydetails({id:'4444'})">
-                                <img src="img/active.png" width="220" height="147"/>
-                                <figcaption>桥的说法是打发斯蒂芬</figcaption>
-                                <p><span>吉林省博物馆</span><span>2017/12/1</span></p>
-                            </a>
-                        </figure>
-                    </li><li>
-                        <figure>
-                            <a ui-sref="activitydetails({id:'4444'})">
-                                <img src="img/active.png" width="220" height="147"/>
-                                <figcaption>桥的说法是打发斯蒂芬</figcaption>
-                                <p><span>吉林省博物馆</span><span>2017/12/1</span></p>
-                            </a>
-                        </figure>
-                    </li><li>
-                        <figure>
-                            <a ui-sref="activitydetails({id:'4444'})">
-                                <img src="img/active.png" width="220" height="147"/>
-                                <figcaption>桥的说法是打发斯蒂芬</figcaption>
-                                <p><span>吉林省博物馆</span><span>2017/12/1</span></p>
-                            </a>
-                        </figure>
-                    </li><li>
-                        <figure>
-                            <a ui-sref="activitydetails({id:'4444'})">
-                                <img src="img/active.png" width="220" height="147"/>
-                                <figcaption>桥的说法是打发斯蒂芬</figcaption>
-                                <p><span>吉林省博物馆</span><span>2017/12/1</span></p>
+                            <a ui-sref="activitydetails({id:other.id})">
+                                <img ng-src="{{other.pictureThumb}}" width="220" height="147"/>
+                                <figcaption ng-bind="other.activityName"></figcaption>
+                                <p><span ng-bind="other.musExhibition"></span><span ng-bind="other.activityDate"></span></p>
                             </a>
                         </figure>
                     </li>

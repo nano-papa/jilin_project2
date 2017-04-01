@@ -289,11 +289,12 @@ footer {
           font-weight: bold;
           color: #723f3f;
           font-size: 12px; }
-      .activity-details .activity-details-content .activity-details-content-one p {
-        font-size: 12px;
-        line-height: 20px;
-        color: #666;
+      .activity-details .activity-details-content .activity-details-content-one div {
         min-height: 330px; }
+        .activity-details .activity-details-content .activity-details-content-one div p {
+          font-size: 12px;
+          line-height: 20px;
+          color: #666; }
     .activity-details .activity-details-content .activity-details-content-two {
       margin-left: 67px; }
       .activity-details .activity-details-content .activity-details-content-two h1 {

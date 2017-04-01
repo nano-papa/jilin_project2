@@ -91,11 +91,12 @@ angular.module("myApp.router", ["ui.router"])
                     }
                 }
             })
-            // .state('Wiki', {
-            //     url: '/wiki',
-            //     templateUrl: 'template/Wiki.html',
-            //     controller:'wiki'
-            // })
+            //文创列表
+            .state('Art', {
+                url: '/Art:museum/:id',
+                templateUrl: 'views/Art.html',
+                controller:'Art'
+            })
             .state('display', {
                 url: '/display/:museum/:id',
                 templateUrl: 'views/display.html',
