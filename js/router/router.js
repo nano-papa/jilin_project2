@@ -119,6 +119,11 @@ angular.module("myApp.router", ["ui.router"])
                 templateUrl: 'views/activity_details.html',
                 controller: 'Activity.Details'
             })
-
+            //历史吉林
+            .state('history',{
+                url:"/history",
+                templateUrl:"views/history.html",
+                controller:'History'
+            })
         ;
     });

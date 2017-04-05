@@ -1,0 +1,119 @@
+@charset "utf-8";
+@import "common";
+$theme-color:#723f3f;
+$theme-color-active: #dc4652;
+$theme-color-pink1: #723f3f;
+$theme-color-pink2: #dc4652;
+$theme-color-pink-active: #ea703a;
+.sliders{
+  height:455px;
+}
+.history-inner{
+  padding:0 85px;
+  display:flex;
+  flex-flow: row;
+  .history-items{
+    width:678px;
+    .history-item{
+      padding-bottom:10px;
+      border-bottom:1px solid #eee;
+      p{
+        display: flex;
+        flex-flow: row;
+        justify-content: space-between;
+        height:60px;
+        span{
+          display:inline;
+          padding:5px 8px;
+          height:20px;
+          background:$theme-color-pink2;
+          font-weight:bold;
+          color:#fff;
+          line-height:20px;
+          font-size:18px;
+          margin-top:15px;
+        }
+        a{
+          color:$theme-color-pink1;
+          line-height:50px;
+          &:hover{
+            color:$theme-color-pink2;
+          }
+        }
+      }
+      ul{
+        display: flex;
+        flex-flow: row;
+        li{
+          width:297px;
+          &:not(:last-child){
+            margin-right:83px;
+          }
+          a{
+            color:#000;
+            h1{
+              margin-top:10px;
+              @include simpleLine(297);
+              font-size:14px;
+              line-height:25px;
+            }
+            figcaption{
+              font-size:12px;
+              line-height:18px;
+              color:#0d0d0d;
+              @include limitLine(3,297,54);
+            }
+            h3,h4{
+              font-size:12px;
+              font-weight:normal;
+              line-height:25px;
+              color:$theme-color-pink1;
+            }
+          }
+        }
+      }
+    }
+  }
+  .history-top-ten{
+    width:324px;
+    margin-left:37px;
+    margin-top:24px;
+    background:#f7f7f7;
+    padding-left:5px;
+    >h1{
+      font-size:18px;
+      line-height:25px;
+      color:#0d0d0d;
+    }
+    ul{
+      li{
+        padding:20px 0;
+        border-bottom:1px solid #eee;
+        a{
+          display: flex;
+          flex-flow: row;
+          color:#000;
+          .history-top-ten-img{
+
+          }
+          .history-top-ten-msg{
+            margin-left:10px;
+            h1{
+              font-size:16px;
+              font-weight:normal;
+              color:$theme-color-pink1;
+              @include simpleLine(140);
+              margin-bottom:10px;
+            }
+            p{
+              font-size:12px;
+              color:#0d0d0d;
+              line-height:16px;
+              @include limitLine(3,140,50);
+            }
+          }
+        }
+      }
+    }
+  }
+}

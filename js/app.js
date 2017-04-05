@@ -18,6 +18,7 @@ angular.module('myApp', [
     'myApp.controllersregister',
     'myApp.controllersactivity',
     'myApp.controllersArt',
+    'myApp.controllershistory',
     'myApp.router'
 ])
     .run(['$rootScope','$http',function($rootScope,$http){

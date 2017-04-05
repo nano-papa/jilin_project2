@@ -62,20 +62,23 @@
 	__webpack_require__(40);
 	__webpack_require__(44);
 	__webpack_require__(46);
-	var app=__webpack_require__(48);
-	var router=__webpack_require__(49);
-	var service=__webpack_require__(50);
-	var filter=__webpack_require__(51);
-	var directive=__webpack_require__(52);
-	var controller1=__webpack_require__(53);
-	var controller2=__webpack_require__(54);
-	var controller3=__webpack_require__(55);
-	var controller4=__webpack_require__(56);
-	var controller5=__webpack_require__(57);
-	var controller5=__webpack_require__(58);
+	__webpack_require__(48);
+	var app=__webpack_require__(50);
+	var router=__webpack_require__(51);
+	var service=__webpack_require__(52);
+	var filter=__webpack_require__(53);
+	var directive=__webpack_require__(54);
+	var controller1=__webpack_require__(55);
+	var controller2=__webpack_require__(56);
+	var controller3=__webpack_require__(57);
+	var controller4=__webpack_require__(58);
 	var controller5=__webpack_require__(59);
-	var controller6=__webpack_require__(60);
-	var controller7=__webpack_require__(61);
+	var controller5=__webpack_require__(60);
+	var controller5=__webpack_require__(61);
+	var controller6=__webpack_require__(62);
+	var controller7=__webpack_require__(63);
+	var controller8=__webpack_require__(64);
+
 
 /***/ },
 /* 1 */
@@ -1049,6 +1052,46 @@
 
 /***/ },
 /* 48 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+
+	// load the styles
+	var content = __webpack_require__(49);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(4)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!../node_modules/css-loader/index.js!../node_modules/postcss-loader/index.js!./history.css", function() {
+				var newContent = require("!!../node_modules/css-loader/index.js!../node_modules/postcss-loader/index.js!./history.css");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 49 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(3)();
+	// imports
+
+
+	// module
+	exports.push([module.id, "@charset \"UTF-8\";\r\n/* http://meyerweb.com/eric/tools/css/reset/\r\n   v2.0 | 20110126\r\n   License: none (public domain)\r\n*/\r\nhtml, body, div, span, applet, object, iframe,\r\nh1, h2, h3, h4, h5, h6, p, blockquote, pre,\r\na, abbr, acronym, address, big, cite, code,\r\ndel, dfn, em, img, ins, kbd, q, s, samp,\r\nsmall, strike, strong, sub, sup, tt, var,\r\nb, u, i, center,\r\ndl, dt, dd, ol, ul, li,\r\nfieldset, form, label, legend,\r\ntable, caption, tbody, tfoot, thead, tr, th, td,\r\narticle, aside, canvas, details, embed,\r\nfigure, figcaption, footer, header, hgroup,\r\nmenu, nav, output, ruby, section, summary,\r\ntime, mark, audio, video {\r\n  margin: 0;\r\n  padding: 0;\r\n  border: 0;\r\n  font-family: \"Microsoft YaHei UI\";\r\n  font-size: 16px;\r\n  vertical-align: bottom; }\r\n\r\n/* HTML5 display-role reset for older browsers */\r\narticle, aside, details, figcaption, figure,\r\nfooter, header, hgroup, menu, nav, section {\r\n  display: block; }\r\n\r\nbody {\r\n  line-height: 1;\r\n  background: #eee; }\r\n\r\nol, ul {\r\n  list-style: none; }\r\n\r\nblockquote, q {\r\n  quotes: none; }\r\n\r\nblockquote:before, blockquote:after,\r\nq:before, q:after {\r\n  content: '';\r\n  content: none; }\r\n\r\ntable {\r\n  border-collapse: collapse;\r\n  border-spacing: 0; }\r\n\r\ninput {\r\n  outline: none; }\r\n\r\nbutton {\r\n  font-family: \"Microsoft YaHei UI\";\r\n  outline: none;\r\n  border: none; }\r\n\r\n.wrapper {\r\n  width: 1200px;\r\n  margin: auto;\r\n  background: rgba(255, 255, 255, 0.9); }\r\n\r\n.index-outer {\r\n  background: url(" + __webpack_require__(7) + ") no-repeat;\r\n  background-size: 100% 100%; }\r\n\r\na {\r\n  text-decoration: none;\r\n  color: #fff; }\r\n  a:hover, a.active {\r\n    color: #dc4652; }\r\n\r\n.header {\r\n  width: 100%;\r\n  background: #1e2326; }\r\n  .header .header-inner {\r\n    margin: 0 auto;\r\n    width: 1200px;\r\n    height: 70px;\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-pack: justify;\r\n        -ms-flex-pack: justify;\r\n            justify-content: space-between;\r\n    -webkit-box-align: center;\r\n        -ms-flex-align: center;\r\n            align-items: center; }\r\n    .header .header-inner .header-inner-logo {\r\n      height: 30px;\r\n      width: 395px; }\r\n    .header .header-inner .header-inner-service {\r\n      position: relative;\r\n      width: 200px;\r\n      height: 20px; }\r\n      .header .header-inner .header-inner-service ul {\r\n        display: -webkit-box;\r\n        display: -ms-flexbox;\r\n        display: flex; }\r\n        .header .header-inner .header-inner-service ul li {\r\n          height: 16px; }\r\n          .header .header-inner .header-inner-service ul li a {\r\n            display: inline-block;\r\n            font-size: 12px;\r\n            line-height: 16px; }\r\n          .header .header-inner .header-inner-service ul li:first-child {\r\n            border-right: 1px solid #fff; }\r\n            .header .header-inner .header-inner-service ul li:first-child a {\r\n              padding-right: 8px; }\r\n          .header .header-inner .header-inner-service ul li:nth-child(2) a {\r\n            padding-left: 8px; }\r\n      .header .header-inner .header-inner-service button {\r\n        position: absolute;\r\n        right: 35px;\r\n        top: -2px;\r\n        color: #fff;\r\n        cursor: pointer;\r\n        background: #723f3f; }\r\n  .header .header-inners {\r\n    width: 100%;\r\n    background: #2a2a2a; }\r\n    .header .header-inners nav {\r\n      border-top: 2px solid #35393c;\r\n      display: -webkit-box;\r\n      display: -ms-flexbox;\r\n      display: flex;\r\n      -webkit-box-pack: center;\r\n          -ms-flex-pack: center;\r\n              justify-content: center; }\r\n      .header .header-inners nav ul {\r\n        display: -webkit-box;\r\n        display: -ms-flexbox;\r\n        display: flex;\r\n        -webkit-box-orient: horizontal;\r\n        -webkit-box-direction: normal;\r\n            -ms-flex-flow: row;\r\n                flex-flow: row;\r\n        height: 69px;\r\n        -webkit-box-pack: center;\r\n            -ms-flex-pack: center;\r\n                justify-content: center;\r\n        width: 970px; }\r\n        .header .header-inners nav ul li:not(last-child) {\r\n          border-right: 1px solid #353535;\r\n          border-left: 1px solid #0d0c08; }\r\n        .header .header-inners nav ul li a {\r\n          padding: 0 36px;\r\n          line-height: 69px;\r\n          display: inline-block;\r\n          height: 69px; }\r\n          .header .header-inners nav ul li a:hover, .header .header-inners nav ul li a.active {\r\n            color: #fff;\r\n            background: #dc1720; }\r\n\r\nfooter {\r\n  width: 100%;\r\n  height: 212px;\r\n  background: #333333;\r\n  color: #fff;\r\n  border-top: 5px solid #dc4652; }\r\n  footer p {\r\n    margin: auto;\r\n    font-size: 14px;\r\n    text-align: center;\r\n    padding-top: 36px; }\r\n    footer p span {\r\n      line-height: 25px;\r\n      color: #fff; }\r\n  footer ul {\r\n    overflow: hidden;\r\n    margin: 0 auto;\r\n    width: 637px;\r\n    margin-top: 20px; }\r\n    footer ul li {\r\n      float: left;\r\n      border-right: 1px solid #fff; }\r\n      footer ul li:last-child {\r\n        border: none; }\r\n      footer ul li a {\r\n        color: #fff;\r\n        font-size: 12px;\r\n        padding: 0 20px; }\r\n\r\n/*面包屑*/\r\n.breadcrumb {\r\n  font-size: 18px;\r\n  color: #723f3f;\r\n  padding: 20px 83px 0px 83px; }\r\n  .breadcrumb u {\r\n    text-decoration: none;\r\n    line-height: 30px; }\r\n  .breadcrumb a {\r\n    color: #723f3f;\r\n    line-height: 30px; }\r\n    .breadcrumb a:hover {\r\n      color: #dc4652; }\r\n  .breadcrumb span {\r\n    line-height: 30px; }\r\n  .breadcrumb .tab-items {\r\n    float: right; }\r\n    .breadcrumb .tab-items button {\r\n      border: none;\r\n      color: #666;\r\n      background: #f2f2f2;\r\n      padding: 5px 20px;\r\n      font-size: 14px;\r\n      font-weight: bold;\r\n      border-bottom: 2px solid #fff; }\r\n      .breadcrumb .tab-items button:hover {\r\n        color: #fff;\r\n        background: #666;\r\n        border-bottom: 2px solid #ea703a; }\r\n      .breadcrumb .tab-items button.active {\r\n        color: #fff;\r\n        background: #666;\r\n        border-bottom: 2px solid #ea703a; }\r\n\r\n.PagePlugs {\r\n  text-align: center; }\r\n\r\n/* 设置滚动条的样式 */\r\n::-webkit-scrollbar {\r\n  width: 2px;\r\n  height: 2px; }\r\n\r\n/* 滚动槽 */\r\n::-webkit-scrollbar-track {\r\n  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);\r\n  border-radius: 2px; }\r\n\r\n/* 滚动条滑块 */\r\n::-webkit-scrollbar-thumb {\r\n  border-radius: 2px;\r\n  background: rgba(0, 0, 0, 0.1);\r\n  -webkit-box-shadow: inset 0 0 6px #723f3f; }\r\n\r\n::-webkit-scrollbar-thumb:window-inactive {\r\n  background: #723f3f; }\r\n\r\n.sliders {\r\n  height: 455px; }\r\n\r\n.history-inner {\r\n  padding: 0 85px;\r\n  display: -webkit-box;\r\n  display: -ms-flexbox;\r\n  display: flex;\r\n  -webkit-box-orient: horizontal;\r\n  -webkit-box-direction: normal;\r\n      -ms-flex-flow: row;\r\n          flex-flow: row; }\r\n  .history-inner .history-items {\r\n    width: 678px; }\r\n    .history-inner .history-items .history-item {\r\n      padding-bottom: 10px;\r\n      border-bottom: 1px solid #eee; }\r\n      .history-inner .history-items .history-item p {\r\n        display: -webkit-box;\r\n        display: -ms-flexbox;\r\n        display: flex;\r\n        -webkit-box-orient: horizontal;\r\n        -webkit-box-direction: normal;\r\n            -ms-flex-flow: row;\r\n                flex-flow: row;\r\n        -webkit-box-pack: justify;\r\n            -ms-flex-pack: justify;\r\n                justify-content: space-between;\r\n        height: 60px; }\r\n        .history-inner .history-items .history-item p span {\r\n          display: inline;\r\n          padding: 5px 8px;\r\n          height: 20px;\r\n          background: #dc4652;\r\n          font-weight: bold;\r\n          color: #fff;\r\n          line-height: 20px;\r\n          font-size: 18px;\r\n          margin-top: 15px; }\r\n        .history-inner .history-items .history-item p a {\r\n          color: #723f3f;\r\n          line-height: 50px; }\r\n          .history-inner .history-items .history-item p a:hover {\r\n            color: #dc4652; }\r\n      .history-inner .history-items .history-item ul {\r\n        display: -webkit-box;\r\n        display: -ms-flexbox;\r\n        display: flex;\r\n        -webkit-box-orient: horizontal;\r\n        -webkit-box-direction: normal;\r\n            -ms-flex-flow: row;\r\n                flex-flow: row; }\r\n        .history-inner .history-items .history-item ul li {\r\n          width: 297px; }\r\n          .history-inner .history-items .history-item ul li:not(:last-child) {\r\n            margin-right: 83px; }\r\n          .history-inner .history-items .history-item ul li a {\r\n            color: #000; }\r\n            .history-inner .history-items .history-item ul li a h1 {\r\n              margin-top: 10px;\r\n              display: block;\r\n              width: 297px;\r\n              overflow: hidden;\r\n              text-overflow: ellipsis;\r\n              white-space: nowrap;\r\n              font-size: 14px;\r\n              line-height: 25px; }\r\n            .history-inner .history-items .history-item ul li a figcaption {\r\n              font-size: 12px;\r\n              line-height: 18px;\r\n              color: #0d0d0d;\r\n              display: -webkit-box;\r\n              -webkit-box-orient: vertical;\r\n              -webkit-line-clamp: 3;\r\n              overflow: hidden;\r\n              width: 297px;\r\n              height: 54px; }\r\n            .history-inner .history-items .history-item ul li a h3, .history-inner .history-items .history-item ul li a h4 {\r\n              font-size: 12px;\r\n              font-weight: normal;\r\n              line-height: 25px;\r\n              color: #723f3f; }\r\n  .history-inner .history-top-ten {\r\n    width: 324px;\r\n    margin-left: 37px;\r\n    margin-top: 24px;\r\n    background: #f7f7f7;\r\n    padding-left: 5px; }\r\n    .history-inner .history-top-ten > h1 {\r\n      font-size: 18px;\r\n      line-height: 25px;\r\n      color: #0d0d0d; }\r\n    .history-inner .history-top-ten ul li {\r\n      padding: 20px 0;\r\n      border-bottom: 1px solid #eee; }\r\n      .history-inner .history-top-ten ul li a {\r\n        display: -webkit-box;\r\n        display: -ms-flexbox;\r\n        display: flex;\r\n        -webkit-box-orient: horizontal;\r\n        -webkit-box-direction: normal;\r\n            -ms-flex-flow: row;\r\n                flex-flow: row;\r\n        color: #000; }\r\n        .history-inner .history-top-ten ul li a .history-top-ten-msg {\r\n          margin-left: 10px; }\r\n          .history-inner .history-top-ten ul li a .history-top-ten-msg h1 {\r\n            font-size: 16px;\r\n            font-weight: normal;\r\n            color: #723f3f;\r\n            display: block;\r\n            width: 140px;\r\n            overflow: hidden;\r\n            text-overflow: ellipsis;\r\n            white-space: nowrap;\r\n            margin-bottom: 10px; }\r\n          .history-inner .history-top-ten ul li a .history-top-ten-msg p {\r\n            font-size: 12px;\r\n            color: #0d0d0d;\r\n            line-height: 16px;\r\n            display: -webkit-box;\r\n            -webkit-box-orient: vertical;\r\n            -webkit-line-clamp: 3;\r\n            overflow: hidden;\r\n            width: 140px;\r\n            height: 50px; }\r\n\r\n/*# sourceMappingURL=history.css.map */\r\n", ""]);
+
+	// exports
+
+
+/***/ },
+/* 50 */
 /***/ function(module, exports) {
 
 	/**
@@ -1071,6 +1114,7 @@
 	    'myApp.controllersregister',
 	    'myApp.controllersactivity',
 	    'myApp.controllersArt',
+	    'myApp.controllershistory',
 	    'myApp.router'
 	])
 	    .run(['$rootScope','$http',function($rootScope,$http){
@@ -1085,7 +1129,7 @@
 	;
 
 /***/ },
-/* 49 */
+/* 51 */
 /***/ function(module, exports) {
 
 	/**
@@ -1209,13 +1253,18 @@
 	                templateUrl: 'views/activity_details.html',
 	                controller: 'Activity.Details'
 	            })
-
+	            //历史吉林
+	            .state('history',{
+	                url:"/history",
+	                templateUrl:"views/history.html",
+	                controller:'History'
+	            })
 	        ;
 	    });
 
 
 /***/ },
-/* 50 */
+/* 52 */
 /***/ function(module, exports) {
 
 	/**
@@ -1270,7 +1319,7 @@
 	    // })
 
 /***/ },
-/* 51 */
+/* 53 */
 /***/ function(module, exports) {
 
 	/**
@@ -1331,7 +1380,7 @@
 	;
 
 /***/ },
-/* 52 */
+/* 54 */
 /***/ function(module, exports) {
 
 	/**
@@ -1353,7 +1402,7 @@
 	;
 
 /***/ },
-/* 53 */
+/* 55 */
 /***/ function(module, exports) {
 
 	/**
@@ -1425,7 +1474,7 @@
 	;
 
 /***/ },
-/* 54 */
+/* 56 */
 /***/ function(module, exports) {
 
 	/**
@@ -1549,7 +1598,7 @@
 	    }]);
 
 /***/ },
-/* 55 */
+/* 57 */
 /***/ function(module, exports) {
 
 	/**
@@ -1761,7 +1810,7 @@
 	    }]);
 
 /***/ },
-/* 56 */
+/* 58 */
 /***/ function(module, exports) {
 
 	/**
@@ -1857,7 +1906,7 @@
 	    }]);
 
 /***/ },
-/* 57 */
+/* 59 */
 /***/ function(module, exports) {
 
 	/**
@@ -2692,7 +2741,7 @@
 	    }])
 
 /***/ },
-/* 58 */
+/* 60 */
 /***/ function(module, exports) {
 
 	/**
@@ -2749,7 +2798,7 @@
 	    }])
 
 /***/ },
-/* 59 */
+/* 61 */
 /***/ function(module, exports) {
 
 	/**
@@ -2934,7 +2983,7 @@
 	    }]);
 
 /***/ },
-/* 60 */
+/* 62 */
 /***/ function(module, exports) {
 
 	/**
@@ -3156,7 +3205,7 @@
 	;
 
 /***/ },
-/* 61 */
+/* 63 */
 /***/ function(module, exports) {
 
 	/**
@@ -3203,6 +3252,19 @@
 	    //     $rootScope.showIndex = true;
 	    // }])
 	;
+
+/***/ },
+/* 64 */
+/***/ function(module, exports) {
+
+	/**
+	 * Created by jerry on 2017/4/2.
+	 */
+	angular.module('myApp.controllershistory', [])
+	.controller('History', ['$scope','$rootScope','ipCookie','$window',function ($scope,$rootScope,ipCookie,$window) {
+	    $rootScope.showIndex = true;
+
+	}])
 
 /***/ }
 /******/ ]);
