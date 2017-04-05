@@ -1,115 +1,379 @@
 @charset "utf-8";
 @import "common";
-$theme-color:#723f3f;
+
+$theme-color: #723f3f;
 $theme-color-active: #dc4652;
 $theme-color-pink1: #723f3f;
-$theme-color-pink2: #dc4652;
+$theme-color-pink2: #e0626c;
 $theme-color-pink-active: #ea703a;
-.sliders{
-  height:455px;
+.sliders {
+  height: 455px;
 }
-.history-inner{
-  padding:0 85px;
-  display:flex;
+
+.history-inner {
+  padding: 0 85px;
+  display: flex;
   flex-flow: row;
-  .history-items{
-    width:678px;
-    .history-item{
-      padding-bottom:10px;
-      border-bottom:1px solid #eee;
-      p{
+  .history-items {
+    width: 678px;
+    .history-item {
+      padding-bottom: 10px;
+      border-bottom: 1px solid #eee;
+      p {
         display: flex;
         flex-flow: row;
         justify-content: space-between;
-        height:60px;
-        span{
-          display:inline;
-          padding:5px 8px;
-          height:20px;
-          background:$theme-color-pink2;
-          font-weight:bold;
-          color:#fff;
-          line-height:20px;
-          font-size:18px;
-          margin-top:15px;
+        height: 60px;
+        span {
+          display: inline;
+          padding: 5px 8px;
+          height: 20px;
+          background: $theme-color-pink2;
+          font-weight: bold;
+          color: #fff;
+          line-height: 20px;
+          font-size: 18px;
+          margin-top: 15px;
         }
-        a{
-          color:$theme-color-pink1;
-          line-height:50px;
-          &:hover{
-            color:$theme-color-pink2;
+        a {
+          color: $theme-color-pink1;
+          line-height: 50px;
+          &:hover {
+            color: $theme-color-pink2;
           }
         }
       }
-      ul{
+      ul {
         display: flex;
         flex-flow: row;
-        li{
-          width:297px;
-          &:not(:last-child){
-            margin-right:83px;
+        min-height:307px;
+        li {
+          width: 297px;
+          &:not(:last-child) {
+            margin-right: 83px;
           }
-          a{
-            color:#000;
-            h1{
-              margin-top:10px;
+          a {
+            color: #000;
+            h1 {
+              margin-top: 10px;
               @include simpleLine(297);
-              font-size:14px;
-              line-height:25px;
+              font-size: 14px;
+              line-height: 25px;
             }
-            figcaption{
-              font-size:12px;
-              line-height:18px;
-              color:#0d0d0d;
-              @include limitLine(3,297,54);
+            figcaption {
+              p{
+                font-size: 12px;
+                line-height: 18px;
+                color: #0d0d0d;
+                @include limitLine(3, 297, 54);
+              }
             }
-            h3,h4{
-              font-size:12px;
-              font-weight:normal;
-              line-height:25px;
-              color:$theme-color-pink1;
+            h3, h4 {
+              font-size: 12px;
+              font-weight: normal;
+              line-height: 25px;
+              color: $theme-color-pink1;
             }
           }
         }
       }
     }
   }
-  .history-top-ten{
-    width:324px;
-    margin-left:37px;
-    margin-top:24px;
-    background:#f7f7f7;
-    padding-left:5px;
-    >h1{
-      font-size:18px;
-      line-height:25px;
-      color:#0d0d0d;
+  .history-top-ten {
+    width: 324px;
+    margin-left: 37px;
+    margin-top: 24px;
+    background: #f7f7f7;
+    padding-left: 5px;
+    > h1 {
+      font-size: 18px;
+      line-height: 25px;
+      color: #0d0d0d;
     }
-    ul{
-      li{
-        padding:20px 0;
-        border-bottom:1px solid #eee;
+    ul {
+      .chunk-other{
+      a{
+        display: flex;
+        flex-flow: row;
+        color: #000;
+        .history-top-ten-msg {
+          margin-left: 10px;
+          h1 {
+            font-size: 16px;
+            font-weight: normal;
+            color: $theme-color-pink1;
+            @include simpleLine(295);
+            margin-bottom: 10px;
+          }
+          p {
+            font-size: 12px;
+            color: #0d0d0d;
+            line-height: 16px;
+            @include limitLine(3,295, 50);
+          }
+        }
+      }
+    }
+      li {
+        padding: 20px 0;
+        border-bottom: 1px solid #eee;
+
+        a {
+          display: flex;
+          flex-flow: row;
+          color: #000;
+          .history-top-ten-img {
+
+          }
+          .history-top-ten-msg {
+            margin-left: 10px;
+            h1 {
+              font-size: 16px;
+              font-weight: normal;
+              color: $theme-color-pink1;
+              @include simpleLine(140);
+              margin-bottom: 10px;
+            }
+            p {
+              font-size: 12px;
+              color: #0d0d0d;
+              line-height: 16px;
+              @include limitLine(3, 140, 50);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.history-details {
+  padding: 0 85px;
+  display: flex;
+  flex-flow: row;
+  .history-details-content {
+    width: 678px;
+    h1 {
+      margin-top: 10px;
+      padding-left: 8px;
+      @include simpleLine(678);
+    }
+    h4 {
+      font-weight: normal;
+      color: #000;
+      line-height: 40px;
+      padding-left: 10px;
+      span {
+        font-size: 12px;
+      }
+      b, u {
+        font-weight: normal;
+        text-decoration: none;
+        font-size: 12px;
+        color: $theme-color-pink1;
+      }
+    }
+    .history-details-content-msg {
+      margin-top: 30px;
+      div {
+        p{
+          font-size: 12px;
+          color: #666;
+          line-height:18px;
+        }
+      }
+    }
+  }
+  .history-top-ten {
+    width: 324px;
+    margin-left: 37px;
+    margin-top: 24px;
+    background: #f7f7f7;
+    padding-left: 5px;
+    > h1 {
+      font-size: 18px;
+      line-height: 25px;
+      color: #0d0d0d;
+    }
+    ul {
+      .chunk-other{
         a{
           display: flex;
           flex-flow: row;
-          color:#000;
-          .history-top-ten-img{
+          color: #000;
+          .history-top-ten-msg {
+            margin-left: 10px;
+            h1 {
+              font-size: 16px;
+              font-weight: normal;
+              color: $theme-color-pink1;
+              @include simpleLine(295);
+              margin-bottom: 10px;
+            }
+            p {
+              font-size: 12px;
+              color: #0d0d0d;
+              line-height: 16px;
+              @include limitLine(3,295, 50);
+            }
+          }
+        }
+      }
+      li {
+        padding: 20px 0;
+        border-bottom: 1px solid #eee;
+        a {
+          display: flex;
+          flex-flow: row;
+          color: #000;
+          .history-top-ten-img {
 
           }
-          .history-top-ten-msg{
-            margin-left:10px;
-            h1{
-              font-size:16px;
-              font-weight:normal;
-              color:$theme-color-pink1;
+          .history-top-ten-msg {
+            margin-left: 10px;
+            h1 {
+              font-size: 16px;
+              font-weight: normal;
+              color: $theme-color-pink1;
               @include simpleLine(140);
-              margin-bottom:10px;
+              margin-bottom: 10px;
             }
-            p{
-              font-size:12px;
-              color:#0d0d0d;
-              line-height:16px;
-              @include limitLine(3,140,50);
+            p {
+              font-size: 12px;
+              color: #0d0d0d;
+              line-height: 16px;
+              @include limitLine(3, 140, 50);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.history-list {
+  padding: 0 85px;
+  display: flex;
+  flex-flow: row;
+  .history-list-left {
+    .history-list-title {
+      margin-top: 28px;
+      position: relative;
+      div {
+        position: absolute;
+        background: #e2646e;
+        padding: 8px 100px;
+        color: #fff;
+        top: -20px;
+        left: 30px;
+      }
+      p {
+        padding: 25px 30px;
+        width: 613px;
+        line-height: 25px;
+        border-radius: 10px;
+        background: #f5f5f5;
+        color: #656565;
+        font-size: 14px;
+      }
+    }
+    .history-list-content {
+      ul {
+        min-height: 1128px;
+        li {
+          width: 673px;
+          padding: 10px 0;
+          border-bottom: 1px solid #eee;
+          a {
+            display: flex;
+            flex-flow: row;
+            color: #000;
+            div {
+              margin-left: 15px;
+              h1 {
+                font-size: 14px;
+                line-height: 25px;
+              }
+              p {
+                font-size: 12px;
+                color: #666666;
+                line-height: 18px;
+                @include limitLine(3, 347, 52)
+              }
+              h4, h5 {
+                font-size: 12px;
+                line-height: 18px;
+                color: $theme-color-pink1;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .chunks {
+    .chunk {
+      width: 324px;
+      margin-left: 37px;
+      margin-top: 24px;
+      padding-left: 5px;
+      >h1 {
+        font-size: 16px;
+        line-height: 25px;
+        padding-left:20px;
+        color: $theme-color-pink2;
+      }
+      ul {
+        li {
+          padding: 20px 10px;
+          border-bottom: 1px solid #cccccc;
+          background: #f7f7f7;
+          a {
+            display: flex;
+            flex-flow: row;
+            color: #000;
+            .history-top-ten-img {
+
+            }
+            .history-top-ten-msg {
+              margin-left: 10px;
+              h1 {
+                font-size: 16px;
+                font-weight: normal;
+                color: $theme-color-pink1;
+                @include simpleLine(140);
+                margin-bottom: 10px;
+              }
+              p {
+                font-size: 12px;
+                color: #0d0d0d;
+                line-height: 16px;
+                @include limitLine(3, 140, 50);
+              }
+            }
+          }
+
+        }
+        .chunk-other{
+          a{
+            display: flex;
+            flex-flow: row;
+            color: #000;
+            .history-top-ten-msg {
+              margin-left: 10px;
+              h1 {
+                font-size: 16px;
+                font-weight: normal;
+                color: $theme-color-pink1;
+                @include simpleLine(295);
+                margin-bottom: 10px;
+              }
+              p {
+                font-size: 12px;
+                color: #0d0d0d;
+                line-height: 16px;
+                @include limitLine(3,295, 50);
+              }
             }
           }
         }

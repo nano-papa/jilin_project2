@@ -12,124 +12,72 @@
     <div class="history-inner">
         <div class="history-items">
             <div class="history-item">
-                <p class="history-item-title"><span>历史大事记</span><a href="">更多&gt;&gt;</a></p>
+                <p class="history-item-title"><span>历史大事记</span><a ui-sref="historylist({type:'历史大事记',class:'1'})">更多&gt;&gt;</a></p>
                 <ul>
-                    <li>
+                    <li ng-repeat="l in data.dsjList">
                         <figure>
-                            <a href="">
-                                <img src="img/history-items.png" width="297" height="168"/>
-                                <h1>黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀asdfasdfasdfasd</h1>
+                            <a ui-sref="historyDetails({id:l.id})">
+                                <img ng-src="{{l.pictureThumb}}" width="297" height="168"/>
+                                <h1 ng-bind="l.headline"></h1>
                                 <figcaption>
-                                    黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀.黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀阀黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀
+                                    <p ng-bind="l.content|filterhtml"></p>
                                 </figcaption>
-                                <h3>2017/2/17 18:00</h3>
-                                <h4>吉林省博物馆</h4>
-                            </a>
-                        </figure>
-                    </li>
-                    <li>
-                        <figure>
-                            <a href="">
-                                <img src="img/history-items.png" width="297" height="168"/>
-                                <h1>黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀asdfasdfasdfasd</h1>
-                                <figcaption>
-                                    黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀.黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀阀黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀
-                                </figcaption>
-                                <h3>2017/2/17 18:00</h3>
-                                <h4>吉林省博物馆</h4>
+                                <h3 ng-bind="l.publishDate"></h3>
+                                <h4 ng-bind="l.musExhibition"></h4>
                             </a>
                         </figure>
                     </li>
                 </ul>
             </div>
             <div style="margin-top:20px;" class="history-item">
-                <p class="history-item-title"><span>文化走廊</span><a href="">更多&gt;&gt;</a></p>
+                <p class="history-item-title"><span>文化走廊</span><a ui-sref="historylist({type:'文化走廊',class:'2'})">更多&gt;&gt;</a></p>
                 <ul>
-                    <li>
+                    <li ng-repeat="w in data.whzlList">
                         <figure>
-                            <a href="">
-                                <img src="img/history-items.png" width="297" height="168"/>
-                                <h1>黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀asdfasdfasdfasd</h1>
+                            <a ui-sref="historyDetails({id:w.id})">
+                                <img ng-src="{{w.pictureThumb}}" width="297" height="168"/>
+                                <h1 ng-bind="w.headline"></h1>
                                 <figcaption>
-                                    黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀.黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀阀黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀
+                                    <p ng-bind="w.content|filterhtml"></p>
                                 </figcaption>
-                                <h3>2017/2/17 18:00</h3>
-                                <h4>吉林省博物馆</h4>
-                            </a>
-                        </figure>
-                    </li>
-                    <li>
-                        <figure>
-                            <a href="">
-                                <img src="img/history-items.png" width="297" height="168"/>
-                                <h1>黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀asdfasdfasdfasd</h1>
-                                <figcaption>
-                                    黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀.黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀阀黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀
-                                </figcaption>
-                                <h3>2017/2/17 18:00</h3>
-                                <h4>吉林省博物馆</h4>
+                                <h3 ng-bind="w.publishDate"></h3>
+                                <h4 ng-bind="w.musExhibition"></h4>
                             </a>
                         </figure>
                     </li>
                 </ul>
             </div>
             <div style="margin-top:20px;" class="history-item">
-                <p class="history-item-title"><span>历史名人</span><a href="">更多&gt;&gt;</a></p>
+                <p class="history-item-title"><span>历史名人</span><a ui-sref="historylist({type:'历史名人',class:'3'})">更多&gt;&gt;</a></p>
                 <ul>
-                    <li>
+                    <li ng-repeat="m in data.lsmrlList">
                         <figure>
-                            <a href="">
-                                <img src="img/history-items.png" width="297" height="168"/>
-                                <h1>黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀asdfasdfasdfasd</h1>
+                            <a ui-sref="historyDetails({id:m.id})">
+                                <img ng-src="{{m.pictureThumb}}" width="297" height="168"/>
+                                <h1 ng-bind="m.headline"></h1>
                                 <figcaption>
-                                    黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀.黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀阀黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀
+                                    <p ng-bind="m.content|filterhtml"></p>
                                 </figcaption>
-                                <h3>2017/2/17 18:00</h3>
-                                <h4>吉林省博物馆</h4>
-                            </a>
-                        </figure>
-                    </li>
-                    <li>
-                        <figure>
-                            <a href="">
-                                <img src="img/history-items.png" width="297" height="168"/>
-                                <h1>黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀asdfasdfasdfasd</h1>
-                                <figcaption>
-                                    黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀.黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀阀黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀
-                                </figcaption>
-                                <h3>2017/2/17 18:00</h3>
-                                <h4>吉林省博物馆</h4>
+                                <h3 ng-bind="m.publishDate"></h3>
+                                <h4 ng-bind="m.musExhibition"></h4>
                             </a>
                         </figure>
                     </li>
                 </ul>
             </div>
             <div style="margin-top:20px;" class="history-item">
-                <p class="history-item-title"><span>旅游景点</span><a href="">更多&gt;&gt;</a></p>
+                <p class="history-item-title"><span>旅游景点</span><a ui-sref="historylist({type:'旅游景点',class:'4'})">更多&gt;&gt;</a></p>
                 <ul>
-                    <li>
+                    <li ng-repeat="y in data.lyjdlList">
                         <figure>
-                            <a href="">
-                                <img src="img/history-items.png" width="297" height="168"/>
-                                <h1>黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀asdfasdfasdfasd</h1>
+                            <a ui-sref="historyDetails({id:y.id})">
+                                <img ng-src="{{y.pictureThumb}}" width="297" height="168"/>
+                                <h1 ng-bind="y.headline"></h1>
                                 <figcaption>
-                                    黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀.黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀阀黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀
+                                    <p ng-bind="y.content|filterhtml"></p>
                                 </figcaption>
-                                <h3>2017/2/17 18:00</h3>
-                                <h4>吉林省博物馆</h4>
-                            </a>
-                        </figure>
-                    </li>
-                    <li>
-                        <figure>
-                            <a href="">
-                                <img src="img/history-items.png" width="297" height="168"/>
-                                <h1>黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀asdfasdfasdfasd</h1>
-                                <figcaption>
-                                    黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀.黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀阀黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀黄浦江上的的卢浦大桥的说法是打发斯蒂芬手动阀
-                                </figcaption>
-                                <h3>2017/2/17 18:00</h3>
-                                <h4>吉林省博物馆</h4>
+                                <h3 ng-bind="y.publishDate"></h3>
+                                <h4 ng-bind="y.musExhibition"></h4>
                             </a>
                         </figure>
                     </li>
@@ -140,103 +88,21 @@
             <h1>本月热门文章TOP10</h1>
             <ul>
                 <li>
-                    <a href="">
+                    <a ui-sref="historyDetails({id:data.hotlList[0].id})">
                         <div class="history-top-ten-img">
-                            <img src="img/top10.png" width="150" height="85" alt="">
+                            <img ng-src="{{data.hotlList[0].pictureThumb}}" width="150" height="85" alt="">
                         </div>
                         <div class="history-top-ten-msg">
-                            <h1>吉林历史沿asdfasdfasdfasdfas革</h1>
-                            <p>sdfasdfasdfasdfasd吉林历史久70000年前，就有人土按时间顺序周为肃周为肃慎dfasdfasdfasdfasdfas地，扶余地......</p>
+                            <h1 ng-bind="data.hotlList[0].headline"></h1>
+                            <p ng-bind="data.hotlList[0].content"></p>
                         </div>
                     </a>
-                </li><li>
-                    <a href="">
-                        <div class="history-top-ten-img">
-                            <img src="img/top10.png" width="150" height="85" alt="">
-                        </div>
+                </li>
+                <li class="chunk-other" ng-repeat="hot in hot10">
+                    <a ui-sref="historyDetails({id:hot.id})">
                         <div class="history-top-ten-msg">
-                            <h1>吉林历史沿asdfasdfasdfasdfas革</h1>
-                            <p>sdfasdfasdfasdfasd吉林历史久70000年前，就有人土按时间顺序周为肃周为肃慎dfasdfasdfasdfasdfas地，扶余地......</p>
-                        </div>
-                    </a>
-                </li><li>
-                    <a href="">
-                        <div class="history-top-ten-img">
-                            <img src="img/top10.png" width="150" height="85" alt="">
-                        </div>
-                        <div class="history-top-ten-msg">
-                            <h1>吉林历史沿asdfasdfasdfasdfas革</h1>
-                            <p>sdfasdfasdfasdfasd吉林历史久70000年前，就有人土按时间顺序周为肃周为肃慎dfasdfasdfasdfasdfas地，扶余地......</p>
-                        </div>
-                    </a>
-                </li><li>
-                    <a href="">
-                        <div class="history-top-ten-img">
-                            <img src="img/top10.png" width="150" height="85" alt="">
-                        </div>
-                        <div class="history-top-ten-msg">
-                            <h1>吉林历史沿asdfasdfasdfasdfas革</h1>
-                            <p>sdfasdfasdfasdfasd吉林历史久70000年前，就有人土按时间顺序周为肃周为肃慎dfasdfasdfasdfasdfas地，扶余地......</p>
-                        </div>
-                    </a>
-                </li><li>
-                    <a href="">
-                        <div class="history-top-ten-img">
-                            <img src="img/top10.png" width="150" height="85" alt="">
-                        </div>
-                        <div class="history-top-ten-msg">
-                            <h1>吉林历史沿asdfasdfasdfasdfas革</h1>
-                            <p>sdfasdfasdfasdfasd吉林历史久70000年前，就有人土按时间顺序周为肃周为肃慎dfasdfasdfasdfasdfas地，扶余地......</p>
-                        </div>
-                    </a>
-                </li><li>
-                    <a href="">
-                        <div class="history-top-ten-img">
-                            <img src="img/top10.png" width="150" height="85" alt="">
-                        </div>
-                        <div class="history-top-ten-msg">
-                            <h1>吉林历史沿asdfasdfasdfasdfas革</h1>
-                            <p>sdfasdfasdfasdfasd吉林历史久70000年前，就有人土按时间顺序周为肃周为肃慎dfasdfasdfasdfasdfas地，扶余地......</p>
-                        </div>
-                    </a>
-                </li><li>
-                    <a href="">
-                        <div class="history-top-ten-img">
-                            <img src="img/top10.png" width="150" height="85" alt="">
-                        </div>
-                        <div class="history-top-ten-msg">
-                            <h1>吉林历史沿asdfasdfasdfasdfas革</h1>
-                            <p>sdfasdfasdfasdfasd吉林历史久70000年前，就有人土按时间顺序周为肃周为肃慎dfasdfasdfasdfasdfas地，扶余地......</p>
-                        </div>
-                    </a>
-                </li><li>
-                    <a href="">
-                        <div class="history-top-ten-img">
-                            <img src="img/top10.png" width="150" height="85" alt="">
-                        </div>
-                        <div class="history-top-ten-msg">
-                            <h1>吉林历史沿asdfasdfasdfasdfas革</h1>
-                            <p>sdfasdfasdfasdfasd吉林历史久70000年前，就有人土按时间顺序周为肃周为肃慎dfasdfasdfasdfasdfas地，扶余地......</p>
-                        </div>
-                    </a>
-                </li><li>
-                    <a href="">
-                        <div class="history-top-ten-img">
-                            <img src="img/top10.png" width="150" height="85" alt="">
-                        </div>
-                        <div class="history-top-ten-msg">
-                            <h1>吉林历史沿asdfasdfasdfasdfas革</h1>
-                            <p>sdfasdfasdfasdfasd吉林历史久70000年前，就有人土按时间顺序周为肃周为肃慎dfasdfasdfasdfasdfas地，扶余地......</p>
-                        </div>
-                    </a>
-                </li><li>
-                    <a href="">
-                        <div class="history-top-ten-img">
-                            <img src="img/top10.png" width="150" height="85" alt="">
-                        </div>
-                        <div class="history-top-ten-msg">
-                            <h1>吉林历史沿asdfasdfasdfasdfas革</h1>
-                            <p>sdfasdfasdfasdfasd吉林历史久70000年前，就有人土按时间顺序周为肃周为肃慎dfasdfasdfasdfasdfas地，扶余地......</p>
+                            <h1 ng-bind="hot.headline"></h1>
+                            <p ng-bind="hot.content"></p>
                         </div>
                     </a>
                 </li>

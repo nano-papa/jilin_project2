@@ -239,7 +239,7 @@ footer {
           display: inline;
           padding: 5px 8px;
           height: 20px;
-          background: #dc4652;
+          background: #e0626c;
           font-weight: bold;
           color: #fff;
           line-height: 20px;
@@ -249,10 +249,11 @@ footer {
           color: #723f3f;
           line-height: 50px; }
           .history-inner .history-items .history-item p a:hover {
-            color: #dc4652; }
+            color: #e0626c; }
       .history-inner .history-items .history-item ul {
         display: flex;
-        flex-flow: row; }
+        flex-flow: row;
+        min-height: 307px; }
         .history-inner .history-items .history-item ul li {
           width: 297px; }
           .history-inner .history-items .history-item ul li:not(:last-child) {
@@ -268,7 +269,7 @@ footer {
               white-space: nowrap;
               font-size: 14px;
               line-height: 25px; }
-            .history-inner .history-items .history-item ul li a figcaption {
+            .history-inner .history-items .history-item ul li a figcaption p {
               font-size: 12px;
               line-height: 18px;
               color: #0d0d0d;
@@ -293,6 +294,32 @@ footer {
       font-size: 18px;
       line-height: 25px;
       color: #0d0d0d; }
+    .history-inner .history-top-ten ul .chunk-other a {
+      display: flex;
+      flex-flow: row;
+      color: #000; }
+      .history-inner .history-top-ten ul .chunk-other a .history-top-ten-msg {
+        margin-left: 10px; }
+        .history-inner .history-top-ten ul .chunk-other a .history-top-ten-msg h1 {
+          font-size: 16px;
+          font-weight: normal;
+          color: #723f3f;
+          display: block;
+          width: 295px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          margin-bottom: 10px; }
+        .history-inner .history-top-ten ul .chunk-other a .history-top-ten-msg p {
+          font-size: 12px;
+          color: #0d0d0d;
+          line-height: 16px;
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 3;
+          overflow: hidden;
+          width: 295px;
+          height: 50px; }
     .history-inner .history-top-ten ul li {
       padding: 20px 0;
       border-bottom: 1px solid #eee; }
@@ -322,5 +349,221 @@ footer {
             overflow: hidden;
             width: 140px;
             height: 50px; }
+
+.history-details {
+  padding: 0 85px;
+  display: flex;
+  flex-flow: row; }
+  .history-details .history-details-content {
+    width: 678px; }
+    .history-details .history-details-content h1 {
+      margin-top: 10px;
+      padding-left: 8px;
+      display: block;
+      width: 678px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap; }
+    .history-details .history-details-content h4 {
+      font-weight: normal;
+      color: #000;
+      line-height: 40px;
+      padding-left: 10px; }
+      .history-details .history-details-content h4 span {
+        font-size: 12px; }
+      .history-details .history-details-content h4 b, .history-details .history-details-content h4 u {
+        font-weight: normal;
+        text-decoration: none;
+        font-size: 12px;
+        color: #723f3f; }
+    .history-details .history-details-content .history-details-content-msg {
+      margin-top: 30px; }
+      .history-details .history-details-content .history-details-content-msg div p {
+        font-size: 12px;
+        color: #666;
+        line-height: 18px; }
+  .history-details .history-top-ten {
+    width: 324px;
+    margin-left: 37px;
+    margin-top: 24px;
+    background: #f7f7f7;
+    padding-left: 5px; }
+    .history-details .history-top-ten > h1 {
+      font-size: 18px;
+      line-height: 25px;
+      color: #0d0d0d; }
+    .history-details .history-top-ten ul .chunk-other a {
+      display: flex;
+      flex-flow: row;
+      color: #000; }
+      .history-details .history-top-ten ul .chunk-other a .history-top-ten-msg {
+        margin-left: 10px; }
+        .history-details .history-top-ten ul .chunk-other a .history-top-ten-msg h1 {
+          font-size: 16px;
+          font-weight: normal;
+          color: #723f3f;
+          display: block;
+          width: 295px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          margin-bottom: 10px; }
+        .history-details .history-top-ten ul .chunk-other a .history-top-ten-msg p {
+          font-size: 12px;
+          color: #0d0d0d;
+          line-height: 16px;
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 3;
+          overflow: hidden;
+          width: 295px;
+          height: 50px; }
+    .history-details .history-top-ten ul li {
+      padding: 20px 0;
+      border-bottom: 1px solid #eee; }
+      .history-details .history-top-ten ul li a {
+        display: flex;
+        flex-flow: row;
+        color: #000; }
+        .history-details .history-top-ten ul li a .history-top-ten-msg {
+          margin-left: 10px; }
+          .history-details .history-top-ten ul li a .history-top-ten-msg h1 {
+            font-size: 16px;
+            font-weight: normal;
+            color: #723f3f;
+            display: block;
+            width: 140px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            margin-bottom: 10px; }
+          .history-details .history-top-ten ul li a .history-top-ten-msg p {
+            font-size: 12px;
+            color: #0d0d0d;
+            line-height: 16px;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 3;
+            overflow: hidden;
+            width: 140px;
+            height: 50px; }
+
+.history-list {
+  padding: 0 85px;
+  display: flex;
+  flex-flow: row; }
+  .history-list .history-list-left .history-list-title {
+    margin-top: 28px;
+    position: relative; }
+    .history-list .history-list-left .history-list-title div {
+      position: absolute;
+      background: #e2646e;
+      padding: 8px 100px;
+      color: #fff;
+      top: -20px;
+      left: 30px; }
+    .history-list .history-list-left .history-list-title p {
+      padding: 25px 30px;
+      width: 613px;
+      line-height: 25px;
+      border-radius: 10px;
+      background: #f5f5f5;
+      color: #656565;
+      font-size: 14px; }
+  .history-list .history-list-left .history-list-content ul {
+    min-height: 1128px; }
+    .history-list .history-list-left .history-list-content ul li {
+      width: 673px;
+      padding: 10px 0;
+      border-bottom: 1px solid #eee; }
+      .history-list .history-list-left .history-list-content ul li a {
+        display: flex;
+        flex-flow: row;
+        color: #000; }
+        .history-list .history-list-left .history-list-content ul li a div {
+          margin-left: 15px; }
+          .history-list .history-list-left .history-list-content ul li a div h1 {
+            font-size: 14px;
+            line-height: 25px; }
+          .history-list .history-list-left .history-list-content ul li a div p {
+            font-size: 12px;
+            color: #666666;
+            line-height: 18px;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 3;
+            overflow: hidden;
+            width: 347px;
+            height: 52px; }
+          .history-list .history-list-left .history-list-content ul li a div h4, .history-list .history-list-left .history-list-content ul li a div h5 {
+            font-size: 12px;
+            line-height: 18px;
+            color: #723f3f; }
+  .history-list .chunks .chunk {
+    width: 324px;
+    margin-left: 37px;
+    margin-top: 24px;
+    padding-left: 5px; }
+    .history-list .chunks .chunk > h1 {
+      font-size: 16px;
+      line-height: 25px;
+      padding-left: 20px;
+      color: #e0626c; }
+    .history-list .chunks .chunk ul li {
+      padding: 20px 10px;
+      border-bottom: 1px solid #cccccc;
+      background: #f7f7f7; }
+      .history-list .chunks .chunk ul li a {
+        display: flex;
+        flex-flow: row;
+        color: #000; }
+        .history-list .chunks .chunk ul li a .history-top-ten-msg {
+          margin-left: 10px; }
+          .history-list .chunks .chunk ul li a .history-top-ten-msg h1 {
+            font-size: 16px;
+            font-weight: normal;
+            color: #723f3f;
+            display: block;
+            width: 140px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            margin-bottom: 10px; }
+          .history-list .chunks .chunk ul li a .history-top-ten-msg p {
+            font-size: 12px;
+            color: #0d0d0d;
+            line-height: 16px;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 3;
+            overflow: hidden;
+            width: 140px;
+            height: 50px; }
+    .history-list .chunks .chunk ul .chunk-other a {
+      display: flex;
+      flex-flow: row;
+      color: #000; }
+      .history-list .chunks .chunk ul .chunk-other a .history-top-ten-msg {
+        margin-left: 10px; }
+        .history-list .chunks .chunk ul .chunk-other a .history-top-ten-msg h1 {
+          font-size: 16px;
+          font-weight: normal;
+          color: #723f3f;
+          display: block;
+          width: 295px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          margin-bottom: 10px; }
+        .history-list .chunks .chunk ul .chunk-other a .history-top-ten-msg p {
+          font-size: 12px;
+          color: #0d0d0d;
+          line-height: 16px;
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 3;
+          overflow: hidden;
+          width: 295px;
+          height: 50px; }
 
 /*# sourceMappingURL=history.css.map */

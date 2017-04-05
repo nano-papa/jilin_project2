@@ -125,5 +125,17 @@ angular.module("myApp.router", ["ui.router"])
                 templateUrl:"views/history.html",
                 controller:'History'
             })
+            //历史吉林列表页
+            .state('historylist',{
+                url:"/historylist/:type/:class",
+                templateUrl:"views/history_list.html",
+                controller:'Historylist'
+            })
+            //历史吉林详情页
+            .state('historyDetails',{
+                url:'/historydetails/:id',
+                templateUrl:'views/history_details.html',
+                controller:"Historydetials"
+            })
         ;
     });

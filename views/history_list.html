@@ -1,0 +1,122 @@
+<div class="wrapper">
+    <img  ng-src="{{imgUrlarr[4].carList[0].pic.backUrl}}" width="1200" height="120" alt="">
+    <p class="breadcrumb">
+        <a ui-sref="home">首页</a><u>&gt;&gt;</u><a ui-sref="digitization">历史吉林</a>
+    </p>
+    <div class="history-list">
+        <div class="history-list-left">
+            <div class="history-list-title">
+                <div>
+                    <h1 ng-bind="data.main.categoryName"></h1>
+                </div>
+                <p ng-show="type==='历史大事记'">
+                    历经千年洗礼，见证历史时刻。仰望满族先世发祥于春秋北魏，聆听金朝女真的铁马金戈，缅怀无数革命先烈抵御外侵的英勇抗争……历史从未走远，让我们一起铭记……
+                </p>
+                <p ng-show="type==='文化走廊'">
+                    “长白山文化”以秽貉族系文化为基础，以华夏（汉）文化为主体。在这里，您可以领略“马背生活”的独特原生方式，感受少数民族尊天敬山的文化寄托，感受万物有灵的山林文化，欣赏丰富多彩的民俗表演……
+                </p>
+                <p ng-show="type==='历史名人'">
+                    追寻纳兰性德“人生若只如初见”的清丽婉约，一览清代第一女词人顾太清的传奇人生，见证赫赫有名的“吉林三杰”如何闻名关东、享誉京城……人物，令历史有了温度，为城市注入生机。
+                </p>
+                <p ng-show="type==='旅游景点'">
+                    景观独特的冰雪之乡拥有绿荫如盖、森林浩瀚的净月潭， “雄山托天池,林海藏珍奇” 的长白山，以及冰清玉洁的吉林雾凇……而独具特色的朝鲜民俗风情则为白山黑土的人文景观添上了浓墨重彩的一笔。
+                </p>
+            </div>
+            <div class="history-list-content">
+                <ul>
+                    <li ng-repeat="item in data.main.list">
+                        <a ui-sref="historyDetails({id:item.id})">
+                            <div>
+                                <img ng-src="{{item.pictureThumb}}" width="296" height="167" alt="">
+                            </div>
+                            <div style="padding-top:8px;">
+                                <h1 ng-bind="item.headline"></h1>
+                                <p ng-bind="item.content|filterhtml"></p>
+                                <h4 style="margin-top:8px;" ng-bind="item.publishDate"></h4>
+                                <h5 ng-bind="item.musExhibition"></h5>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <div class="PagePlugs" style="margin:30px auto;"></div>
+            </div>
+        </div>
+        <div class="chunks">
+            <div class="chunk">
+                <h1 ng-bind="data.c1.categoryName">
+                </h1>
+                <ul>
+                    <li>
+                        <a ui-sref="historyDetails({id:data.c1.list[0].id})">
+                            <div class="history-top-ten-img">
+                                <img ng-src="{{data.c1.list[0].pictureThumb}}" width="150" height="85" alt="">
+                            </div>
+                            <div class="history-top-ten-msg">
+                                <h1 ng-bind="data.c1.list[0].headline"></h1>
+                                <p ng-bind="data.c1.list[0].content|filterhtml"></p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="chunk-other" ng-repeat="w in wenhua">
+                        <a ui-sref="historyDetails({id:w.id})">
+                            <div class="history-top-ten-msg">
+                                <h1 ng-bind="w.headline"></h1>
+                                <p ng-bind="w.content|filterhtml"></p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="chunk">
+                <h1 ng-bind="data.c2.categoryName">
+                </h1>
+                <ul>
+                    <li>
+                        <a ui-sref="historyDetails({id:data.c2.list[0].id})">
+                            <div class="history-top-ten-img">
+                                <img ng-src="{{data.c2.list[0].pictureThumb}}" width="150" height="85" alt="">
+                            </div>
+                            <div class="history-top-ten-msg">
+                                <h1 ng-bind="data.c2.list[0].headline"></h1>
+                                <p ng-bind="data.c2.list[0].content|filterhtml"></p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="chunk-other" ng-repeat="l in lishi">
+                        <a ui-sref="historyDetails({id:l.id})">
+                            <div class="history-top-ten-msg">
+                                <h1 ng-bind="l.headline"></h1>
+                                <p ng-bind="l.content|filterhtml"></p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="chunk">
+                <h1 ng-bind="data.c3.categoryName">
+                </h1>
+                <ul>
+                    <li>
+                        <a ui-sref="historyDetails({id:data.c3.list[0].id})">
+                            <div class="history-top-ten-img">
+                                <img ng-src="{{data.c3.list[0].pictureThumb}}" width="150" height="85" alt="">
+                            </div>
+                            <div class="history-top-ten-msg">
+                                <h1 ng-bind="data.c3.list[0].headline"></h1>
+                                <p ng-bind="data.c3.list[0].content|filterhtml"></p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="chunk-other" ng-repeat="j in lvyou">
+                        <a ui-sref="historyDetails({id:j.id})">
+                            <div class="history-top-ten-msg">
+                                <h1 ng-bind="j.headline"></h1>
+                                <p ng-bind="j.content|filterhtml"></p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

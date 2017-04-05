@@ -1,0 +1,52 @@
+<div class="wrapper" style="padding-bottom:1px;">
+    <img  ng-src="{{imgUrlarr[4].carList[0].pic.backUrl}}" width="1200" height="120" alt="">
+    <p class="breadcrumb">
+        <a ui-sref="home">首页</a><u>&gt;&gt;</u><a ui-sref="digitization">历史吉林</a>
+    </p>
+    <div class="history-details">
+        <div class="history-details-content">
+            <h1 ng-bind="data.mipJiLinArticle.headline">
+
+            </h1>
+            <h4>
+                <span>
+                    来源：<b ng-bind="data.mipJiLinArticle.musExhibition"></b>
+                </span>
+                <span style="padding-left:30px;">
+                    <u ng-bind="data.mipJiLinArticle.publishDate"></u>
+                </span>
+            </h4>
+            <div class="history-details-content-img">
+                <img ng-src="{{data.mipJiLinArticle.pictureThumb}}" width="678" height="380" alt="">
+            </div>
+            <div class="history-details-content-msg">
+                <div ng-bind-html="data.mipJiLinArticle.content">
+                </div>
+            </div>
+        </div>
+        <div class="history-top-ten">
+            <h1>本月热门文章TOP10</h1>
+            <ul>
+                <li>
+                    <a ui-sref="historyDetails({id:data.hotlList[0].id})">
+                        <div class="history-top-ten-img">
+                            <img ng-src="data.hotlList[0].pictureThumb" width="150" height="85" alt="">
+                        </div>
+                        <div class="history-top-ten-msg">
+                            <h1 ng-bind="data.hotlList[0].headline"></h1>
+                            <p ng-bind="data.hotlList[0].content"></p>
+                        </div>
+                    </a>
+                </li>
+                <li class="chunk-other" ng-repeat="hot in hot10">
+                    <a ui-sref="historyDetails({id:hot.id})">
+                        <div class="history-top-ten-msg">
+                            <h1 ng-bind="hot.headline"></h1>
+                            <p ng-bind="hot.content"></p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
