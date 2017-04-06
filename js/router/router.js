@@ -93,9 +93,15 @@ angular.module("myApp.router", ["ui.router"])
             })
             //文创列表
             .state('Art', {
-                url: '/Art:museum/:id',
-                templateUrl: 'views/Art.html',
+                url: '/art/:museum/:id',
+                templateUrl:'views/Art.html',
                 controller:'Art'
+            })
+            //文创详情
+            .state('Artdetails', {
+                url: '/Artdetails/:id',
+                templateUrl: 'views/art_details.html',
+                controller:'ArtDetails'
             })
             .state('display', {
                 url: '/display/:museum/:id',

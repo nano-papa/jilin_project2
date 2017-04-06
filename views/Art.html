@@ -1,117 +1,23 @@
 <div class="wrapper">
     <img  ng-src="{{imgUrlarr[5].carList[0].pic.backUrl}}" width="1200" height="120" alt="">
-    <div ui-view="">
-        <div class="breadcrumb" style="padding-left:18px;padding-bottom: 20px;">
-            <a ui-sref="home">首页</a><u>&gt;&gt;</u><a ui-sref="collection">藏品</a><u>&gt;&gt;</u><span ng-bind="tab"></span>
-            <div class="tab-items">
-                <button style="margin-left:343px" class="active" ng-click="tabChange($event)" ng-show="showbtn">文物藏品</button>
-                <button style="margin-left:16px;" ng-click="tabChange($event)" ng-show="showbtn">标本化石</button>
-            </div>
-            <div class="collection-wraper" ng-if="isSelectedRelic">
-                <div class="slected-condition" ng-if="isSelected">
-                    <ul>
-                        <li>
-                <span>
-                    全部结果>
-                </span>
-                        </li>
-
-                        <li ng-if="isUnitshow">
-                            <small>单位：</small>
-                            <u ng-bind="selected.unit"></u>
-                            <i ng-click="removeUnit()" ng-show="remove">×</i>
-                        </li>
-
-                        <li ng-if="isYear">
-                            <small>年代：</small>
-                            <u ng-bind="selected.year"></u>
-                            <i ng-click="removeCondition('isYear','year')">×</i>
-                        </li>
-                        <li ng-if="isClassify">
-                            <small>分类：</small>
-                            <u ng-bind="selected.classify"></u>
-                            <i ng-click="removeCondition('isClassify','classify')">×</i>
-                        </li>
-                        <li ng-if="isKey">
-                            <small>关键词：</small>
-                            <u ng-bind="selectedcondition.keyword"></u>
-                            <i ng-click="hideKeyword('isKey','keyword')" ng-if="removekey">×</i>
-                        </li>
-                    </ul>
-                </div>
-                <div class="key-words">
-                    <span class="fontB" style="line-height: 36px">关键字：</span>
-                    <input type="text" class="collection-search" id="collection-search" ng-trim="true">
-                    <ul>
-                        <li>
-                            <input type="file" style="width:21px;height:21px;opacity: 0;overflow: hidden;">
-                        </li>
-                        <li ng-click="showKeyword('isKey','keyword',$event)"></li>
-                    </ul>
-                </div>
-                <div class="condition">
-                    <div class="condition-item" ng-if="!isClassify">
-                        <p class="condition-title fontB">藏品分类：</p>
-                        <ul class="condition-content">
-                            <li ng-repeat="i in data.ccList">
-                                <span ng-click="getConditions('isClassify','classify',$event)" data-id="{{i.id}}" ng-bind="i.name"></span>
-                            </li>
-                        </ul>
-                        <div class="condition-more" ng-click="SlideDown($event)">更多<span>&gt;</span></div>
-                    </div>
-
-
-                    <div class="condition-item" ng-if="!isArea">
-                        <p class="condition-title fontB">所在地区：</p>
-                        <ul class="condition-content">
-                            <li ng-repeat="(key,value) in data.orgList">
-                                <span ng-click="getArea($event)" ng-bind="value.cityName" data-id="{{key}}"></span>
-                            </li>
-                        </ul>
-                        <div class="condition-more" ng-click="SlideDown($event)">更多<span>&gt;</span></div>
-                    </div>
-
-
-                    <div class="condition-item" ng-if="isUnit">
-                        <p class="condition-title fontB">收藏单位：</p>
-                        <ul class="condition-content">
-                            <li ng-repeat="a in data.orgList[id].museum">
-                                <span ng-click="getUnit($event)" ng-bind="a.name" data-id2="{{a.cityId}}"></span>
-                            </li>
-                        </ul>
-                        <div class="condition-more" ng-click="SlideDown($event)">更多<span>&gt;</span></div>
-                    </div>
-                    <div class="condition-item" ng-if="!isYear">
-                        <p class="condition-title fontB">所属年代：</p>
-                        <ul class="condition-content">
-                            <li ng-repeat="x in data.ytList">
-                                <span ng-click="getConditions('isYear','year',$event)" data-id="{{x.id}}" ng-bind="x.name"></span>
-                            </li>
-                        </ul>
-                        <div class="condition-more" ng-click="SlideDown($event)">更多<span>&gt;</span></div>
-                    </div>
-                </div>
-                <div class="sort-state">
-                    <ul>
-                        <li class="fontB" style="padding: 0 10px;line-height: 40px;">排序：</li>
-                        <li style="margin-left:45px;">
-                            <ul>
-                                <li>
-                                    <button ng-class="{active:!isActive}" ng-click="changeBtn($event)" data-status="1">最新</button>
-                                </li>
-                                <li style="margin-left:20px;">
-                                    <button ng-class="{active:isActive}" ng-click="changeBtn($event)" data-status="2">最热</button>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-                <ul id="ul1">
-                    <li></li>
-                </ul>
-                <nohavemore nheight="500" nwidth="1160" ng-if="showData"></nohavemore>
-            </div>
+        <div class="breadcrumb">
+            <a ui-sref="home">首页</a><u>&gt;&gt;</u><a ui-sref="Art">文创</a>
         </div>
-    </div>
+        <div class="art">
+            <ul>
+                <li ng-repeat="art in data.list">
+                    <figure>
+                        <a ui-sref="Artdetails({id:art.id})" target="_blank">
+                            <img ng-src="{{art.pictureThumb}}" width="236" height="158"/>
+                            <figcaption>
+                                <span ng-bind="art.productName"></span>
+                                <u ng-bind="art.price"></u>
+                            </figcaption>
+                        </a>
+                    </figure>
+                </li>
+            </ul>
+            <div class="PagePlugs" style="padding-bottom:20px;"></div>
+        </div>
 </div>
 

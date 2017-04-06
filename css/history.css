@@ -503,7 +503,8 @@ footer {
     width: 324px;
     margin-left: 37px;
     margin-top: 24px;
-    padding-left: 5px; }
+    padding-left: 5px;
+    min-height: 385px; }
     .history-list .chunks .chunk > h1 {
       font-size: 16px;
       line-height: 25px;

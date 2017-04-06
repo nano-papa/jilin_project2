@@ -1,0 +1,57 @@
+<div class="wrapper">
+    <img ng-src="{{imgUrlarr[5].carList[0].pic.backUrl}}" width="1200" height="120" alt="">
+    <div ui-view="">
+        <div class="breadcrumb">
+            <a ui-sref="home">首页</a><u>&gt;&gt;</u><a ui-sref="Art">文创</a>
+        </div>
+        <div class="art_details">
+            <div class="art_details_img">
+                <img ng-src="{{data.mipWenchuang.pictureThumb}}" width="640" height="426" alt="">
+            </div>
+            <div class="art_details_msg">
+                <h1 ng-bind="data.mipWenchuang.productName"></h1>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>产品类别：</td>
+                            <td ng-bind="data.mipWenchuang.categoryName"></td>
+                        </tr>
+                        <tr>
+                            <td>产品价格：</td>
+                            <td ng-bind="data.mipWenchuang.price"></td>
+                        </tr>
+                        <tr>
+                            <td>设计元素：</td>
+                            <td ng-bind="data.mipWenchuang.designElements"></td>
+                        </tr>
+                        <tr>
+                            <td>产品来源：</td>
+                            <td ng-bind="data.mipWenchuang.musExhibition"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="collection-details-infor">
+                    <div class="content_1" ng-bind="data.mipWenchuang.content">
+                    </div>
+                </div>
+            </div>
+            <div class="art_details_list">
+                <p>同类产品</p>
+                <ul>
+                    <li ng-repeat="art in data.similarities">
+                        <figure>
+                            <a ui-sref="Artdetails({id:art.id})" target="_blank">
+                                <img ng-src="{{art.pictureThumb}}" width="236" height="158"/>
+                                <figcaption>
+                                    <span ng-bind="art.productName"></span>
+                                    <u ng-bind="art.price"></u>
+                                </figcaption>
+                            </a>
+                        </figure>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
