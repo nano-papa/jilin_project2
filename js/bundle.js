@@ -3025,6 +3025,7 @@
 	        $scope.isA = false;
 	        $scope.isK = false;
 	        $scope.isT = false;
+	        $scope.isM=false;
 	        $scope.conditions = {
 	            currentPage: $scope.curr,
 	            orgId: $scope.area,
@@ -3161,11 +3162,24 @@
 	        $scope.searchTime=function(){
 	            if($scope.activityDate==''){
 	                $scope.conditions.activityDate=$("#date").val();
+	                $scope.activityDate=$("#date").val();
+	                $scope.arr.push(1);
+	                $scope.isM = true;
+	                $scope.checkCondition();
 	                $scope.laypage();
 	            }else{
 	                layer.msg('请选中时间！')
 	            }
 	        };
+	        $scope.removeTime=function(){
+	            $scope.isM = false;
+	            $scope.conditions.activityDate="";
+	            $scope.activityDate='';
+	            $("#date").val('');
+	            $scope.arr.pop();
+	            $scope.checkCondition();
+	            $scope.laypage();
+	        }
 	        $scope.laypage = function () {
 	            $http({
 	                method: 'GET',

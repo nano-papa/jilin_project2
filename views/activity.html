@@ -1,5 +1,5 @@
 <div class="wrapper">
-    <img ng-src="{{imgUrlarr[3].carList[0].pic.backUrl}}" width="1200" height="120" alt="">
+    <img ng-src="{{imgUrlarr[9].carList[0].pic.backUrl}}" width="1200" height="120" alt="">
     <div class="display">
         <div class="breadcrumb">
             <a ui-sref="home">首页</a><u>&gt;&gt;</u><a ui-sref="activity">活动</a>
@@ -26,6 +26,11 @@
                             <small>活动种类：</small>
                             <u ng-bind="activityCategory"></u>
                             <i ng-click="removetype()" ng-show="remove">×</i>
+                        </li>
+                        <li ng-show="isM">
+                            <small>活动时间：</small>
+                            <u ng-bind="activityDate"></u>
+                            <i ng-click="removeTime()" ng-show="remove">×</i>
                         </li>
                         <li ng-show="isK">
                             <small>关键字：</small>

@@ -1,10 +1,9 @@
 <div class="wrapper">
     <div class="sliders">
         <ul>
-            <!--<li ng-repeat="slide in imgUrlarr[0].carList" repeat-done="slider()">-->
-            <li>
+            <li ng-repeat="slide in imgUrlarr[0].carList" repeat-done="slider()">
                 <a href="">
-                    <img src="img/history.png" width="1200" height="455" style="margin:auto;">
+                    <img ng-src="{{slide.pic.backUrl}}" width="1200" height="455" style="margin:auto;">
                 </a>
             </li>
         </ul>
